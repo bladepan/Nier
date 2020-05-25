@@ -1,2 +1,5 @@
 # Nier
-Extra methods for c# standard libary. Inspired by Apache Commons Lang
+Extra methods for dotnet standard library. Inspired by [Apache Commons](https://commons.apache.org/).
+
+# Nier.Lang
+Utilities ported from [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/). Such as SubStringBetween.
