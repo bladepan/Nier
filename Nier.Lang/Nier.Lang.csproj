@@ -10,12 +10,8 @@
         <PackageProjectUrl>https://github.com/bladepan/Nier</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bladepan/Nier</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageLicenseUrl>https://github.com/bladepan/Nier/blob/master/LICENSE</PackageLicenseUrl>
     </PropertyGroup>
-
-    <ItemGroup>
-    </ItemGroup>
-
+    
     <ItemGroup>
       <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0">
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
