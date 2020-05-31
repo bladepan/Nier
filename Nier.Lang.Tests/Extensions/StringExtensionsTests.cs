@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Nier.Lang.Extensions;
 
@@ -6,6 +7,58 @@ namespace Nier.Lang.Tests.Extensions
     [TestClass]
     public class StringExtensionsTests
     {
+        [TestMethod]
+        [DataRow(null, ".", 0, 1)]
+        [DataRow("", ".", 0, 1)]
+        [DataRow("abc", ".", 1, 3)]
+        public void Abbreviate_DoesNotNeedAbbreviate_ReturnsOriginString(string str, string abbrevMarker, int offset, int maxWidth)
+        {
+            string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
+            Assert.AreEqual(result, str);
+        }
+
+        [TestMethod]
+        [DataRow("abc", "", 0, 2, "ab")]
+        [DataRow("abc", null, 0, 2, "ab")]
+        [DataRow("abcd", "..", 1, 3, "a..")]
+        public void Abbreviate_AbbreviateOnlyOnRightSide_ReturnsExpectedResult(string str, string abbrevMarker, int offset, int maxWidth, string expected)
+        {
+            string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        [DataRow("abcdefghijklmno", "...", 6, 10, "...ghij...")]
+        [DataRow("abcdefg", "..", 3, 5, "..d..")]
+        public void Abbreviate_AbbreviateOnBothSides_ReturnsExpectedResult(string str, string abbrevMarker, int offset, int maxWidth, string expected)
+        {
+            string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", "...", -1, 10)]
+        public void Abbreviate_InvalidOffset_ThrowsException(string str, string abbrevMarker, int offset, int maxWidth)
+        {
+            Assert.ThrowsException<ArgumentException>(() => _ = str.Abbreviate(abbrevMarker, offset, maxWidth));
+        }
+
+        [TestMethod]
+        [DataRow("abcdef", ".", 6, 3)]
+        [DataRow("abcdef", ".", 7, 3)]
+        public void Abbreviate_OffsetExceedsLimit_ThrowsException(string str, string abbrevMarker, int offset, int maxWidth)
+        {
+            Assert.ThrowsException<ArgumentException>(() => _ = str.Abbreviate(abbrevMarker, offset, maxWidth));
+        }
+
+        [TestMethod]
+        [DataRow("abcdef", ".", 1, 1)]
+        [DataRow("abcdef", ".", 1, 0)]
+        public void Abbreviate_MaxWidthLessThanRequired_ThrowsException(string str, string abbrevMarker, int offset, int maxWidth)
+        {
+            Assert.ThrowsException<ArgumentException>(() => _ = str.Abbreviate(abbrevMarker, offset, maxWidth));
+        }
+
         [TestMethod]
         [DataRow(null, "a", "a")]
         [DataRow("a", null, "a")]
