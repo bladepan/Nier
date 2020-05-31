@@ -100,6 +100,38 @@ namespace Nier.Lang.Extensions
         }
 
         /// <summary>
+        /// Abbreviates a string to the length passed, replacing the middle characters with the supplied replacement string.
+        ///
+        /// The abbreviation happens when the string length is greater than the maxWidth.
+        /// Otherwise, the original string is returned.
+        /// </summary>
+        /// <param name="str">the string to be abbreviated, can be null</param>
+        /// <param name="abbrevMarker">the string to replace the middle characters with</param>
+        /// <param name="maxWidth">maximum length of result string</param>
+        /// <returns>the abbreviated string if abbreviation is necessary, or the original string supplied for abbreviation</returns>
+        public static string AbbreviateMiddle(this string str, string abbrevMarker, int maxWidth)
+        {
+            int strLen = str?.Length ?? 0;
+            int abbrevMarkerLength = abbrevMarker?.Length ?? 0;
+            if (strLen <= maxWidth)
+            {
+                return str;
+            }
+
+            int minMaxLength = abbrevMarkerLength + 2;
+            if (maxWidth < minMaxLength)
+            {
+                throw new ArgumentException($"Insufficient maxWidth {maxWidth}. Require at least {minMaxLength}", nameof(maxWidth));
+            }
+
+            // from here maxWidth is positive. str is not null
+            int characterLength = maxWidth - abbrevMarkerLength;
+            int rightLength = characterLength / 2;
+            int leftLength = characterLength - rightLength;
+            return str.Substring(0, leftLength) + abbrevMarker + str.Substring(strLen - rightLength, rightLength);
+        }
+
+        /// <summary>
         /// Gets the String that is nested in between two Strings. Only the first match is returned.
         /// Uses StringComparison.Ordinal for string comparison.
         ///

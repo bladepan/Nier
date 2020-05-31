@@ -60,6 +60,35 @@ namespace Nier.Lang.Tests.Extensions
         }
 
         [TestMethod]
+        [DataRow("abcd", ".", 3, "a.d")]
+        [DataRow("abcde", ".", 4, "ab.e")]
+        [DataRow("abcde", null, 4, "abde")]
+        public void AbbreviateMiddle_AbbreviateHappens_ReturnsExpectedResult(string str, string abbrevMarker, int maxWidth, string expected)
+        {
+            string result = str.AbbreviateMiddle(abbrevMarker, maxWidth);
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", ".", 4)]
+        [DataRow("abcd", ".", 4)]
+        [DataRow(null, ".", 4)]
+        [DataRow("", ".", 4)]
+        public void AbbreviateMiddle_AbbreviateDoesNotHappen_ReturnsOriginalString(string str, string abbrevMarker, int maxWidth)
+        {
+            string result = str.AbbreviateMiddle(abbrevMarker, maxWidth);
+            Assert.AreSame(str, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", ".", 2)]
+        [DataRow("abc", ".", 1)]
+        public void AbbreviateMiddle_InvalidMaxWidth_ThrowsException(string str, string abbrevMarker, int maxWidth)
+        {
+            Assert.ThrowsException<ArgumentException>(() => _ = str.AbbreviateMiddle(abbrevMarker, maxWidth));
+        }
+
+        [TestMethod]
         [DataRow(null, "a", "a")]
         [DataRow("a", null, "a")]
         [DataRow("a", "a", null)]
