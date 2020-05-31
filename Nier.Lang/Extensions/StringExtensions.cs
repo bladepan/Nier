@@ -78,7 +78,8 @@ namespace Nier.Lang.Extensions
 
             if (offset >= strLen)
             {
-                throw new ArgumentException($"Offset {offset} should be less than string length {strLen}.", nameof(offset));
+                throw new ArgumentException($"Offset {offset} should be less than string length {strLen}.",
+                    nameof(offset));
             }
 
             // from this point on, str can't be null.
@@ -121,7 +122,8 @@ namespace Nier.Lang.Extensions
             int minMaxLength = abbrevMarkerLength + 2;
             if (maxWidth < minMaxLength)
             {
-                throw new ArgumentException($"Insufficient maxWidth {maxWidth}. Require at least {minMaxLength}", nameof(maxWidth));
+                throw new ArgumentException($"Insufficient maxWidth {maxWidth}. Require at least {minMaxLength}",
+                    nameof(maxWidth));
             }
 
             // from here maxWidth is positive. str is not null
@@ -129,6 +131,24 @@ namespace Nier.Lang.Extensions
             int rightLength = characterLength / 2;
             int leftLength = characterLength - rightLength;
             return str.Substring(0, leftLength) + abbrevMarker + str.Substring(strLen - rightLength, rightLength);
+        }
+
+        /// <summary>
+        /// Appends the suffix to the end of the string if the string does not
+        /// already end with the suffix.
+        /// </summary>
+        /// <param name="str">The string, can be null</param>
+        /// <param name="suffix">The suffix to append to the end of the string.</param>
+        /// <param name="stringComparison">String comparison used to find suffix</param>
+        /// <returns></returns>
+        public static string AppendIfMissing(this string str, string suffix, StringComparison stringComparison)
+        {
+            if (string.IsNullOrEmpty(suffix) || (str != null && str.EndsWith(suffix, stringComparison)))
+            {
+                return str;
+            }
+
+            return str + suffix;
         }
 
         /// <summary>

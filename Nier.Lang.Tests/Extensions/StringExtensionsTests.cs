@@ -89,6 +89,29 @@ namespace Nier.Lang.Tests.Extensions
         }
 
         [TestMethod]
+        [DataRow("abc", "C", StringComparison.Ordinal, "abcC")]
+        [DataRow(null, "C", StringComparison.Ordinal, "C")]
+        [DataRow("", "C", StringComparison.Ordinal, "C")]
+        [DataRow("C", "C", StringComparison.Ordinal, "C")]
+        public void AppendIfMissing_StringDoesNotEndsWithSuffix_AppendSuffix(string str, string suffix, StringComparison stringComparison,
+            string expectedResult)
+        {
+            string result = str.AppendIfMissing(suffix, stringComparison);
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", "C", StringComparison.OrdinalIgnoreCase)]
+        [DataRow("abc", "c", StringComparison.Ordinal)]
+        [DataRow("abc", null, StringComparison.Ordinal)]
+        [DataRow("abc", "", StringComparison.Ordinal)]
+        public void AppendIfMissing_StringEndsWithSuffix_ReturnOriginalString(string str, string suffix, StringComparison stringComparison)
+        {
+            string result = str.AppendIfMissing(suffix, stringComparison);
+            Assert.AreSame(str, result);
+        }
+
+        [TestMethod]
         [DataRow(null, "a", "a")]
         [DataRow("a", null, "a")]
         [DataRow("a", "a", null)]
