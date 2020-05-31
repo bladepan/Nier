@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 namespace Nier.Lang.Extensions
 {
@@ -149,6 +150,103 @@ namespace Nier.Lang.Extensions
             }
 
             return str + suffix;
+        }
+
+        /// <summary>
+        /// Centers a string in a larger string of size size. Uses a supplied character as the value to pad the string with.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="size"></param>
+        /// <param name="padChar"></param>
+        /// <returns></returns>
+        public static string Center(this string str, int size, char padChar = ' ')
+        {
+            int strLen = str?.Length ?? 0;
+            int padSize = size - strLen;
+            if (padSize <= 0)
+            {
+                return str;
+            }
+
+            int rightPadSize = padSize / 2;
+            int leftPadSize = padSize - rightPadSize;
+            return Pad(str, leftPadSize, rightPadSize, padChar);
+        }
+
+        /// <summary>
+        /// Left pad a string with a specified character.
+        /// The string is padded to the size of size.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="size"></param>
+        /// <param name="padChar"></param>
+        /// <returns></returns>
+        public static string LeftPad(this string str, int size, char padChar = ' ')
+        {
+            int strLen = str?.Length ?? 0;
+            int padSize = size - strLen;
+            return padSize <= 0 ? str : Pad(str, padSize, 0, padChar);
+        }
+
+        /// <summary>
+        /// Right pad a string with a specified character.
+        /// The string is padded to the size of size.
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="size"></param>
+        /// <param name="padChar"></param>
+        /// <returns></returns>
+        public static string RightPad(this string str, int size, char padChar = ' ')
+        {
+            int strLen = str?.Length ?? 0;
+            int padSize = size - strLen;
+            return padSize <= 0 ? str : Pad(str, 0, padSize, padChar);
+        }
+
+        /// <summary>
+        /// Pad string withs supplied character
+        /// </summary>
+        /// <param name="str"></param>
+        /// <param name="leftPadSize"></param>
+        /// <param name="rightPadSize"></param>
+        /// <param name="padChar"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException"></exception>
+        private static string Pad(string str, int leftPadSize, int rightPadSize, char padChar)
+        {
+            if (leftPadSize < 0)
+            {
+                throw new ArgumentException($"Invalid pad size {leftPadSize}.", nameof(leftPadSize));
+            }
+
+            if (rightPadSize < 0)
+            {
+                throw new ArgumentException($"Invalid pad size {rightPadSize}.", nameof(rightPadSize));
+            }
+
+            if (leftPadSize == 0 && rightPadSize == 0)
+            {
+                return str;
+            }
+
+            int strLen = str?.Length ?? 0;
+            StringBuilder sb = new StringBuilder(leftPadSize + rightPadSize + strLen);
+            for (int i = 0; i < leftPadSize; i++)
+            {
+                sb.Append(padChar);
+            }
+
+            if (strLen > 0)
+            {
+                sb.Append(str);
+            }
+
+            for (int i = 0; i < rightPadSize; i++)
+            {
+                sb.Append(padChar);
+            }
+
+            return sb.ToString();
         }
 
         /// <summary>

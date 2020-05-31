@@ -112,6 +112,43 @@ namespace Nier.Lang.Tests.Extensions
         }
 
         [TestMethod]
+        [DataRow("abc", 2, "abc")]
+        [DataRow("abc", 3, "abc")]
+        [DataRow("abc", 5, ".abc.")]
+        [DataRow("abc", 6, "..abc.")]
+        [DataRow(null, 3, "...")]
+        [DataRow("", 3, "...")]
+        public void Center(string str, int size, string expectedResult)
+        {
+            string result = str.Center(size, '.');
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", 2, "abc")]
+        [DataRow("abc", 3, "abc")]
+        [DataRow("abc", 5, "..abc")]
+        [DataRow(null, 3, "...")]
+        [DataRow("", 3, "...")]
+        public void LeftPad(string str, int size, string expectedResult)
+        {
+            string result = str.LeftPad(size, '.');
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        [DataRow("abc", 2, "abc")]
+        [DataRow("abc", 3, "abc")]
+        [DataRow("abc", 5, "abc..")]
+        [DataRow(null, 3, "...")]
+        [DataRow("", 3, "...")]
+        public void RightPad(string str, int size, string expectedResult)
+        {
+            string result = str.RightPad(size, '.');
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
         [DataRow(null, "a", "a")]
         [DataRow("a", null, "a")]
         [DataRow("a", "a", null)]
