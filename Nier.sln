@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.Lang", "Nier.Lang\Nier
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.Lang.Tests", "Nier.Lang.Tests\Nier.Lang.Tests.csproj", "{F1080EAF-AFC5-4682-83C6-4008C0D0676B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.Collections", "Nier.Collections\Nier.Collections.csproj", "{4C2A81D5-2158-4FEA-A991-B45F9DD28613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.Collections.Tests", "Nier.Collections.Tests\Nier.Collections.Tests.csproj", "{4950417B-3D35-4366-972E-89C6596B8A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{F1080EAF-AFC5-4682-83C6-4008C0D0676B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1080EAF-AFC5-4682-83C6-4008C0D0676B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1080EAF-AFC5-4682-83C6-4008C0D0676B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2A81D5-2158-4FEA-A991-B45F9DD28613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2A81D5-2158-4FEA-A991-B45F9DD28613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2A81D5-2158-4FEA-A991-B45F9DD28613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2A81D5-2158-4FEA-A991-B45F9DD28613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4950417B-3D35-4366-972E-89C6596B8A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4950417B-3D35-4366-972E-89C6596B8A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4950417B-3D35-4366-972E-89C6596B8A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4950417B-3D35-4366-972E-89C6596B8A93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
