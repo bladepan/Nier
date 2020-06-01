@@ -8,3 +8,4 @@ Dotnet utility classes usually end up in folders named like "Utilities", "Utils"
 # Nier.Lang
 Utility classes for dotnet runtime core types.
 - StringExtensions
+- ISystemClock/SystemClock - Abstraction of system clock.
