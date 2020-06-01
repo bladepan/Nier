@@ -130,9 +130,9 @@ namespace Nier.Lang.Tests.Extensions
         [DataRow("abc", 5, "..abc")]
         [DataRow(null, 3, "...")]
         [DataRow("", 3, "...")]
-        public void LeftPad(string str, int size, string expectedResult)
+        public void PadStart(string str, int size, string expectedResult)
         {
-            string result = str.LeftPad(size, '.');
+            string result = str.PadStart(size, '.');
             Assert.AreEqual(expectedResult, result);
         }
 
@@ -142,9 +142,9 @@ namespace Nier.Lang.Tests.Extensions
         [DataRow("abc", 5, "abc..")]
         [DataRow(null, 3, "...")]
         [DataRow("", 3, "...")]
-        public void RightPad(string str, int size, string expectedResult)
+        public void PadEnd(string str, int size, string expectedResult)
         {
-            string result = str.RightPad(size, '.');
+            string result = str.PadEnd(size, '.');
             Assert.AreEqual(expectedResult, result);
         }
 

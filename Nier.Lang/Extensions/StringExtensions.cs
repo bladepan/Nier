@@ -181,7 +181,7 @@ namespace Nier.Lang.Extensions
         /// <param name="size"></param>
         /// <param name="padChar"></param>
         /// <returns></returns>
-        public static string LeftPad(this string str, int size, char padChar = ' ')
+        public static string PadStart(this string str, int size, char padChar = ' ')
         {
             int strLen = str?.Length ?? 0;
             int padSize = size - strLen;
@@ -196,7 +196,7 @@ namespace Nier.Lang.Extensions
         /// <param name="size"></param>
         /// <param name="padChar"></param>
         /// <returns></returns>
-        public static string RightPad(this string str, int size, char padChar = ' ')
+        public static string PadEnd(this string str, int size, char padChar = ' ')
         {
             int strLen = str?.Length ?? 0;
             int padSize = size - strLen;
@@ -207,31 +207,31 @@ namespace Nier.Lang.Extensions
         /// Pad string withs supplied character
         /// </summary>
         /// <param name="str"></param>
-        /// <param name="leftPadSize"></param>
-        /// <param name="rightPadSize"></param>
+        /// <param name="startPadSize"></param>
+        /// <param name="endPadSize"></param>
         /// <param name="padChar"></param>
         /// <returns></returns>
         /// <exception cref="ArgumentException"></exception>
-        private static string Pad(string str, int leftPadSize, int rightPadSize, char padChar)
+        private static string Pad(string str, int startPadSize, int endPadSize, char padChar)
         {
-            if (leftPadSize < 0)
+            if (startPadSize < 0)
             {
-                throw new ArgumentException($"Invalid pad size {leftPadSize}.", nameof(leftPadSize));
+                throw new ArgumentException($"Invalid pad size {startPadSize}.", nameof(startPadSize));
             }
 
-            if (rightPadSize < 0)
+            if (endPadSize < 0)
             {
-                throw new ArgumentException($"Invalid pad size {rightPadSize}.", nameof(rightPadSize));
+                throw new ArgumentException($"Invalid pad size {endPadSize}.", nameof(endPadSize));
             }
 
-            if (leftPadSize == 0 && rightPadSize == 0)
+            if (startPadSize == 0 && endPadSize == 0)
             {
                 return str;
             }
 
             int strLen = str?.Length ?? 0;
-            StringBuilder sb = new StringBuilder(leftPadSize + rightPadSize + strLen);
-            for (int i = 0; i < leftPadSize; i++)
+            StringBuilder sb = new StringBuilder(startPadSize + endPadSize + strLen);
+            for (int i = 0; i < startPadSize; i++)
             {
                 sb.Append(padChar);
             }
@@ -241,7 +241,7 @@ namespace Nier.Lang.Extensions
                 sb.Append(str);
             }
 
-            for (int i = 0; i < rightPadSize; i++)
+            for (int i = 0; i < endPadSize; i++)
             {
                 sb.Append(padChar);
             }
