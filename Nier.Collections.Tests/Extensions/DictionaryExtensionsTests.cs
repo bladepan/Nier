@@ -16,10 +16,10 @@ namespace Nier.Collections.Tests.Extensions
 
         [DataTestMethod]
         [DynamicData(nameof(EmptyDictionaryTestData))]
-        public void AreEquivalent_BothAreEmpty_ReturnsTrue(IDictionary<string, string> dict1,
+        public void IsEquivalentTo_BothAreEmpty_ReturnsTrue(IDictionary<string, string> dict1,
             IDictionary<string, string> dict2)
         {
-            Assert.IsTrue(dict1.AreEquivalent(dict2));
+            Assert.IsTrue(dict1.IsEquivalentTo(dict2));
         }
 
         private static IEnumerable<object[]> DictionariesOfDifferentLengthTestData =>
@@ -31,34 +31,34 @@ namespace Nier.Collections.Tests.Extensions
 
         [DataTestMethod]
         [DynamicData(nameof(DictionariesOfDifferentLengthTestData))]
-        public void AreEquivalent_DictionariesAreOfDifferentLength_ReturnsFalse(IDictionary<string, string> dict1,
+        public void IsEquivalentTo_DictionariesAreOfDifferentLength_ReturnsFalse(IDictionary<string, string> dict1,
             IDictionary<string, string> dict2)
         {
-            Assert.IsFalse(dict1.AreEquivalent(dict2));
+            Assert.IsFalse(dict1.IsEquivalentTo(dict2));
         }
 
         [TestMethod]
-        public void AreEquivalent_DictionariesWithDifferentKeys_ReturnsFalse()
+        public void IsEquivalentTo_DictionariesWithDifferentKeys_ReturnsFalse()
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key2", "val1"}};
-            Assert.IsFalse(dict1.AreEquivalent(dict2));
+            Assert.IsFalse(dict1.IsEquivalentTo(dict2));
         }
 
         [TestMethod]
-        public void AreEquivalent_DictionariesWithDifferentValues_ReturnsFalse()
+        public void IsEquivalentTo_DictionariesWithDifferentValues_ReturnsFalse()
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key1", "val2"}};
-            Assert.IsFalse(dict1.AreEquivalent(dict2));
+            Assert.IsFalse(dict1.IsEquivalentTo(dict2));
         }
 
         [TestMethod]
-        public void AreEquivalent_DictionariesSameKeyValues_ReturnsTrue()
+        public void IsEquivalentTo_DictionariesSameKeyValues_ReturnsTrue()
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key1", "val1"}};
-            Assert.IsTrue(dict1.AreEquivalent(dict2));
+            Assert.IsTrue(dict1.IsEquivalentTo(dict2));
         }
     }
 }

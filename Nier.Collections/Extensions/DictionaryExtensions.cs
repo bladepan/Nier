@@ -4,7 +4,7 @@ namespace Nier.Collections.Extensions
 {
     public static class DictionaryExtensions
     {
-        public static bool AreEquivalent<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
+        public static bool IsEquivalentTo<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
             IDictionary<TKey, TValue> dict2)
         {
             int len1 = dict1?.Count ?? 0;
