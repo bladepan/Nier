@@ -2,14 +2,15 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-        <PackageVersion>0.0.1</PackageVersion>
+        <PackageVersion>0.0.2</PackageVersion>
         <Authors>Pan</Authors>
         <Description>Extra methods for dotnet standard library. Similar to Apache Commons Lang for java.</Description>
         <Copyright>MIT</Copyright>
-        <Title>Nier Lang</Title>
+        <Title>Nier.Lang</Title>
         <PackageProjectUrl>https://github.com/bladepan/Nier</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bladepan/Nier</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
+        <PackageTags>commons,utilities,utils,guava</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>
