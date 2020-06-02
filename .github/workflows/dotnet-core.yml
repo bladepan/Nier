@@ -27,17 +27,11 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
     - name: Create the package
       run: dotnet pack --configuration Release
-    - name: Publish Nier.Lang
-      run: dotnet nuget push Nier.Lang/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
-    - name: Publish Nier.Collections
-      run: dotnet nuget push Nier.Collections/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+    - name: Publish Nier.Commons
+      run: dotnet nuget push Nier.Commons/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
     - name: Publish nuget
       run: |
-            for f in ./Nier.Lang/bin/Release/*.nupkg
-            do
-              curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
-            done
-            for f in ./Nier.Collections/bin/Release/*.nupkg
+            for f in ./Nier.Commons/bin/Release/*.nupkg
             do
               curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
             done

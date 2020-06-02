@@ -1,8 +1,8 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Nier.Lang.Extensions;
+using Nier.Commons.Extensions;
 
-namespace Nier.Lang.Tests.Extensions
+namespace Nier.Commons.Tests.Extensions
 {
     [TestClass]
     public class StringExtensionsTests

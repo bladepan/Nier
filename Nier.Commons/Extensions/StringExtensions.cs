@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace Nier.Lang.Extensions
+namespace Nier.Commons.Extensions
 {
     public static class StringExtensions
     {

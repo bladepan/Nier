@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nier.Lang.Extensions
+namespace Nier.Commons.Extensions
 {
     public static class ObjectExtensions
     {

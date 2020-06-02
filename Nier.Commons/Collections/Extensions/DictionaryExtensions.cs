@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Nier.Collections.Extensions
+namespace Nier.Commons.Collections.Extensions
 {
     public static class DictionaryExtensions
     {

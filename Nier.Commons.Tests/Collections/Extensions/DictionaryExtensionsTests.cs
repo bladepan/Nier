@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Nier.Collections.Extensions;
+using Nier.Commons.Collections.Extensions;
 
-namespace Nier.Collections.Tests.Extensions
+namespace Nier.Commons.Tests.Collections.Extensions
 {
     [TestClass]
     public class DictionaryExtensionsTests
