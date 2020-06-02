@@ -1,6 +1,6 @@
 using System;
 
-namespace Nier.Lang
+namespace Nier.Commons
 {
     public class SystemClock : ISystemClock
     {

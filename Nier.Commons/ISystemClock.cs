@@ -1,6 +1,6 @@
 using System;
 
-namespace Nier.Lang
+namespace Nier.Commons
 {
     /// <summary>
     /// Abstracts the system clock to facilitate testing.
