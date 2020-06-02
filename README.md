@@ -15,3 +15,7 @@ Utility classes for dotnet runtime core types.
 # Nier.Commons.Collections
 Utility classes for Collections.
 - Extensions.DictionaryExtensions
+- Extensions.EnumerableExtensions
+
+## Readable ToString for Collections
+`ToString` methods in Collection types in dotnet does not have collection values. `ToReadableString` methods in extension classes creates string with collection values.
