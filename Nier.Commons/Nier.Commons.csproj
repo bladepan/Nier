@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-        <PackageVersion>0.0.2</PackageVersion>
+        <PackageVersion>0.0.3</PackageVersion>
         <Authors>Pan</Authors>
         <Description>Extra methods for dotnet standard library. Similar to Apache Commons or Guava for java.</Description>
         <Copyright>MIT</Copyright>
