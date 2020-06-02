@@ -6,6 +6,15 @@ namespace Nier.Commons.Collections.Extensions
 {
     public static class DictionaryExtensions
     {
+        /// <summary>
+        /// <see cref="dict1"/> has the same key value pairs as <see cref="dict2"/>, or they
+        /// are both null/empty.
+        /// </summary>
+        /// <param name="dict1">can be null</param>
+        /// <param name="dict2">can be null</param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
         public static bool IsEquivalentTo<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
             IDictionary<TKey, TValue> dict2)
         {
