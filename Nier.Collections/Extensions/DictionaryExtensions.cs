@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Nier.Collections.Extensions
 {
@@ -34,6 +36,57 @@ namespace Nier.Collections.Extensions
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// Readable string representation contains key values of a dictionary.
+        /// </summary>
+        /// <param name="dict">dictionary, can be null.</param>
+        /// <typeparam name="TKey">type of key</typeparam>
+        /// <typeparam name="TValue">type of value</typeparam>
+        /// <returns>readable string representation of the dictionary</returns>
+        public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            if (dict == null)
+            {
+                stringBuilder.Append("IDictionary<").Append(typeof(TKey).Name).Append(",").Append(typeof(TValue).Name)
+                    .Append("> null");
+            }
+            else
+            {
+                // something like Dictionary`2
+                string dictTypeName = dict.GetType().Name;
+                int backTickIndex = dictTypeName.IndexOf("`", StringComparison.Ordinal);
+                if (backTickIndex >= 0)
+                {
+                    dictTypeName = dictTypeName.Remove(backTickIndex);
+                }
+
+                stringBuilder.Append(dictTypeName).Append("<")
+                    .Append(typeof(TKey).Name).Append(",").Append(typeof(TValue).Name)
+                    .Append(">{");
+                bool firstValue = true;
+                foreach (KeyValuePair<TKey, TValue> keyValuePair in dict)
+                {
+                    if (firstValue)
+                    {
+                        firstValue = false;
+                    }
+                    else
+                    {
+                        stringBuilder.Append(", ");
+                    }
+
+                    stringBuilder.Append(keyValuePair.Key?.ToString() ?? "null");
+                    stringBuilder.Append('=');
+                    stringBuilder.Append(keyValuePair.Value?.ToString() ?? "null");
+                }
+
+                stringBuilder.Append('}');
+            }
+
+            return stringBuilder.ToString();
         }
     }
 }

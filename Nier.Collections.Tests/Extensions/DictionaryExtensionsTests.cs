@@ -60,5 +60,19 @@ namespace Nier.Collections.Tests.Extensions
             var dict2 = new Dictionary<string, string> {{"key1", "val1"}};
             Assert.IsTrue(dict1.IsEquivalentTo(dict2));
         }
+
+        [TestMethod]
+        public void ToReadableString_NullValue_ReturnsNullDictionaryString()
+        {
+            Dictionary<string, int> dict = null;
+            Assert.AreEqual("IDictionary<String,Int32> null", dict.ToReadableString());
+        }
+
+        [TestMethod]
+        public void ToReadableString_NoneEmptyDictionary_ReturnsStringWithKeyValues()
+        {
+            Dictionary<string, int> dict = new Dictionary<string, int> {{"key1", 1}, {"key2", 2}};
+            Assert.AreEqual("Dictionary<String,Int32>{key1=1, key2=2}", dict.ToReadableString());
+        }
     }
 }
