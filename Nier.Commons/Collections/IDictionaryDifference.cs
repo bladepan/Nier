@@ -12,22 +12,22 @@ namespace Nier.Commons.Collections
         /// <summary>
         /// Entries that only appear on the left dictionary
         /// </summary>
-        IDictionary<TKey, TVal> EntriesOnlyOnLeft { get; }
+        IReadOnlyDictionary<TKey, TVal> EntriesOnlyOnLeft { get; }
 
         /// <summary>
         /// Entries that only appear on the right dictionary
         /// </summary>
-        IDictionary<TKey, TVal> EntriesOnlyOnRight { get; }
+        IReadOnlyDictionary<TKey, TVal> EntriesOnlyOnRight { get; }
 
         /// <summary>
         /// Entries with keys that appear on both dictionaries with equal values
         /// </summary>
-        IDictionary<TKey, TVal> EntriesInCommon { get; }
+        IReadOnlyDictionary<TKey, TVal> EntriesInCommon { get; }
 
         /// <summary>
         /// Entries with keys that appear on both dictionaries with different values
         /// </summary>
-        IDictionary<TKey, IDictionaryValueDifference<TVal>> EntriesDiffering { get; }
+        IReadOnlyDictionary<TKey, IDictionaryValueDifference<TVal>> EntriesDiffering { get; }
     }
 
     /// <summary>

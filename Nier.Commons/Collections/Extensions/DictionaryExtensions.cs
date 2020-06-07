@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Text;
 
 namespace Nier.Commons.Collections.Extensions
 {
     /// <summary>
-    /// Utility methods for <see cref="IDictionary{TKey,TValue}"/> type.
+    /// Utility methods for <see cref="IDictionary{TKey,TValue}"/> and <see cref="IReadOnlyDictionary{TKey,TValue}"/> type.
+    /// Methods deal with IReadOnlyDictionary have "ReadOnly" prefix or suffix. This is because types like <see cref="Dictionary{TKey,TValue}"/>
+    /// implements both interfaces, it will create ambiguous reference if the same name is used.
     /// </summary>
     public static class DictionaryExtensions
     {
@@ -22,8 +23,45 @@ namespace Nier.Commons.Collections.Extensions
         public static bool IsEquivalentTo<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
             IDictionary<TKey, TValue> dict2)
         {
-            int len1 = dict1?.Count ?? 0;
-            int len2 = dict2?.Count ?? 0;
+            return IsEquivalentTo(new DictionaryAccessor<TKey, TValue>(dict1),
+                new DictionaryAccessor<TKey, TValue>(dict2));
+        }
+
+        /// <summary>
+        /// same as <see cref="IsEquivalentTo{TKey,TValue}"/>, but for IReadOnlyDictionary types.
+        /// </summary>
+        /// <param name="dict1"></param>
+        /// <param name="dict2"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
+        public static bool ReadOnlyIsEquivalentTo<TKey, TValue>(this IReadOnlyDictionary<TKey, TValue> dict1,
+            IReadOnlyDictionary<TKey, TValue> dict2)
+        {
+            return IsEquivalentTo(new ReadOnlyDictionaryAccessor<TKey, TValue>(dict1),
+                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2));
+        }
+
+        /// <summary>
+        /// Same as <see cref="IsEquivalentTo{TKey,TValue}"/>, but compares IDictionary with IReadOnlyDictionary.
+        /// </summary>
+        /// <param name="dict1"></param>
+        /// <param name="dict2"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
+        public static bool IsEquivalentToReadonly<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
+            IReadOnlyDictionary<TKey, TValue> dict2)
+        {
+            return IsEquivalentTo(new DictionaryAccessor<TKey, TValue>(dict1),
+                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2));
+        }
+
+        private static bool IsEquivalentTo<TKey, TValue>(IDictionaryAccessor<TKey, TValue> dict1,
+            IDictionaryAccessor<TKey, TValue> dict2)
+        {
+            int len1 = dict1.Count;
+            int len2 = dict2.Count;
             if (len1 != len2)
             {
                 return false;
@@ -113,12 +151,35 @@ namespace Nier.Commons.Collections.Extensions
         public static IDictionaryDifference<TKey, TVal> GetDifference<TKey, TVal>(this IDictionary<TKey, TVal> left,
             IDictionary<TKey, TVal> right)
         {
+            return GetDifference(new DictionaryAccessor<TKey, TVal>(left), new DictionaryAccessor<TKey, TVal>(right));
+        }
+
+        /// <summary>
+        /// Same as <see cref="GetDifference{TKey,TVal}"/>, for IReadOnlyDictionary types.
+        /// </summary>
+        /// <param name="left"></param>
+        /// <param name="right"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TVal"></typeparam>
+        /// <returns></returns>
+        public static IDictionaryDifference<TKey, TVal> ReadOnlyGetDifference<TKey, TVal>(
+            this IReadOnlyDictionary<TKey, TVal> left,
+            IReadOnlyDictionary<TKey, TVal> right)
+        {
+            return GetDifference(new ReadOnlyDictionaryAccessor<TKey, TVal>(left),
+                new ReadOnlyDictionaryAccessor<TKey, TVal>(right));
+        }
+
+        private static IDictionaryDifference<TKey, TVal> GetDifference<TKey, TVal>(
+            IDictionaryAccessor<TKey, TVal> left,
+            IDictionaryAccessor<TKey, TVal> right)
+        {
             IDictionary<TKey, TVal> entriesOnlyOnLeft = new Dictionary<TKey, TVal>();
             IDictionary<TKey, TVal> entriesOnlyOnRight = new Dictionary<TKey, TVal>();
             var entriesInCommon = new Dictionary<TKey, TVal>();
             var entriesDiffering = new Dictionary<TKey, IDictionaryValueDifference<TVal>>();
-            int leftSize = left?.Count ?? 0;
-            int rightSize = right?.Count ?? 0;
+            int leftSize = left.Count;
+            int rightSize = right.Count;
             if (leftSize != 0 && rightSize != 0)
             {
                 foreach (KeyValuePair<TKey, TVal> leftKeyVal in left)
@@ -154,11 +215,11 @@ namespace Nier.Commons.Collections.Extensions
             }
             else if (leftSize != 0)
             {
-                entriesOnlyOnLeft = left;
+                entriesOnlyOnLeft = left.ToDictionary();
             }
             else if (rightSize != 0)
             {
-                entriesOnlyOnRight = right;
+                entriesOnlyOnRight = right.ToDictionary();
             }
 
             return new DictionaryDifference<TKey, TVal>(entriesOnlyOnLeft, entriesOnlyOnRight, entriesInCommon,
@@ -182,106 +243,6 @@ namespace Nier.Commons.Collections.Extensions
 
             return difference.EntriesOnlyOnLeft.Count == 0 && difference.EntriesOnlyOnRight.Count == 0 &&
                    difference.EntriesDiffering.Count == 0;
-        }
-    }
-
-    internal class DictionaryDifference<TKey, TVal> : IDictionaryDifference<TKey, TVal>
-    {
-        public IDictionary<TKey, TVal> EntriesOnlyOnLeft { get; }
-        public IDictionary<TKey, TVal> EntriesOnlyOnRight { get; }
-        public IDictionary<TKey, TVal> EntriesInCommon { get; }
-        public IDictionary<TKey, IDictionaryValueDifference<TVal>> EntriesDiffering { get; }
-
-        public DictionaryDifference(IDictionary<TKey, TVal> entriesOnlyOnLeft,
-            IDictionary<TKey, TVal> entriesOnlyOnRight, IDictionary<TKey, TVal> entriesInCommon,
-            IDictionary<TKey, IDictionaryValueDifference<TVal>> entriesDiffering)
-        {
-            EntriesOnlyOnLeft = new ReadOnlyDictionary<TKey, TVal>(entriesOnlyOnLeft);
-            EntriesOnlyOnRight = new ReadOnlyDictionary<TKey, TVal>(entriesOnlyOnRight);
-            EntriesInCommon = new ReadOnlyDictionary<TKey, TVal>(entriesInCommon);
-            EntriesDiffering = new ReadOnlyDictionary<TKey, IDictionaryValueDifference<TVal>>(entriesDiffering);
-        }
-
-        private bool Equals(IDictionaryDifference<TKey, TVal> other) =>
-            EntriesOnlyOnLeft.IsEquivalentTo(other.EntriesOnlyOnLeft) &&
-            EntriesOnlyOnRight.IsEquivalentTo(other.EntriesOnlyOnRight) &&
-            EntriesInCommon.IsEquivalentTo(other.EntriesInCommon) &&
-            EntriesDiffering.IsEquivalentTo(other.EntriesDiffering);
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj is IDictionaryDifference<TKey, TVal> other)
-            {
-                return Equals(other);
-            }
-
-            return false;
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                int hashCode = EntriesOnlyOnLeft.GetHashCode();
-                hashCode = (hashCode * 397) ^ EntriesOnlyOnRight.GetHashCode();
-                hashCode = (hashCode * 397) ^ EntriesInCommon.GetHashCode();
-                hashCode = (hashCode * 397) ^ EntriesDiffering.GetHashCode();
-                return hashCode;
-            }
-        }
-    }
-
-    internal class DictionaryValueDifference<TVal> : IDictionaryValueDifference<TVal>
-    {
-        public TVal LeftValue { get; }
-        public TVal RightValue { get; }
-
-        public DictionaryValueDifference(TVal leftValue, TVal rightValue)
-        {
-            LeftValue = leftValue;
-            RightValue = rightValue;
-        }
-
-        private bool Equals(IDictionaryValueDifference<TVal> other) =>
-            Equals(LeftValue, other.LeftValue) && Equals(RightValue, other.RightValue);
-
-        public override bool Equals(object obj)
-        {
-            if (ReferenceEquals(null, obj))
-            {
-                return false;
-            }
-
-            if (ReferenceEquals(this, obj))
-            {
-                return true;
-            }
-
-            if (obj is IDictionaryValueDifference<TVal> another)
-            {
-                return Equals(another);
-            }
-
-            return false;
-        }
-
-        public override int GetHashCode()
-        {
-            unchecked
-            {
-                return (EqualityComparer<TVal>.Default.GetHashCode(LeftValue) * 397) ^
-                       EqualityComparer<TVal>.Default.GetHashCode(RightValue);
-            }
         }
     }
 }

@@ -43,7 +43,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key2", "val1"}};
-            Assert.IsFalse(dict1.IsEquivalentTo(dict2));
+            Assert.IsFalse(DictionaryExtensions.IsEquivalentTo(dict1, dict2));
         }
 
         [TestMethod]
@@ -51,7 +51,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key1", "val2"}};
-            Assert.IsFalse(dict1.IsEquivalentTo(dict2));
+            Assert.IsFalse(DictionaryExtensions.IsEquivalentTo(dict1, dict2));
         }
 
         [TestMethod]
@@ -59,7 +59,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
         {
             var dict1 = new Dictionary<string, string> {{"key1", "val1"}};
             var dict2 = new Dictionary<string, string> {{"key1", "val1"}};
-            Assert.IsTrue(dict1.IsEquivalentTo(dict2));
+            Assert.IsTrue(DictionaryExtensions.IsEquivalentTo(dict1, dict2));
         }
 
         [TestMethod]
@@ -97,7 +97,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
                 {"diff1", "diffRightVal1"},
                 {"diff2", "diffRightVal2"}
             };
-            var diff = left.GetDifference(right);
+            var diff = DictionaryExtensions.GetDifference(left, right);
 
             var expectedLeftOnly = new Dictionary<string, string> {{"left1", "leftVal1"}, {"left2", "leftVal2"}};
             var expectedRightOnly = new Dictionary<string, string> {{"right1", "rightVal1"}, {"right2", "rightVal2"}};
@@ -108,10 +108,10 @@ namespace Nier.Commons.Tests.Collections.Extensions
                     {"diff1", new ExpectedDictionaryValueDifference<string>("diffLeftVal1", "diffRightVal1")},
                     {"diff2", new ExpectedDictionaryValueDifference<string>("diffLeftVal2", "diffRightVal2")}
                 };
-            Assert.IsTrue(diff.EntriesOnlyOnLeft.IsEquivalentTo(expectedLeftOnly));
-            Assert.IsTrue(diff.EntriesOnlyOnRight.IsEquivalentTo(expectedRightOnly));
-            Assert.IsTrue(diff.EntriesInCommon.IsEquivalentTo(expectedCommon));
-            Assert.IsTrue(diff.EntriesDiffering.IsEquivalentTo(expectedDiffering));
+            Assert.IsTrue(diff.EntriesOnlyOnLeft.ReadOnlyIsEquivalentTo(expectedLeftOnly));
+            Assert.IsTrue(diff.EntriesOnlyOnRight.ReadOnlyIsEquivalentTo(expectedRightOnly));
+            Assert.IsTrue(diff.EntriesInCommon.ReadOnlyIsEquivalentTo(expectedCommon));
+            Assert.IsTrue(diff.EntriesDiffering.ReadOnlyIsEquivalentTo(expectedDiffering));
         }
 
         [TestMethod]
@@ -125,7 +125,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
 
             var diff = left.GetDifference(right);
 
-            Assert.IsTrue(right.IsEquivalentTo(diff.EntriesOnlyOnRight));
+            Assert.IsTrue(right.IsEquivalentToReadonly(diff.EntriesOnlyOnRight));
             Assert.AreEqual(0, diff.EntriesOnlyOnLeft.Count);
             Assert.AreEqual(0, diff.EntriesInCommon.Count);
             Assert.AreEqual(0, diff.EntriesDiffering.Count);
@@ -142,7 +142,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
 
             var diff = left.GetDifference(right);
 
-            Assert.IsTrue(left.IsEquivalentTo(diff.EntriesOnlyOnLeft));
+            Assert.IsTrue(left.IsEquivalentToReadonly(diff.EntriesOnlyOnLeft));
             Assert.AreEqual(0, diff.EntriesOnlyOnRight.Count);
             Assert.AreEqual(0, diff.EntriesInCommon.Count);
             Assert.AreEqual(0, diff.EntriesDiffering.Count);
