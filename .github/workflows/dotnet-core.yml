@@ -25,6 +25,15 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+    - name: docfx
+      uses: nikeee/docfx-action@v0.1.0
+      with:
+        args: metadata Nier.Commons/Nier.Commons.csproj
+    - name: publish docfx
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site 
     - name: Create the package
       run: dotnet pack --configuration Release
     - name: Publish Nier.Commons
@@ -36,14 +45,5 @@ jobs:
               curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
             done
       shell: bash
-    - name: docfx-action
-      uses: nikeee/docfx-action@v0.1.0
-      with:
-        args: metadata Nier.Commons/Nier.Commons.csproj
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
     
     
