@@ -21,5 +21,5 @@ Utility classes for Collections.
 - Extensions.DictionaryExtensions
 - Extensions.EnumerableExtensions
 
-## Notable features 
+# Notable features 
 - Readable ToString for Collections. `ToString` methods in Collection types in dotnet does not have collection values. `ToReadableString` methods in extension classes creates string with collection values.

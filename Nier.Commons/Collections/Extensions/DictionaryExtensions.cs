@@ -6,6 +6,7 @@ namespace Nier.Commons.Collections.Extensions
 {
     /// <summary>
     /// Utility methods for <see cref="IDictionary{TKey,TValue}"/> and <see cref="IReadOnlyDictionary{TKey,TValue}"/> type.
+    ///
     /// Methods deal with IReadOnlyDictionary have "ReadOnly" prefix or suffix. This is because types like <see cref="Dictionary{TKey,TValue}"/>
     /// implements both interfaces, it will create ambiguous reference if the same name is used.
     /// </summary>
@@ -91,6 +92,7 @@ namespace Nier.Commons.Collections.Extensions
 
         /// <summary>
         /// Readable string representation contains key values of a dictionary.
+        /// {{"key1", 1}, {"key2", 2}} => "Dictionary<String,Int32>{key1=1, key2=2}"
         /// </summary>
         /// <param name="dict">dictionary, can be null.</param>
         /// <typeparam name="TKey">type of key</typeparam>
@@ -141,7 +143,7 @@ namespace Nier.Commons.Collections.Extensions
         }
 
         /// <summary>
-        /// Get difference of this dictionary (left) to another (right).
+        /// Get difference of this dictionary (left) to another (right). See <see cref="IDictionaryDifference{TKey,TVal}"/>.
         /// </summary>
         /// <param name="left">The left dictionary. can be null.</param>
         /// <param name="right">The right dictionary. can be null.</param>
@@ -224,25 +226,6 @@ namespace Nier.Commons.Collections.Extensions
 
             return new DictionaryDifference<TKey, TVal>(entriesOnlyOnLeft, entriesOnlyOnRight, entriesInCommon,
                 entriesDiffering);
-        }
-
-        /// <summary>
-        /// If the difference object represents any difference between 2 dictionaries.
-        /// </summary>
-        /// <param name="difference"></param>
-        /// <typeparam name="TKey"></typeparam>
-        /// <typeparam name="TVal"></typeparam>
-        /// <returns></returns>
-        /// <exception cref="ArgumentNullException">the difference object is null</exception>
-        public static bool IsEmpty<TKey, TVal>(this IDictionaryDifference<TKey, TVal> difference)
-        {
-            if (difference == null)
-            {
-                throw new ArgumentNullException(nameof(difference));
-            }
-
-            return difference.EntriesOnlyOnLeft.Count == 0 && difference.EntriesOnlyOnRight.Count == 0 &&
-                   difference.EntriesDiffering.Count == 0;
         }
     }
 }

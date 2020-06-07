@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using System.Text;
 
 namespace Nier.Commons.Collections.Extensions
@@ -12,6 +11,8 @@ namespace Nier.Commons.Collections.Extensions
     {
         /// <summary>
         /// Readable string representation of a IEnumerable object with all the values.
+        ///
+        /// new[] {"1", "2"}; => "String[]<String>[1, 2]"
         /// </summary>
         /// <param name="enumerable"></param>
         /// <typeparam name="T"></typeparam>
