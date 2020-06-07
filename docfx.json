@@ -16,10 +16,13 @@
         "files": [ "**/*.yml" ],
         "src": "obj/api",
         "dest": "api"
+      },
+      {
+        "files": [ "*.md", "toc.yml" ]
       }
     ],
     "globalMetadata": {
-      "_appTitle": "docfx seed website",
+      "_appTitle": "Nier.Commons",
       "_enableSearch": true
     },
     "markdownEngineName": "markdig",
