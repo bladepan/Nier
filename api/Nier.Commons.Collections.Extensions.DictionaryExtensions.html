@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class DictionaryExtensions
-   | docfx seed website </title>
+   | Nier.Commons </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class DictionaryExtensions
-   | docfx seed website ">
+   | Nier.Commons ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -83,7 +83,10 @@
   
   <h1 id="Nier_Commons_Collections_Extensions_DictionaryExtensions" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions" class="text-break">Class DictionaryExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Utility methods for <see cref="!:IDictionary&lt;TKey,TValue>"></see> and <see cref="!:IReadOnlyDictionary&lt;TKey,TValue>"></see> type.
+Methods deal with IReadOnlyDictionary have &quot;ReadOnly&quot; prefix or suffix. This is because types like <see cref="!:Dictionary&lt;TKey,TValue>"></see>
+implements both interfaces, it will create ambiguous reference if the same name is used.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -305,6 +308,207 @@ are both null/empty.</p>
         <td><span class="parametername">dict2</span></td>
         <td><p>can be null</p>
 </td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly__2_IDictionary___0___1__IReadOnlyDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly``2(IDictionary{``0,``1},IReadOnlyDictionary{``0,``1})">IsEquivalentToReadonly&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__">IsEquivalentTo&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;)</a>, but compares IDictionary with IReadOnlyDictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEquivalentToReadonly&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dict1, IReadOnlyDictionary&lt;TKey, TValue&gt; dict2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyGetDifference_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyGetDifference__2_IReadOnlyDictionary___0___1__IReadOnlyDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})">ReadOnlyGetDifference&lt;TKey, TVal&gt;(IReadOnlyDictionary&lt;TKey, TVal&gt;, IReadOnlyDictionary&lt;TKey, TVal&gt;)</h4>
+  <div class="markdown level1 summary"><p>Same as <a class="xref" href="Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_GetDifference__2_IDictionary___0___1__IDictionary___0___1__">GetDifference&lt;TKey, TVal&gt;(IDictionary&lt;TKey, TVal&gt;, IDictionary&lt;TKey, TVal&gt;)</a>, for IReadOnlyDictionary types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionaryDifference&lt;TKey, TVal&gt; ReadOnlyGetDifference&lt;TKey, TVal&gt;(this IReadOnlyDictionary&lt;TKey, TVal&gt; left, IReadOnlyDictionary&lt;TKey, TVal&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TVal&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TVal&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nier.Commons.Collections.IDictionaryDifference-2.html">IDictionaryDifference</a>&lt;TKey, TVal&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TVal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyIsEquivalentTo_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyIsEquivalentTo__2_IReadOnlyDictionary___0___1__IReadOnlyDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})">ReadOnlyIsEquivalentTo&lt;TKey, TValue&gt;(IReadOnlyDictionary&lt;TKey, TValue&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>same as <a class="xref" href="Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__">IsEquivalentTo&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;)</a>, but for IReadOnlyDictionary types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ReadOnlyIsEquivalentTo&lt;TKey, TValue&gt;(this IReadOnlyDictionary&lt;TKey, TValue&gt; dict1, IReadOnlyDictionary&lt;TKey, TValue&gt; dict2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict2</span></td>
+        <td></td>
       </tr>
     </tbody>
   </table>

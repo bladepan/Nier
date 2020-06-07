@@ -13,12 +13,36 @@
       "is_incremental": false
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html",
+          "hash": "on3WWIPwyXeQh0VMCUd7IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "wrhRFbnvgxfXyQkcfgmBug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Collections.Extensions.DictionaryExtensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html",
-          "hash": "vJ5DvbEQ7GeyC5BDV6LgBQ=="
+          "hash": "ABAPI200QBDAeoHb8GfJTA=="
         }
       },
       "is_incremental": false,
@@ -30,7 +54,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html",
-          "hash": "2QUNw8HQd7T9cKGG98j4Jw=="
+          "hash": "S0aHxL+OLTOkLbZuarT8PQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions.html",
+          "hash": "eQ+9IGqrw5pecQpFFAL34g=="
         }
       },
       "is_incremental": false,
@@ -42,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.html",
-          "hash": "RI+aHef67BR+/aJVD969Iw=="
+          "hash": "RX+X6Srld0ZV6niDZmZJ+A=="
         }
       },
       "is_incremental": false,
@@ -54,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.IDictionaryDifference-2.html",
-          "hash": "dF63yOofxNQrqHm3q1Talw=="
+          "hash": "IoCvf1h/X1U+zcsliZEK6w=="
         }
       },
       "is_incremental": false,
@@ -66,7 +102,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.IDictionaryValueDifference-1.html",
-          "hash": "AP0wz+BFKQQTq6pwYlQaTA=="
+          "hash": "raiHzeaZ7ZKKXylWNDcCoA=="
         }
       },
       "is_incremental": false,
@@ -78,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.html",
-          "hash": "9boQz7x5UUHG7VGI66xlyQ=="
+          "hash": "qza0ydSnZKmsnAPiB2gIPw=="
         }
       },
       "is_incremental": false,
@@ -90,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.ObjectExtensions.html",
-          "hash": "r57rs3ZuH6SeQpekjt9n7Q=="
+          "hash": "InohY4GZFCI+uIfnE2a5Qg=="
         }
       },
       "is_incremental": false,
@@ -102,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.StringExtensions.html",
-          "hash": "GkolsX+dePACuq/qx9iSxg=="
+          "hash": "YpJNweTcchAJKozU7fyCUA=="
         }
       },
       "is_incremental": false,
@@ -114,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.ToStringBuilder.html",
-          "hash": "9uByfO0Ceg6duadlUud8Dw=="
+          "hash": "bfqP73V2bEEIOcSFan7Znw=="
         }
       },
       "is_incremental": false,
@@ -126,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.html",
-          "hash": "+DjwfU6+A5Rb/fchg1ES0g=="
+          "hash": "QSuQqU0j0ELzs+28S6RvVA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.ISystemClock.html",
-          "hash": "e45mpTUxONL5p8iFftoIow=="
+          "hash": "/9kWxZFPoRohqipoeZE8SQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.SystemClock.html",
-          "hash": "M6PQ2mj4yr/BRyMQCCEMew=="
+          "hash": "sJ+mfIR4ACOUAOCAJpHRlA=="
         }
       },
       "is_incremental": false,
@@ -162,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.html",
-          "hash": "prpPUfcS85CzCrpnxbXAUw=="
+          "hash": "OrcVRTdRuEwR22B8CzH44A=="
         }
       },
       "is_incremental": false,
@@ -174,7 +210,19 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "F7qCVtHFUuf4F+KLngNJGw=="
+          "hash": "g1aMskP/41diI6Z4SDXYtQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "jG+HlmhvGhuWoeJj0KTkTA=="
         }
       },
       "is_incremental": false,
@@ -192,17 +240,23 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 2,
           "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 13,
+          "total_file_count": 14,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
           "skipped_file_count": 0
         }
       }

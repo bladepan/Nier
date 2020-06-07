@@ -73,6 +73,54 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
   nameWithType: DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)
   nameWithType.vb: DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly*
+  name: IsEquivalentToReadonly
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly
+  nameWithType: DictionaryExtensions.IsEquivalentToReadonly
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly``2(IDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name: IsEquivalentToReadonly<TKey, TValue>(IDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly__2_IDictionary___0___1__IReadOnlyDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly``2(IDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name.vb: IsEquivalentToReadonly(Of TKey, TValue)(IDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly<TKey, TValue>(IDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly(Of TKey, TValue)(IDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.IsEquivalentToReadonly<TKey, TValue>(IDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  nameWithType.vb: DictionaryExtensions.IsEquivalentToReadonly(Of TKey, TValue)(IDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference*
+  name: ReadOnlyGetDifference
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyGetDifference_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference
+  nameWithType: DictionaryExtensions.ReadOnlyGetDifference
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name: ReadOnlyGetDifference<TKey, TVal>(IReadOnlyDictionary<TKey, TVal>, IReadOnlyDictionary<TKey, TVal>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyGetDifference__2_IReadOnlyDictionary___0___1__IReadOnlyDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name.vb: ReadOnlyGetDifference(Of TKey, TVal)(IReadOnlyDictionary(Of TKey, TVal), IReadOnlyDictionary(Of TKey, TVal))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference<TKey, TVal>(IReadOnlyDictionary<TKey, TVal>, IReadOnlyDictionary<TKey, TVal>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyGetDifference(Of TKey, TVal)(IReadOnlyDictionary(Of TKey, TVal), IReadOnlyDictionary(Of TKey, TVal))
+  nameWithType: DictionaryExtensions.ReadOnlyGetDifference<TKey, TVal>(IReadOnlyDictionary<TKey, TVal>, IReadOnlyDictionary<TKey, TVal>)
+  nameWithType.vb: DictionaryExtensions.ReadOnlyGetDifference(Of TKey, TVal)(IReadOnlyDictionary(Of TKey, TVal), IReadOnlyDictionary(Of TKey, TVal))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo*
+  name: ReadOnlyIsEquivalentTo
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyIsEquivalentTo_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo
+  nameWithType: DictionaryExtensions.ReadOnlyIsEquivalentTo
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name: ReadOnlyIsEquivalentTo<TKey, TValue>(IReadOnlyDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ReadOnlyIsEquivalentTo__2_IReadOnlyDictionary___0___1__IReadOnlyDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo``2(IReadOnlyDictionary{``0,``1},IReadOnlyDictionary{``0,``1})
+  name.vb: ReadOnlyIsEquivalentTo(Of TKey, TValue)(IReadOnlyDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo<TKey, TValue>(IReadOnlyDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ReadOnlyIsEquivalentTo(Of TKey, TValue)(IReadOnlyDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.ReadOnlyIsEquivalentTo<TKey, TValue>(IReadOnlyDictionary<TKey, TValue>, IReadOnlyDictionary<TKey, TValue>)
+  nameWithType.vb: DictionaryExtensions.ReadOnlyIsEquivalentTo(Of TKey, TValue)(IReadOnlyDictionary(Of TKey, TValue), IReadOnlyDictionary(Of TKey, TValue))
 - uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString*
   name: ToReadableString
   href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString_
@@ -95,6 +143,31 @@ references:
   commentId: T:Nier.Commons.Collections.Extensions.EnumerableExtensions
   fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions
   nameWithType: EnumerableExtensions
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary*
+  name: SafeToDictionary
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary_
+  commentId: Overload:Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary
+  nameWithType: EnumerableExtensions.SafeToDictionary
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``2(IEnumerable{``0},System.Func{``0,``1},IEqualityComparer{``1})
+  name: SafeToDictionary<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>, IEqualityComparer<TKey>)
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary__2_IEnumerable___0__System_Func___0___1__IEqualityComparer___1__
+  commentId: M:Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``2(IEnumerable{``0},System.Func{``0,``1},IEqualityComparer{``1})
+  name.vb: SafeToDictionary(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey), IEqualityComparer(Of TKey))
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary<TSource, TKey>(IEnumerable<TSource>, System.Func<TSource, TKey>, IEqualityComparer<TKey>)
+  fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary(Of TSource, TKey)(IEnumerable(Of TSource), System.Func(Of TSource, TKey), IEqualityComparer(Of TKey))
+  nameWithType: EnumerableExtensions.SafeToDictionary<TSource, TKey>(IEnumerable<TSource>, Func<TSource, TKey>, IEqualityComparer<TKey>)
+  nameWithType.vb: EnumerableExtensions.SafeToDictionary(Of TSource, TKey)(IEnumerable(Of TSource), Func(Of TSource, TKey), IEqualityComparer(Of TKey))
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``3(IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},IEqualityComparer{``1})
+  name: SafeToDictionary<TSource, TKey, TElement>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TElement>, IEqualityComparer<TKey>)
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary__3_IEnumerable___0__System_Func___0___1__System_Func___0___2__IEqualityComparer___1__
+  commentId: M:Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``3(IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},IEqualityComparer{``1})
+  name.vb: SafeToDictionary(Of TSource, TKey, TElement)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TElement), IEqualityComparer(Of TKey))
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary<TSource, TKey, TElement>(IEnumerable<TSource>, System.Func<TSource, TKey>, System.Func<TSource, TElement>, IEqualityComparer<TKey>)
+  fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary(Of TSource, TKey, TElement)(IEnumerable(Of TSource), System.Func(Of TSource, TKey), System.Func(Of TSource, TElement), IEqualityComparer(Of TKey))
+  nameWithType: EnumerableExtensions.SafeToDictionary<TSource, TKey, TElement>(IEnumerable<TSource>, Func<TSource, TKey>, Func<TSource, TElement>, IEqualityComparer<TKey>)
+  nameWithType.vb: EnumerableExtensions.SafeToDictionary(Of TSource, TKey, TElement)(IEnumerable(Of TSource), Func(Of TSource, TKey), Func(Of TSource, TElement), IEqualityComparer(Of TKey))
 - uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString*
   name: ToReadableString
   href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_ToReadableString_
@@ -111,6 +184,12 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
   nameWithType: EnumerableExtensions.ToReadableString<T>(IEnumerable<T>)
   nameWithType.vb: EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
+- uid: Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions
+  name: ReadOnlyDictionaryExtensions
+  href: api/Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions.html
+  commentId: T:Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions
+  fullName: Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions
+  nameWithType: ReadOnlyDictionaryExtensions
 - uid: Nier.Commons.Collections.IDictionaryDifference`2
   name: IDictionaryDifference<TKey, TVal>
   href: api/Nier.Commons.Collections.IDictionaryDifference-2.html

@@ -6,17 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Class EnumerableExtensions
-   | docfx seed website </title>
+   | Nier.Commons </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class EnumerableExtensions
-   | docfx seed website ">
+   | Nier.Commons ">
     <meta name="generator" content="docfx 2.45.1.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -83,7 +83,8 @@
   
   <h1 id="Nier_Commons_Collections_Extensions_EnumerableExtensions" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions" class="text-break">Class EnumerableExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Utility methods for <see cref="!:IEnumerable&lt;T>"></see> type.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -122,6 +123,179 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary_" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary__2_IEnumerable___0__System_Func___0___1__IEqualityComparer___1__" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``2(IEnumerable{``0},System.Func{``0,``1},IEqualityComparer{``1})">SafeToDictionary&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>A variation of <a class="xref" href="Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary__3_IEnumerable___0__System_Func___0___1__System_Func___0___2__IEqualityComparer___1__">SafeToDictionary&lt;TSource, TKey, TElement&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TElement&gt;, IEqualityComparer&lt;TKey&gt;)</a> that
+returns the elements from the source as dictionary values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionary&lt;TKey, TSource&gt; SafeToDictionary&lt;TSource, TKey&gt;(this IEnumerable&lt;TSource&gt; source, Func&lt;TSource, TKey&gt; keySelector, IEqualityComparer&lt;TKey&gt; comparer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEqualityComparer</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TSource&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary_" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_EnumerableExtensions_SafeToDictionary__3_IEnumerable___0__System_Func___0___1__System_Func___0___2__IEqualityComparer___1__" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions.SafeToDictionary``3(IEnumerable{``0},System.Func{``0,``1},System.Func{``0,``2},IEqualityComparer{``1})">SafeToDictionary&lt;TSource, TKey, TElement&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TElement&gt;, IEqualityComparer&lt;TKey&gt;)</h4>
+  <div class="markdown level1 summary"><p>Same as Linq's ToDictionary except it does not throw exception
+when keySelector generates duplicate keys. The new key value pair generated
+overrides the old one.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IDictionary&lt;TKey, TElement&gt; SafeToDictionary&lt;TSource, TKey, TElement&gt;(this IEnumerable&lt;TSource&gt; source, Func&lt;TSource, TKey&gt; keySelector, Func&lt;TSource, TElement&gt; elementSelector, IEqualityComparer&lt;TKey&gt; comparer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TSource&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>the data source, can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TKey&gt;</td>
+        <td><span class="parametername">keySelector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TSource, TElement&gt;</td>
+        <td><span class="parametername">elementSelector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEqualityComparer</span>&lt;TKey&gt;</td>
+        <td><span class="parametername">comparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TElement&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>keySelector or elementSelector is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   
   
   <a id="Nier_Commons_Collections_Extensions_EnumerableExtensions_ToReadableString_" data-uid="Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString*"></a>
