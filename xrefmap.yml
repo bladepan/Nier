@@ -1,0 +1,459 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Nier.Commons
+  name: Nier.Commons
+  href: api/Nier.Commons.html
+  commentId: N:Nier.Commons
+  fullName: Nier.Commons
+  nameWithType: Nier.Commons
+- uid: Nier.Commons.Collections
+  name: Nier.Commons.Collections
+  href: api/Nier.Commons.Collections.html
+  commentId: N:Nier.Commons.Collections
+  fullName: Nier.Commons.Collections
+  nameWithType: Nier.Commons.Collections
+- uid: Nier.Commons.Collections.Extensions
+  name: Nier.Commons.Collections.Extensions
+  href: api/Nier.Commons.Collections.Extensions.html
+  commentId: N:Nier.Commons.Collections.Extensions
+  fullName: Nier.Commons.Collections.Extensions
+  nameWithType: Nier.Commons.Collections.Extensions
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions
+  name: DictionaryExtensions
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html
+  commentId: T:Nier.Commons.Collections.Extensions.DictionaryExtensions
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions
+  nameWithType: DictionaryExtensions
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference*
+  name: GetDifference
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_GetDifference_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference
+  nameWithType: DictionaryExtensions.GetDifference
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference``2(IDictionary{``0,``1},IDictionary{``0,``1})
+  name: GetDifference<TKey, TVal>(IDictionary<TKey, TVal>, IDictionary<TKey, TVal>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_GetDifference__2_IDictionary___0___1__IDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference``2(IDictionary{``0,``1},IDictionary{``0,``1})
+  name.vb: GetDifference(Of TKey, TVal)(IDictionary(Of TKey, TVal), IDictionary(Of TKey, TVal))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference<TKey, TVal>(IDictionary<TKey, TVal>, IDictionary<TKey, TVal>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference(Of TKey, TVal)(IDictionary(Of TKey, TVal), IDictionary(Of TKey, TVal))
+  nameWithType: DictionaryExtensions.GetDifference<TKey, TVal>(IDictionary<TKey, TVal>, IDictionary<TKey, TVal>)
+  nameWithType.vb: DictionaryExtensions.GetDifference(Of TKey, TVal)(IDictionary(Of TKey, TVal), IDictionary(Of TKey, TVal))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty*
+  name: IsEmpty
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEmpty_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty
+  nameWithType: DictionaryExtensions.IsEmpty
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty``2(Nier.Commons.Collections.IDictionaryDifference{``0,``1})
+  name: IsEmpty<TKey, TVal>(IDictionaryDifference<TKey, TVal>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEmpty__2_Nier_Commons_Collections_IDictionaryDifference___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty``2(Nier.Commons.Collections.IDictionaryDifference{``0,``1})
+  name.vb: IsEmpty(Of TKey, TVal)(IDictionaryDifference(Of TKey, TVal))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty<TKey, TVal>(Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty(Of TKey, TVal)(Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal))
+  nameWithType: DictionaryExtensions.IsEmpty<TKey, TVal>(IDictionaryDifference<TKey, TVal>)
+  nameWithType.vb: DictionaryExtensions.IsEmpty(Of TKey, TVal)(IDictionaryDifference(Of TKey, TVal))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo*
+  name: IsEquivalentTo
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo
+  nameWithType: DictionaryExtensions.IsEquivalentTo
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo``2(IDictionary{``0,``1},IDictionary{``0,``1})
+  name: IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo``2(IDictionary{``0,``1},IDictionary{``0,``1})
+  name.vb: IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)
+  nameWithType.vb: DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString*
+  name: ToReadableString
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString_
+  commentId: Overload:Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString
+  nameWithType: DictionaryExtensions.ToReadableString
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1})
+  name: ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1})
+  name.vb: ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+  nameWithType: DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>)
+  nameWithType.vb: DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions
+  name: EnumerableExtensions
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html
+  commentId: T:Nier.Commons.Collections.Extensions.EnumerableExtensions
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions
+  nameWithType: EnumerableExtensions
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString*
+  name: ToReadableString
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_ToReadableString_
+  commentId: Overload:Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString
+  nameWithType: EnumerableExtensions.ToReadableString
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString``1(IEnumerable{``0})
+  name: ToReadableString<T>(IEnumerable<T>)
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_ToReadableString__1_IEnumerable___0__
+  commentId: M:Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString``1(IEnumerable{``0})
+  name.vb: ToReadableString(Of T)(IEnumerable(Of T))
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString<T>(IEnumerable<T>)
+  fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
+  nameWithType: EnumerableExtensions.ToReadableString<T>(IEnumerable<T>)
+  nameWithType.vb: EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
+- uid: Nier.Commons.Collections.IDictionaryDifference`2
+  name: IDictionaryDifference<TKey, TVal>
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html
+  commentId: T:Nier.Commons.Collections.IDictionaryDifference`2
+  name.vb: IDictionaryDifference(Of TKey, TVal)
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal)
+  nameWithType: IDictionaryDifference<TKey, TVal>
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal)
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesDiffering
+  name: EntriesDiffering
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesDiffering
+  commentId: P:Nier.Commons.Collections.IDictionaryDifference`2.EntriesDiffering
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesDiffering
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesDiffering
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesDiffering
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesDiffering
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesDiffering*
+  name: EntriesDiffering
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesDiffering_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryDifference`2.EntriesDiffering
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesDiffering
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesDiffering
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesDiffering
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesDiffering
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesInCommon
+  name: EntriesInCommon
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesInCommon
+  commentId: P:Nier.Commons.Collections.IDictionaryDifference`2.EntriesInCommon
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesInCommon
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesInCommon
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesInCommon
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesInCommon
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesInCommon*
+  name: EntriesInCommon
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesInCommon_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryDifference`2.EntriesInCommon
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesInCommon
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesInCommon
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesInCommon
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesInCommon
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnLeft
+  name: EntriesOnlyOnLeft
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesOnlyOnLeft
+  commentId: P:Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnLeft
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesOnlyOnLeft
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnLeft
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesOnlyOnLeft
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnLeft
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnLeft*
+  name: EntriesOnlyOnLeft
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesOnlyOnLeft_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnLeft
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesOnlyOnLeft
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnLeft
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesOnlyOnLeft
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnLeft
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnRight
+  name: EntriesOnlyOnRight
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesOnlyOnRight
+  commentId: P:Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnRight
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesOnlyOnRight
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnRight
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesOnlyOnRight
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnRight
+- uid: Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnRight*
+  name: EntriesOnlyOnRight
+  href: api/Nier.Commons.Collections.IDictionaryDifference-2.html#Nier_Commons_Collections_IDictionaryDifference_2_EntriesOnlyOnRight_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryDifference`2.EntriesOnlyOnRight
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryDifference<TKey, TVal>.EntriesOnlyOnRight
+  fullName.vb: Nier.Commons.Collections.IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnRight
+  nameWithType: IDictionaryDifference<TKey, TVal>.EntriesOnlyOnRight
+  nameWithType.vb: IDictionaryDifference(Of TKey, TVal).EntriesOnlyOnRight
+- uid: Nier.Commons.Collections.IDictionaryValueDifference`1
+  name: IDictionaryValueDifference<TVal>
+  href: api/Nier.Commons.Collections.IDictionaryValueDifference-1.html
+  commentId: T:Nier.Commons.Collections.IDictionaryValueDifference`1
+  name.vb: IDictionaryValueDifference(Of TVal)
+  fullName: Nier.Commons.Collections.IDictionaryValueDifference<TVal>
+  fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal)
+  nameWithType: IDictionaryValueDifference<TVal>
+  nameWithType.vb: IDictionaryValueDifference(Of TVal)
+- uid: Nier.Commons.Collections.IDictionaryValueDifference`1.LeftValue
+  name: LeftValue
+  href: api/Nier.Commons.Collections.IDictionaryValueDifference-1.html#Nier_Commons_Collections_IDictionaryValueDifference_1_LeftValue
+  commentId: P:Nier.Commons.Collections.IDictionaryValueDifference`1.LeftValue
+  fullName: Nier.Commons.Collections.IDictionaryValueDifference<TVal>.LeftValue
+  fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal).LeftValue
+  nameWithType: IDictionaryValueDifference<TVal>.LeftValue
+  nameWithType.vb: IDictionaryValueDifference(Of TVal).LeftValue
+- uid: Nier.Commons.Collections.IDictionaryValueDifference`1.LeftValue*
+  name: LeftValue
+  href: api/Nier.Commons.Collections.IDictionaryValueDifference-1.html#Nier_Commons_Collections_IDictionaryValueDifference_1_LeftValue_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryValueDifference`1.LeftValue
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryValueDifference<TVal>.LeftValue
+  fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal).LeftValue
+  nameWithType: IDictionaryValueDifference<TVal>.LeftValue
+  nameWithType.vb: IDictionaryValueDifference(Of TVal).LeftValue
+- uid: Nier.Commons.Collections.IDictionaryValueDifference`1.RightValue
+  name: RightValue
+  href: api/Nier.Commons.Collections.IDictionaryValueDifference-1.html#Nier_Commons_Collections_IDictionaryValueDifference_1_RightValue
+  commentId: P:Nier.Commons.Collections.IDictionaryValueDifference`1.RightValue
+  fullName: Nier.Commons.Collections.IDictionaryValueDifference<TVal>.RightValue
+  fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal).RightValue
+  nameWithType: IDictionaryValueDifference<TVal>.RightValue
+  nameWithType.vb: IDictionaryValueDifference(Of TVal).RightValue
+- uid: Nier.Commons.Collections.IDictionaryValueDifference`1.RightValue*
+  name: RightValue
+  href: api/Nier.Commons.Collections.IDictionaryValueDifference-1.html#Nier_Commons_Collections_IDictionaryValueDifference_1_RightValue_
+  commentId: Overload:Nier.Commons.Collections.IDictionaryValueDifference`1.RightValue
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IDictionaryValueDifference<TVal>.RightValue
+  fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal).RightValue
+  nameWithType: IDictionaryValueDifference<TVal>.RightValue
+  nameWithType.vb: IDictionaryValueDifference(Of TVal).RightValue
+- uid: Nier.Commons.Extensions
+  name: Nier.Commons.Extensions
+  href: api/Nier.Commons.Extensions.html
+  commentId: N:Nier.Commons.Extensions
+  fullName: Nier.Commons.Extensions
+  nameWithType: Nier.Commons.Extensions
+- uid: Nier.Commons.Extensions.ObjectExtensions
+  name: ObjectExtensions
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html
+  commentId: T:Nier.Commons.Extensions.ObjectExtensions
+  fullName: Nier.Commons.Extensions.ObjectExtensions
+  nameWithType: ObjectExtensions
+- uid: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.Object)
+  name: ToStringBuilder(Object)
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_System_Object_
+  commentId: M:Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.Object)
+  fullName: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.Object)
+  nameWithType: ObjectExtensions.ToStringBuilder(Object)
+- uid: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.String)
+  name: ToStringBuilder(String)
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_System_String_
+  commentId: M:Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.String)
+  fullName: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.String)
+  nameWithType: ObjectExtensions.ToStringBuilder(String)
+- uid: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder*
+  name: ToStringBuilder
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_
+  commentId: Overload:Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder
+  nameWithType: ObjectExtensions.ToStringBuilder
+- uid: Nier.Commons.Extensions.StringExtensions
+  name: StringExtensions
+  href: api/Nier.Commons.Extensions.StringExtensions.html
+  commentId: T:Nier.Commons.Extensions.StringExtensions
+  fullName: Nier.Commons.Extensions.StringExtensions
+  nameWithType: StringExtensions
+- uid: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.Int32)
+  name: Abbreviate(String, Int32)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_Int32_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.Int32)
+  fullName: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String, System.Int32)
+  nameWithType: StringExtensions.Abbreviate(String, Int32)
+- uid: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32)
+  name: Abbreviate(String, String, Int32)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_String_System_Int32_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32)
+  fullName: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String, System.String, System.Int32)
+  nameWithType: StringExtensions.Abbreviate(String, String, Int32)
+- uid: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32,System.Int32)
+  name: Abbreviate(String, String, Int32, Int32)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32,System.Int32)
+  fullName: Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String, System.String, System.Int32, System.Int32)
+  nameWithType: StringExtensions.Abbreviate(String, String, Int32, Int32)
+- uid: Nier.Commons.Extensions.StringExtensions.Abbreviate*
+  name: Abbreviate
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Abbreviate_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.Abbreviate
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.Abbreviate
+  nameWithType: StringExtensions.Abbreviate
+- uid: Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle(System.String,System.String,System.Int32)
+  name: AbbreviateMiddle(String, String, Int32)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_AbbreviateMiddle_System_String_System_String_System_Int32_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle(System.String,System.String,System.Int32)
+  fullName: Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle(System.String, System.String, System.Int32)
+  nameWithType: StringExtensions.AbbreviateMiddle(String, String, Int32)
+- uid: Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle*
+  name: AbbreviateMiddle
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_AbbreviateMiddle_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle
+  nameWithType: StringExtensions.AbbreviateMiddle
+- uid: Nier.Commons.Extensions.StringExtensions.AppendIfMissing(System.String,System.String,System.StringComparison)
+  name: AppendIfMissing(String, String, StringComparison)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_AppendIfMissing_System_String_System_String_System_StringComparison_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.AppendIfMissing(System.String,System.String,System.StringComparison)
+  fullName: Nier.Commons.Extensions.StringExtensions.AppendIfMissing(System.String, System.String, System.StringComparison)
+  nameWithType: StringExtensions.AppendIfMissing(String, String, StringComparison)
+- uid: Nier.Commons.Extensions.StringExtensions.AppendIfMissing*
+  name: AppendIfMissing
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_AppendIfMissing_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.AppendIfMissing
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.AppendIfMissing
+  nameWithType: StringExtensions.AppendIfMissing
+- uid: Nier.Commons.Extensions.StringExtensions.Center(System.String,System.Int32,System.Char)
+  name: Center(String, Int32, Char)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Center_System_String_System_Int32_System_Char_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.Center(System.String,System.Int32,System.Char)
+  fullName: Nier.Commons.Extensions.StringExtensions.Center(System.String, System.Int32, System.Char)
+  nameWithType: StringExtensions.Center(String, Int32, Char)
+- uid: Nier.Commons.Extensions.StringExtensions.Center*
+  name: Center
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_Center_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.Center
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.Center
+  nameWithType: StringExtensions.Center
+- uid: Nier.Commons.Extensions.StringExtensions.PadEnd(System.String,System.Int32,System.Char)
+  name: PadEnd(String, Int32, Char)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_PadEnd_System_String_System_Int32_System_Char_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.PadEnd(System.String,System.Int32,System.Char)
+  fullName: Nier.Commons.Extensions.StringExtensions.PadEnd(System.String, System.Int32, System.Char)
+  nameWithType: StringExtensions.PadEnd(String, Int32, Char)
+- uid: Nier.Commons.Extensions.StringExtensions.PadEnd*
+  name: PadEnd
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_PadEnd_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.PadEnd
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.PadEnd
+  nameWithType: StringExtensions.PadEnd
+- uid: Nier.Commons.Extensions.StringExtensions.PadStart(System.String,System.Int32,System.Char)
+  name: PadStart(String, Int32, Char)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_PadStart_System_String_System_Int32_System_Char_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.PadStart(System.String,System.Int32,System.Char)
+  fullName: Nier.Commons.Extensions.StringExtensions.PadStart(System.String, System.Int32, System.Char)
+  nameWithType: StringExtensions.PadStart(String, Int32, Char)
+- uid: Nier.Commons.Extensions.StringExtensions.PadStart*
+  name: PadStart
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_PadStart_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.PadStart
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.PadStart
+  nameWithType: StringExtensions.PadStart
+- uid: Nier.Commons.Extensions.StringExtensions.SubStringBetween(System.String,System.String,System.String)
+  name: SubStringBetween(String, String, String)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_SubStringBetween_System_String_System_String_System_String_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.SubStringBetween(System.String,System.String,System.String)
+  fullName: Nier.Commons.Extensions.StringExtensions.SubStringBetween(System.String, System.String, System.String)
+  nameWithType: StringExtensions.SubStringBetween(String, String, String)
+- uid: Nier.Commons.Extensions.StringExtensions.SubStringBetween*
+  name: SubStringBetween
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_SubStringBetween_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.SubStringBetween
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.SubStringBetween
+  nameWithType: StringExtensions.SubStringBetween
+- uid: Nier.Commons.Extensions.ToStringBuilder
+  name: ToStringBuilder
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html
+  commentId: T:Nier.Commons.Extensions.ToStringBuilder
+  fullName: Nier.Commons.Extensions.ToStringBuilder
+  nameWithType: ToStringBuilder
+- uid: Nier.Commons.Extensions.ToStringBuilder.Add*
+  name: Add
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_Add_
+  commentId: Overload:Nier.Commons.Extensions.ToStringBuilder.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.ToStringBuilder.Add
+  nameWithType: ToStringBuilder.Add
+- uid: Nier.Commons.Extensions.ToStringBuilder.Add``1(System.String,``0)
+  name: Add<T>(String, T)
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_Add__1_System_String___0_
+  commentId: M:Nier.Commons.Extensions.ToStringBuilder.Add``1(System.String,``0)
+  name.vb: Add(Of T)(String, T)
+  fullName: Nier.Commons.Extensions.ToStringBuilder.Add<T>(System.String, T)
+  fullName.vb: Nier.Commons.Extensions.ToStringBuilder.Add(Of T)(System.String, T)
+  nameWithType: ToStringBuilder.Add<T>(String, T)
+  nameWithType.vb: ToStringBuilder.Add(Of T)(String, T)
+- uid: Nier.Commons.Extensions.ToStringBuilder.OmitNullValues
+  name: OmitNullValues()
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_OmitNullValues
+  commentId: M:Nier.Commons.Extensions.ToStringBuilder.OmitNullValues
+  fullName: Nier.Commons.Extensions.ToStringBuilder.OmitNullValues()
+  nameWithType: ToStringBuilder.OmitNullValues()
+- uid: Nier.Commons.Extensions.ToStringBuilder.OmitNullValues*
+  name: OmitNullValues
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_OmitNullValues_
+  commentId: Overload:Nier.Commons.Extensions.ToStringBuilder.OmitNullValues
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.ToStringBuilder.OmitNullValues
+  nameWithType: ToStringBuilder.OmitNullValues
+- uid: Nier.Commons.Extensions.ToStringBuilder.ToString
+  name: ToString()
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_ToString
+  commentId: M:Nier.Commons.Extensions.ToStringBuilder.ToString
+  fullName: Nier.Commons.Extensions.ToStringBuilder.ToString()
+  nameWithType: ToStringBuilder.ToString()
+- uid: Nier.Commons.Extensions.ToStringBuilder.ToString*
+  name: ToString
+  href: api/Nier.Commons.Extensions.ToStringBuilder.html#Nier_Commons_Extensions_ToStringBuilder_ToString_
+  commentId: Overload:Nier.Commons.Extensions.ToStringBuilder.ToString
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.ToStringBuilder.ToString
+  nameWithType: ToStringBuilder.ToString
+- uid: Nier.Commons.ISystemClock
+  name: ISystemClock
+  href: api/Nier.Commons.ISystemClock.html
+  commentId: T:Nier.Commons.ISystemClock
+  fullName: Nier.Commons.ISystemClock
+  nameWithType: ISystemClock
+- uid: Nier.Commons.ISystemClock.UtcNow
+  name: UtcNow
+  href: api/Nier.Commons.ISystemClock.html#Nier_Commons_ISystemClock_UtcNow
+  commentId: P:Nier.Commons.ISystemClock.UtcNow
+  fullName: Nier.Commons.ISystemClock.UtcNow
+  nameWithType: ISystemClock.UtcNow
+- uid: Nier.Commons.ISystemClock.UtcNow*
+  name: UtcNow
+  href: api/Nier.Commons.ISystemClock.html#Nier_Commons_ISystemClock_UtcNow_
+  commentId: Overload:Nier.Commons.ISystemClock.UtcNow
+  isSpec: "True"
+  fullName: Nier.Commons.ISystemClock.UtcNow
+  nameWithType: ISystemClock.UtcNow
+- uid: Nier.Commons.SystemClock
+  name: SystemClock
+  href: api/Nier.Commons.SystemClock.html
+  commentId: T:Nier.Commons.SystemClock
+  fullName: Nier.Commons.SystemClock
+  nameWithType: SystemClock
+- uid: Nier.Commons.SystemClock.UtcNow
+  name: UtcNow
+  href: api/Nier.Commons.SystemClock.html#Nier_Commons_SystemClock_UtcNow
+  commentId: P:Nier.Commons.SystemClock.UtcNow
+  fullName: Nier.Commons.SystemClock.UtcNow
+  nameWithType: SystemClock.UtcNow
+- uid: Nier.Commons.SystemClock.UtcNow*
+  name: UtcNow
+  href: api/Nier.Commons.SystemClock.html#Nier_Commons_SystemClock_UtcNow_
+  commentId: Overload:Nier.Commons.SystemClock.UtcNow
+  isSpec: "True"
+  fullName: Nier.Commons.SystemClock.UtcNow
+  nameWithType: SystemClock.UtcNow

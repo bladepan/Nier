@@ -1,0 +1,693 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StringExtensions
+   | docfx seed website </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StringExtensions
+   | docfx seed website ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Nier.Commons.Extensions.StringExtensions">
+  
+  
+  <h1 id="Nier_Commons_Extensions_StringExtensions" data-uid="Nier.Commons.Extensions.StringExtensions" class="text-break">Class StringExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StringExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Nier.Commons.Extensions.html">Nier.Commons.Extensions</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Nier_Commons_Extensions_StringExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_Abbreviate_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_Int32_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.Int32)">Abbreviate(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Abbreviates a String using ellipses. This will turn
+&quot;Now is the time for all good men&quot; into &quot;Now is the time for...&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Abbreviate(this string str, int maxWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_Abbreviate_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_String_System_Int32_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32)">Abbreviate(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Abbreviates a String using another given String as replacement marker. This will turn
+&quot;Now is the time for all good men&quot; into &quot;Now is the time for...&quot; if &quot;...&quot; was defined
+as the replacement marker.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Abbreviate(this string str, string abbrevMarker, int maxWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">abbrevMarker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_Abbreviate_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_Abbreviate_System_String_System_String_System_Int32_System_Int32_" data-uid="Nier.Commons.Extensions.StringExtensions.Abbreviate(System.String,System.String,System.Int32,System.Int32)">Abbreviate(String, String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Abbreviates a String using a given replacement marker. This will turn
+Now is the time for all good men&quot; into &quot;...is the time for...&quot; if &quot;...&quot; was defined
+as the replacement marker.</p>
+<pre><code> StringExtensions.Abbreviate(null, &quot;.&quot;, 0, 3) -> null
+ StringExtensions.Abbreviate(&quot;&quot;, &quot;.&quot;, 0, 3) -> &quot;&quot;
+ StringExtensions.Abbreviate(&quot;abc&quot;, &quot;.&quot;, 0, 3) -> &quot;abc&quot;
+ StringExtensions.Abbreviate(&quot;abc&quot;, &quot;.&quot;, 0, 2) -> &quot;ab.&quot;
+ StringExtensions.Abbreviate(&quot;abcdefg&quot;, &quot;..&quot;, 3, 5) -> &quot;..d..&quot;
+
+ StringExtensions.Abbreviate(&quot;abcdefg&quot;, &quot;..&quot;, 3, 2) -> ArgumentException
+ StringExtensions.Abbreviate(&quot;abcdefg&quot;, &quot;..&quot;, -1, 5) -> ArgumentException</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Abbreviate(this string str, string abbrevMarker, int offset, int maxWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>the string to check, can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">abbrevMarker</span></td>
+        <td><p>the string used as replacement marker</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>the character on the offset is guaranteed to be kept in the result string. if offset is greater than abbrevMarker length, the characters
+on the left of offset will be abbreviated in result.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td><p>maximum length of the result string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Abbreviated string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>offset less than 0, maxWidth less or equal to abbrevMarker length</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_AbbreviateMiddle_" data-uid="Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_AbbreviateMiddle_System_String_System_String_System_Int32_" data-uid="Nier.Commons.Extensions.StringExtensions.AbbreviateMiddle(System.String,System.String,System.Int32)">AbbreviateMiddle(String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Abbreviates a string to the length passed, replacing the middle characters with the supplied replacement string.</p>
+<p>The abbreviation happens when the string length is greater than the maxWidth.
+Otherwise, the original string is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AbbreviateMiddle(this string str, string abbrevMarker, int maxWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>the string to be abbreviated, can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">abbrevMarker</span></td>
+        <td><p>the string to replace the middle characters with</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxWidth</span></td>
+        <td><p>maximum length of result string</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>the abbreviated string if abbreviation is necessary, or the original string supplied for abbreviation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_AppendIfMissing_" data-uid="Nier.Commons.Extensions.StringExtensions.AppendIfMissing*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_AppendIfMissing_System_String_System_String_System_StringComparison_" data-uid="Nier.Commons.Extensions.StringExtensions.AppendIfMissing(System.String,System.String,System.StringComparison)">AppendIfMissing(String, String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Appends the suffix to the end of the string if the string does not
+already end with the suffix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string AppendIfMissing(this string str, string suffix, StringComparison stringComparison)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>The string, can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">suffix</span></td>
+        <td><p>The suffix to append to the end of the string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">stringComparison</span></td>
+        <td><p>String comparison used to find suffix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_Center_" data-uid="Nier.Commons.Extensions.StringExtensions.Center*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_Center_System_String_System_Int32_System_Char_" data-uid="Nier.Commons.Extensions.StringExtensions.Center(System.String,System.Int32,System.Char)">Center(String, Int32, Char)</h4>
+  <div class="markdown level1 summary"><p>Centers a string in a larger string of size size. Uses a supplied character as the value to pad the string with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Center(this string str, int size, char padChar = ' ')</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">padChar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_PadEnd_" data-uid="Nier.Commons.Extensions.StringExtensions.PadEnd*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_PadEnd_System_String_System_Int32_System_Char_" data-uid="Nier.Commons.Extensions.StringExtensions.PadEnd(System.String,System.Int32,System.Char)">PadEnd(String, Int32, Char)</h4>
+  <div class="markdown level1 summary"><p>Right pad a string with a specified character.
+The string is padded to the size of size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadEnd(this string str, int size, char padChar = ' ')</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">padChar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_PadStart_" data-uid="Nier.Commons.Extensions.StringExtensions.PadStart*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_PadStart_System_String_System_Int32_System_Char_" data-uid="Nier.Commons.Extensions.StringExtensions.PadStart(System.String,System.Int32,System.Char)">PadStart(String, Int32, Char)</h4>
+  <div class="markdown level1 summary"><p>Left pad a string with a specified character.
+The string is padded to the size of size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PadStart(this string str, int size, char padChar = ' ')</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Char</span></td>
+        <td><span class="parametername">padChar</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_SubStringBetween_" data-uid="Nier.Commons.Extensions.StringExtensions.SubStringBetween*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_SubStringBetween_System_String_System_String_System_String_" data-uid="Nier.Commons.Extensions.StringExtensions.SubStringBetween(System.String,System.String,System.String)">SubStringBetween(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the String that is nested in between two Strings. Only the first match is returned.
+Uses StringComparison.Ordinal for string comparison.</p>
+<p>A null input String returns null.
+A null open/close returns null (no match).
+An empty (&quot;&quot;) open and close returns an empty string.</p>
+<pre><code> StringExtensions.SubStringBetween(null, &quot;a&quot;, &quot;a&quot;) -> null</code></pre>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SubStringBetween(this string str, string open, string close)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>the String containing the substring, may be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">open</span></td>
+        <td><p>the String before the substring, may be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">close</span></td>
+        <td><p>the String after the substring, may be null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>the substring, null if no match</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
