@@ -1,0 +1,4 @@
+[*.cs]
+# CA1303: Do not pass literals as localized parameters
+# not going to localize strings
+dotnet_diagnostic.CA1303.severity = none
