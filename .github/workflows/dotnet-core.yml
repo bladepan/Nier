@@ -1,4 +1,4 @@
-name: .NET Core
+name: Build
 
 on:
   push:
@@ -21,29 +21,25 @@ jobs:
         NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: docfx
       uses: nikeee/docfx-action@v0.1.0
-      with:
-        args: metadata Nier.Commons/**.cs
     - name: publish docfx
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: _site  
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
-    - name: Create the package
-      run: dotnet pack --configuration Release
-    - name: Publish Nier.Commons
-      run: dotnet nuget push Nier.Commons/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
-    - name: Publish nuget
-      run: |
-            for f in ./Nier.Commons/bin/Release/*.nupkg
-            do
-              curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
-            done
-      shell: bash
-    
-    
+    # - name: Install dependencies
+    #   run: dotnet restore
+    # - name: Build
+    #   run: dotnet build --configuration Release --no-restore
+    # - name: Test
+    #   run: dotnet test --no-restore --verbosity normal
+    # - name: Create the package
+    #   run: dotnet pack --configuration Release
+    # - name: Publish Nier.Commons
+    #   run: dotnet nuget push Nier.Commons/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+    # - name: Publish nuget
+    #   run: |
+    #         for f in ./Nier.Commons/bin/Release/*.nupkg
+    #         do
+    #           curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
+    #         done
+    #   shell: bash
