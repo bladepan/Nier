@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "on3WWIPwyXeQh0VMCUd7IA=="
+          "hash": "98I5vG7nFRvgYWbzVSJ4rA=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,19 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "wrhRFbnvgxfXyQkcfgmBug=="
+          "hash": "I0xpGkw6xFSbjPu+BP2H7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.Extensions.DictionaryDifferenceExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.Extensions.DictionaryDifferenceExtensions.html",
+          "hash": "GfPHq16w82pktxFpq4dDmA=="
         }
       },
       "is_incremental": false,
@@ -42,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html",
-          "hash": "ABAPI200QBDAeoHb8GfJTA=="
+          "hash": "kT+Rwf7EbxU7BdYqa+bjHQ=="
         }
       },
       "is_incremental": false,
@@ -54,19 +66,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html",
-          "hash": "S0aHxL+OLTOkLbZuarT8PQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "obj/api/Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Nier.Commons.Collections.Extensions.ReadOnlyDictionaryExtensions.html",
-          "hash": "eQ+9IGqrw5pecQpFFAL34g=="
+          "hash": "N045U95GqkLIgQEbCOnYsg=="
         }
       },
       "is_incremental": false,
@@ -78,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.html",
-          "hash": "RX+X6Srld0ZV6niDZmZJ+A=="
+          "hash": "ecVlKK3qw6Wfi2vkhmxo2g=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "g1aMskP/41diI6Z4SDXYtQ=="
+          "hash": "wtXIKHQijERStdYcRt2HWA=="
         }
       },
       "is_incremental": false,

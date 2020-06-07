@@ -83,8 +83,8 @@
   
   <h1 id="Nier_Commons_Collections_Extensions_DictionaryExtensions" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions" class="text-break">Class DictionaryExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Utility methods for <see cref="!:IDictionary&lt;TKey,TValue>"></see> and <see cref="!:IReadOnlyDictionary&lt;TKey,TValue>"></see> type.
-Methods deal with IReadOnlyDictionary have &quot;ReadOnly&quot; prefix or suffix. This is because types like <see cref="!:Dictionary&lt;TKey,TValue>"></see>
+  <div class="markdown level0 summary"><p>Utility methods for <see cref="!:IDictionary&lt;TKey,TValue>"></see> and <see cref="!:IReadOnlyDictionary&lt;TKey,TValue>"></see> type.</p>
+<p>Methods deal with IReadOnlyDictionary have &quot;ReadOnly&quot; prefix or suffix. This is because types like <see cref="!:Dictionary&lt;TKey,TValue>"></see>
 implements both interfaces, it will create ambiguous reference if the same name is used.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -129,7 +129,7 @@ implements both interfaces, it will create ambiguous reference if the same name 
   
   <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_GetDifference_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference*"></a>
   <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_GetDifference__2_IDictionary___0___1__IDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.GetDifference``2(IDictionary{``0,``1},IDictionary{``0,``1})">GetDifference&lt;TKey, TVal&gt;(IDictionary&lt;TKey, TVal&gt;, IDictionary&lt;TKey, TVal&gt;)</h4>
-  <div class="markdown level1 summary"><p>Get difference of this dictionary (left) to another (right).</p>
+  <div class="markdown level1 summary"><p>Get difference of this dictionary (left) to another (right). See <a class="xref" href="Nier.Commons.Collections.IDictionaryDifference-2.html">IDictionaryDifference&lt;TKey, TVal&gt;</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -193,84 +193,6 @@ implements both interfaces, it will create ambiguous reference if the same name 
       <tr>
         <td><span class="parametername">TVal</span></td>
         <td><p>Type of the dictionary values</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEmpty_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty*"></a>
-  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEmpty__2_Nier_Commons_Collections_IDictionaryDifference___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEmpty``2(Nier.Commons.Collections.IDictionaryDifference{``0,``1})">IsEmpty&lt;TKey, TVal&gt;(IDictionaryDifference&lt;TKey, TVal&gt;)</h4>
-  <div class="markdown level1 summary"><p>If the difference object represents any difference between 2 dictionaries.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsEmpty&lt;TKey, TVal&gt;(this IDictionaryDifference&lt;TKey, TVal&gt; difference)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nier.Commons.Collections.IDictionaryDifference-2.html">IDictionaryDifference</a>&lt;TKey, TVal&gt;</td>
-        <td><span class="parametername">difference</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">TKey</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="parametername">TVal</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>the difference object is null</p>
 </td>
       </tr>
     </tbody>
@@ -550,8 +472,7 @@ are both null/empty.</p>
   
   <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString*"></a>
   <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1})">ToReadableString&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;)</h4>
-  <div class="markdown level1 summary"><p>Readable string representation contains key values of a dictionary.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -570,8 +491,7 @@ are both null/empty.</p>
       <tr>
         <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dict</span></td>
-        <td><p>dictionary, can be null.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -586,8 +506,7 @@ are both null/empty.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><p>readable string representation of the dictionary</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -602,13 +521,11 @@ are both null/empty.</p>
     <tbody>
       <tr>
         <td><span class="parametername">TKey</span></td>
-        <td><p>type of key</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><span class="parametername">TValue</span></td>
-        <td><p>type of value</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
