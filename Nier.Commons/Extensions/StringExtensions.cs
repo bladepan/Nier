@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Nier.Commons.Extensions
 {
+    /// <summary>
+    /// Utility methods of <see cref="string"/> type.
+    /// </summary>
     public static class StringExtensions
     {
         /// <summary>

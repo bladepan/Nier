@@ -4,8 +4,17 @@ using System.Text;
 
 namespace Nier.Commons.Extensions
 {
+    /// <summary>
+    /// Utility methods for <see cref="object"/> type.
+    /// </summary>
     public static class ObjectExtensions
     {
+        /// <summary>
+        /// Create a ToStringBuilder instance.
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException">obj is null</exception>
         public static ToStringBuilder ToStringBuilder(this object obj)
         {
             if (obj == null)
@@ -15,6 +24,12 @@ namespace Nier.Commons.Extensions
             return new ToStringBuilder(obj.GetType().Name);
         }
 
+        /// <summary>
+        /// Create a ToStringBuilder instance.
+        /// </summary>
+        /// <param name="className"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
         public static ToStringBuilder ToStringBuilder(string className)
         {
             if (string.IsNullOrEmpty(className))
@@ -26,7 +41,7 @@ namespace Nier.Commons.Extensions
     }
 
     /// <summary>
-    /// NotThreadSafe
+    /// NotThreadSafe. A helper class to implement ToString methods.
     /// </summary>
     public class ToStringBuilder
     {
@@ -39,12 +54,24 @@ namespace Nier.Commons.Extensions
             _className = className;
         }
 
+        /// <summary>
+        /// Skip null values in ToString.
+        /// </summary>
+        /// <returns>The ToStringBuilder itself.</returns>
         public ToStringBuilder OmitNullValues()
         {
             _omitNullValues = true;
             return this;
         }
 
+        /// <summary>
+        /// Add a value to the builder.
+        /// </summary>
+        /// <param name="key"></param>
+        /// <param name="value"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException">The key is null or empty.</exception>
         public ToStringBuilder Add<T>(string key, T value)
         {
             if (string.IsNullOrEmpty(key))
@@ -60,6 +87,10 @@ namespace Nier.Commons.Extensions
             return this;
         }
 
+        /// <summary>
+        /// Return a string specified by this builder.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder stringBuilder = new StringBuilder(_className);

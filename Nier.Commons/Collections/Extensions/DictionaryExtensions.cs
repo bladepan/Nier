@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Nier.Commons.Collections.Extensions
 {
+    /// <summary>
+    /// Utility methods for <see cref="IDictionary{TKey,TValue}"/> type.
+    /// </summary>
     public static class DictionaryExtensions
     {
         /// <summary>

@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Nier.Commons.Collections.Extensions
 {
+    /// <summary>
+    /// Utility methods for <see cref="IEnumerable{T}"/> type.
+    /// </summary>
     public static class EnumerableExtensions
     {
         /// <summary>
