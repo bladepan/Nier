@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace Nier.Commons.Collections.Extensions
@@ -36,6 +38,7 @@ namespace Nier.Commons.Collections.Extensions
                     {
                         stringBuilder.Append(", ");
                     }
+
                     stringBuilder.Append(value?.ToString() ?? "null");
                 }
 
@@ -43,6 +46,65 @@ namespace Nier.Commons.Collections.Extensions
             }
 
             return stringBuilder.ToString();
+        }
+
+        /// <summary>
+        /// A variation of <see cref="SafeToDictionary{TSource, TKey, TElement}"/> that
+        /// returns the elements from the source as dictionary values.
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="keySelector"></param>
+        /// <param name="comparer"></param>
+        /// <typeparam name="TSource"></typeparam>
+        /// <typeparam name="TKey"></typeparam>
+        /// <returns></returns>
+        public static IDictionary<TKey, TSource> SafeToDictionary<TSource, TKey>(
+            this IEnumerable<TSource> source,
+            Func<TSource, TKey> keySelector,
+            IEqualityComparer<TKey> comparer = null)
+        {
+            return SafeToDictionary(source, keySelector, val => val, comparer);
+        }
+
+        /// <summary>
+        /// Same as Linq's ToDictionary except it does not throw exception
+        /// when keySelector generates duplicate keys. The new key value pair generated
+        /// overrides the old one.
+        /// </summary>
+        /// <param name="source">the data source, can be null</param>
+        /// <param name="keySelector"></param>
+        /// <param name="elementSelector"></param>
+        /// <param name="comparer"></param>
+        /// <typeparam name="TSource"></typeparam>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TElement"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException">keySelector or elementSelector is null</exception>
+        public static IDictionary<TKey, TElement> SafeToDictionary<TSource, TKey, TElement>(
+            this IEnumerable<TSource> source,
+            Func<TSource, TKey> keySelector, Func<TSource, TElement> elementSelector,
+            IEqualityComparer<TKey> comparer = null)
+        {
+            if (keySelector == null)
+            {
+                throw new ArgumentNullException(nameof(keySelector));
+            }
+
+            if (elementSelector == null)
+            {
+                throw new ArgumentNullException(nameof(elementSelector));
+            }
+
+            var result = new Dictionary<TKey, TElement>(comparer);
+            if (source != null)
+            {
+                foreach (TSource element in source)
+                {
+                    result[keySelector(element)] = elementSelector(element);
+                }
+            }
+
+            return result;
         }
     }
 }
