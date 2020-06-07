@@ -36,3 +36,12 @@ jobs:
               curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
             done
       shell: bash
+    - name: docfx-action
+      uses: nikeee/docfx-action@v0.1.0
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+    
+    
