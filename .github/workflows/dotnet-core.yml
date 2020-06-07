@@ -13,19 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.101
-      env:
-        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    - name: docfx
-      uses: nikeee/docfx-action@v0.1.0
-    - name: publish docfx
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site  
+    # - name: Setup .NET Core
+    #   uses: actions/setup-dotnet@v1
+    #   with:
+    #     dotnet-version: 3.1.101
+    #   env:
+    #     NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     # - name: Install dependencies
     #   run: dotnet restore
     # - name: Build
@@ -43,3 +36,10 @@ jobs:
     #           curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
     #         done
     #   shell: bash
+    - name: docfx
+      uses: nikeee/docfx-action@v0.1.0
+    - name: publish docfx
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: _site  

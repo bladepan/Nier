@@ -3,7 +3,7 @@
     {
       "src": [
         {
-          "files": [ "Nier.Commons/Nier.Commons.csproj" ],
+          "files": [ "Nier.Commons/**/*.cs" ],
           "exclude": [ "**/bin/**", "**/obj/**" ]
         }
       ],
