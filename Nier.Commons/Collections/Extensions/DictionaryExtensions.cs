@@ -1,6 +1,6 @@
-using System;
 using System.Collections.Generic;
 using System.Text;
+using Nier.Commons.Extensions;
 
 namespace Nier.Commons.Collections.Extensions
 {
@@ -103,22 +103,13 @@ namespace Nier.Commons.Collections.Extensions
             StringBuilder stringBuilder = new StringBuilder();
             if (dict == null)
             {
-                stringBuilder.Append("IDictionary<").Append(typeof(TKey).Name).Append(",").Append(typeof(TValue).Name)
+                stringBuilder.Append("IDictionary<").Append(typeof(TKey).ToReadableString()).Append(",")
+                    .Append(typeof(TValue).ToReadableString())
                     .Append("> null");
             }
             else
             {
-                // something like Dictionary`2
-                string dictTypeName = dict.GetType().Name;
-                int backTickIndex = dictTypeName.IndexOf("`", StringComparison.Ordinal);
-                if (backTickIndex >= 0)
-                {
-                    dictTypeName = dictTypeName.Remove(backTickIndex);
-                }
-
-                stringBuilder.Append(dictTypeName).Append("<")
-                    .Append(typeof(TKey).Name).Append(",").Append(typeof(TValue).Name)
-                    .Append(">{");
+                stringBuilder.Append(dict.GetType().ToReadableString()).Append("{");
                 bool firstValue = true;
                 foreach (KeyValuePair<TKey, TValue> keyValuePair in dict)
                 {

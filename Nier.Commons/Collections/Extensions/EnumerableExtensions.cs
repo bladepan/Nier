@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Nier.Commons.Extensions;
 
 namespace Nier.Commons.Collections.Extensions
 {
@@ -22,12 +23,11 @@ namespace Nier.Commons.Collections.Extensions
             StringBuilder stringBuilder = new StringBuilder();
             if (enumerable == null)
             {
-                stringBuilder.Append("IEnumerable<").Append(typeof(T).Name).Append("> null");
+                stringBuilder.Append("IEnumerable<").Append(typeof(T).ToReadableString()).Append("> null");
             }
             else
             {
-                string enumerableTypeName = enumerable.GetType().Name;
-                stringBuilder.Append(enumerableTypeName).Append('<').Append(typeof(T).Name).Append(">[");
+                stringBuilder.Append(enumerable.GetType().ToReadableString()).Append('[');
                 bool firstValue = true;
                 foreach (T value in enumerable)
                 {

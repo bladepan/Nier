@@ -18,7 +18,7 @@ namespace Nier.Commons.Tests.Collections.Extensions
         public void ToReadableString_NotNull_ReturnsStringWithAllValues()
         {
             string[] strings = {"1", "2"};
-            Assert.AreEqual("String[]<String>[1, 2]", strings.ToReadableString());
+            Assert.AreEqual("String[][1, 2]", strings.ToReadableString());
         }
 
         [TestMethod]
