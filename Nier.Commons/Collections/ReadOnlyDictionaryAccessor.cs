@@ -38,7 +38,19 @@ namespace Nier.Commons.Collections
             return _dictionary != null && _dictionary.TryGetValue(key, out val);
         }
 
-        public IDictionary<TKey, TVal> ToDictionary() =>
-            _dictionary?.ToDictionary(kv => kv.Key, kv => kv.Value) ?? new Dictionary<TKey, TVal>();
+        public IDictionary<TKey, TVal> ToDictionary()
+        {
+            if (_dictionary == null)
+            {
+                return new Dictionary<TKey, TVal>();
+            }
+
+            if (_dictionary is IDictionary<TKey, TVal> dictionary)
+            {
+                return dictionary;
+            }
+
+            return _dictionary.ToDictionary(kv => kv.Key, kv => kv.Value);
+        }
     }
 }
