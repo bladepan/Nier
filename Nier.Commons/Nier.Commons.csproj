@@ -10,7 +10,7 @@
         <PackageProjectUrl>https://github.com/bladepan/Nier</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bladepan/Nier</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>commons,utilities,utils,guava</PackageTags>
+        <PackageTags>commons,utilities,utils,guava,collections,extensions</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>

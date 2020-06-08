@@ -10,16 +10,6 @@ Dotnet utility classes usually end up in folders named like "Utilities", "Utils"
 # API Doc
 - [API doc](https://bladepan.github.io/Nier/api/Nier.Commons.html)
 
-# Nier.Commons
-Utility classes for dotnet runtime core types.
-- ISystemClock/SystemClock - Abstraction of system clock.
-- Extensions.ObjectExtensions
-- Extensions.StringExtensions
-
-# Nier.Commons.Collections
-Utility classes for Collections.
-- Extensions.DictionaryExtensions
-- Extensions.EnumerableExtensions
-
 # Notable features 
+- Null safe methods. Most of the extension methods are null safe.
 - Readable ToString for Collections. `ToString` methods in Collection types in dotnet does not have collection values. `ToReadableString` methods in extension classes creates string with collection values.
