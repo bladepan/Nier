@@ -177,6 +177,88 @@ namespace Nier.Commons.Extensions
         }
 
         /// <summary>
+        /// Returns longest common prefix of str and another.
+        /// </summary>
+        /// <param name="str">source string. can be null</param>
+        /// <param name="another">another string. can be null</param>
+        /// <returns>empty string is there is no common prefix. Otherwise longest common prefix</returns>
+        public static string CommonPrefix(this string str, string another)
+        {
+            int len1 = str?.Length ?? 0;
+            int len2 = another?.Length ?? 0;
+            if (len1 == 0 || len2 == 0)
+            {
+                return string.Empty;
+            }
+
+            int minLen = Math.Min(len1, len2);
+            int index = 0;
+            while (index < minLen)
+            {
+                if (str[index] == another[index])
+                {
+                    index++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            // Substring will return the original string if possible. use
+            // the shorter string so we can potentially save some operations.
+            string shorterStr = len1 == minLen ? str : another;
+            return shorterStr.Substring(0, index);
+        }
+
+        /// <summary>
+        /// Return the longest common suffix of str and another.
+        /// </summary>
+        /// <param name="str">source string. can be null</param>
+        /// <param name="another">another string. can be null</param>
+        /// <returns>empty string is there is no common suffix. Otherwise longest common suffix</returns>
+        public static string CommonSuffix(this string str, string another)
+        {
+            int len1 = str?.Length ?? 0;
+            int len2 = another?.Length ?? 0;
+            if (len1 == 0 || len2 == 0)
+            {
+                return string.Empty;
+            }
+
+            string shorterStr = str;
+            string longerStr = another;
+            int minLen = len1;
+            if (len2 < minLen)
+            {
+                shorterStr = another;
+                longerStr = str;
+                minLen = len2;
+            }
+
+            int suffixLen = 0;
+            int shorterStrIndex = shorterStr.Length - 1;
+            int longerStrIndex = longerStr.Length - 1;
+            while (suffixLen < minLen)
+            {
+                if (shorterStr[shorterStrIndex] == longerStr[longerStrIndex])
+                {
+                    shorterStrIndex--;
+                    longerStrIndex--;
+                    suffixLen++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            // Substring will return the original string if possible. use
+            // the shorter string so we can potentially save some operations.
+            return shorterStr.Substring(shorterStrIndex + 1, suffixLen);
+        }
+
+        /// <summary>
         /// Left pad a string with a specified character.
         /// The string is padded to the size of size.
         /// </summary>

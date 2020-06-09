@@ -11,7 +11,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow(null, ".", 0, 1)]
         [DataRow("", ".", 0, 1)]
         [DataRow("abc", ".", 1, 3)]
-        public void Abbreviate_DoesNotNeedAbbreviate_ReturnsOriginString(string str, string abbrevMarker, int offset, int maxWidth)
+        public void Abbreviate_DoesNotNeedAbbreviate_ReturnsOriginString(string str, string abbrevMarker, int offset,
+            int maxWidth)
         {
             string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
             Assert.AreEqual(result, str);
@@ -21,7 +22,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow("abc", "", 0, 2, "ab")]
         [DataRow("abc", null, 0, 2, "ab")]
         [DataRow("abcd", "..", 1, 3, "a..")]
-        public void Abbreviate_AbbreviateOnlyOnRightSide_ReturnsExpectedResult(string str, string abbrevMarker, int offset, int maxWidth, string expected)
+        public void Abbreviate_AbbreviateOnlyOnRightSide_ReturnsExpectedResult(string str, string abbrevMarker,
+            int offset, int maxWidth, string expected)
         {
             string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
             Assert.AreEqual(expected, result);
@@ -30,7 +32,8 @@ namespace Nier.Commons.Tests.Extensions
         [TestMethod]
         [DataRow("abcdefghijklmno", "...", 6, 10, "...ghij...")]
         [DataRow("abcdefg", "..", 3, 5, "..d..")]
-        public void Abbreviate_AbbreviateOnBothSides_ReturnsExpectedResult(string str, string abbrevMarker, int offset, int maxWidth, string expected)
+        public void Abbreviate_AbbreviateOnBothSides_ReturnsExpectedResult(string str, string abbrevMarker, int offset,
+            int maxWidth, string expected)
         {
             string result = str.Abbreviate(abbrevMarker, offset, maxWidth);
             Assert.AreEqual(expected, result);
@@ -46,7 +49,8 @@ namespace Nier.Commons.Tests.Extensions
         [TestMethod]
         [DataRow("abcdef", ".", 6, 3)]
         [DataRow("abcdef", ".", 7, 3)]
-        public void Abbreviate_OffsetExceedsLimit_ThrowsException(string str, string abbrevMarker, int offset, int maxWidth)
+        public void Abbreviate_OffsetExceedsLimit_ThrowsException(string str, string abbrevMarker, int offset,
+            int maxWidth)
         {
             Assert.ThrowsException<ArgumentException>(() => _ = str.Abbreviate(abbrevMarker, offset, maxWidth));
         }
@@ -54,7 +58,8 @@ namespace Nier.Commons.Tests.Extensions
         [TestMethod]
         [DataRow("abcdef", ".", 1, 1)]
         [DataRow("abcdef", ".", 1, 0)]
-        public void Abbreviate_MaxWidthLessThanRequired_ThrowsException(string str, string abbrevMarker, int offset, int maxWidth)
+        public void Abbreviate_MaxWidthLessThanRequired_ThrowsException(string str, string abbrevMarker, int offset,
+            int maxWidth)
         {
             Assert.ThrowsException<ArgumentException>(() => _ = str.Abbreviate(abbrevMarker, offset, maxWidth));
         }
@@ -63,7 +68,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow("abcd", ".", 3, "a.d")]
         [DataRow("abcde", ".", 4, "ab.e")]
         [DataRow("abcde", null, 4, "abde")]
-        public void AbbreviateMiddle_AbbreviateHappens_ReturnsExpectedResult(string str, string abbrevMarker, int maxWidth, string expected)
+        public void AbbreviateMiddle_AbbreviateHappens_ReturnsExpectedResult(string str, string abbrevMarker,
+            int maxWidth, string expected)
         {
             string result = str.AbbreviateMiddle(abbrevMarker, maxWidth);
             Assert.AreEqual(expected, result);
@@ -74,7 +80,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow("abcd", ".", 4)]
         [DataRow(null, ".", 4)]
         [DataRow("", ".", 4)]
-        public void AbbreviateMiddle_AbbreviateDoesNotHappen_ReturnsOriginalString(string str, string abbrevMarker, int maxWidth)
+        public void AbbreviateMiddle_AbbreviateDoesNotHappen_ReturnsOriginalString(string str, string abbrevMarker,
+            int maxWidth)
         {
             string result = str.AbbreviateMiddle(abbrevMarker, maxWidth);
             Assert.AreSame(str, result);
@@ -93,7 +100,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow(null, "C", StringComparison.Ordinal, "C")]
         [DataRow("", "C", StringComparison.Ordinal, "C")]
         [DataRow("C", "C", StringComparison.Ordinal, "C")]
-        public void AppendIfMissing_StringDoesNotEndsWithSuffix_AppendSuffix(string str, string suffix, StringComparison stringComparison,
+        public void AppendIfMissing_StringDoesNotEndsWithSuffix_AppendSuffix(string str, string suffix,
+            StringComparison stringComparison,
             string expectedResult)
         {
             string result = str.AppendIfMissing(suffix, stringComparison);
@@ -105,7 +113,8 @@ namespace Nier.Commons.Tests.Extensions
         [DataRow("abc", "c", StringComparison.Ordinal)]
         [DataRow("abc", null, StringComparison.Ordinal)]
         [DataRow("abc", "", StringComparison.Ordinal)]
-        public void AppendIfMissing_StringEndsWithSuffix_ReturnOriginalString(string str, string suffix, StringComparison stringComparison)
+        public void AppendIfMissing_StringEndsWithSuffix_ReturnOriginalString(string str, string suffix,
+            StringComparison stringComparison)
         {
             string result = str.AppendIfMissing(suffix, stringComparison);
             Assert.AreSame(str, result);
@@ -121,6 +130,32 @@ namespace Nier.Commons.Tests.Extensions
         public void Center(string str, int size, string expectedResult)
         {
             string result = str.Center(size, '.');
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        [DataRow(null, null, "")]
+        [DataRow("", "abc", "")]
+        [DataRow("abc", "abcd", "abc")]
+        [DataRow("abcd", "abc", "abc")]
+        [DataRow("abc", "cabc", "")]
+        [DataRow("abc", "abd", "ab")]
+        public void CommonPrefix(string str, string another, string expectedResult)
+        {
+            string result = str.CommonPrefix(another);
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
+        [DataRow(null, null, "")]
+        [DataRow("", "abc", "")]
+        [DataRow("abc", "dabc", "abc")]
+        [DataRow("dabc", "abc", "abc")]
+        [DataRow("abc", "abcd", "")]
+        [DataRow("abc", "dbc", "bc")]
+        public void CommonSuffix(string str, string another, string expectedResult)
+        {
+            string result = str.CommonSuffix(another);
             Assert.AreEqual(expectedResult, result);
         }
 
@@ -184,7 +219,8 @@ namespace Nier.Commons.Tests.Extensions
         [TestMethod]
         [DataRow("abc", "", "c", "ab")]
         [DataRow("abc", "a", "c", "b")]
-        public void SubStringBetween_FoundSubString_ReturnsSubString(string str, string open, string close, string expectedResult)
+        public void SubStringBetween_FoundSubString_ReturnsSubString(string str, string open, string close,
+            string expectedResult)
         {
             Assert.AreEqual(expectedResult, str.SubStringBetween(open, close));
         }
