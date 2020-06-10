@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "98I5vG7nFRvgYWbzVSJ4rA=="
+          "hash": "Ev0gEzksr+63zm8kXhP7SQ=="
         }
       },
       "is_incremental": false,
@@ -31,6 +31,18 @@
         ".html": {
           "relative_path": "index.html",
           "hash": "I0xpGkw6xFSbjPu+BP2H7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.BiDirectionDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.BiDirectionDictionary-2.html",
+          "hash": "39CUc7+dOA82ogLfUA3juw=="
         }
       },
       "is_incremental": false,
@@ -86,6 +98,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.IBiDirectionDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.IBiDirectionDictionary-2.html",
+          "hash": "Q484t08+VFKaEJ7hIgsrhA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Collections.IDictionaryDifference-2.yml",
       "output": {
         ".html": {
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.html",
-          "hash": "qza0ydSnZKmsnAPiB2gIPw=="
+          "hash": "mlISMHgxvxR1ZA7VTSIEiA=="
         }
       },
       "is_incremental": false,
@@ -138,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.StringExtensions.html",
-          "hash": "YpJNweTcchAJKozU7fyCUA=="
+          "hash": "l2pyuncJUC5ANcOqXp6sTQ=="
         }
       },
       "is_incremental": false,
@@ -158,11 +182,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Extensions.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Extensions.TypeExtensions.html",
+          "hash": "0w3A/XvBngtd/awah2jrLA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Extensions.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.html",
-          "hash": "QSuQqU0j0ELzs+28S6RvVA=="
+          "hash": "OmXcgu853qeVaPtYH/Qy8A=="
         }
       },
       "is_incremental": false,
@@ -210,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wtXIKHQijERStdYcRt2HWA=="
+          "hash": "uxxL2gJePazpCNgTqSNZ3g=="
         }
       },
       "is_incremental": false,
@@ -240,16 +276,16 @@
         "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 0
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build",
-          "total_file_count": 14,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -13,6 +13,352 @@ references:
   commentId: N:Nier.Commons.Collections
   fullName: Nier.Commons.Collections
   nameWithType: Nier.Commons.Collections
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2
+  name: BiDirectionDictionary<TKey, TValue>
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html
+  commentId: T:Nier.Commons.Collections.BiDirectionDictionary`2
+  name.vb: BiDirectionDictionary(Of TKey, TValue)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue)
+  nameWithType: BiDirectionDictionary<TKey, TValue>
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.#ctor
+  name: BiDirectionDictionary()
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2__ctor
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.#ctor
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary()
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary()
+  nameWithType: BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary()
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary()
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.#ctor(IEnumerable{KeyValuePair{`0,`1}})
+  name: BiDirectionDictionary(IEnumerable<KeyValuePair<TKey, TValue>>)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2__ctor_IEnumerable_KeyValuePair__0__1___
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.#ctor(IEnumerable{KeyValuePair{`0,`1}})
+  name.vb: BiDirectionDictionary(IEnumerable(Of KeyValuePair(Of TKey, TValue)))
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary(IEnumerable<KeyValuePair<TKey, TValue>>)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary(IEnumerable(Of KeyValuePair(Of TKey, TValue)))
+  nameWithType: BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary(IEnumerable<KeyValuePair<TKey, TValue>>)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary(IEnumerable(Of KeyValuePair(Of TKey, TValue)))
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.#ctor*
+  name: BiDirectionDictionary
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2__ctor_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.#ctor
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary
+  nameWithType: BiDirectionDictionary<TKey, TValue>.BiDirectionDictionary
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).BiDirectionDictionary
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Add__0__1_
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Add(`0,`1)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Add(TKey, TValue)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Add(TKey, TValue)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Add(KeyValuePair{`0,`1})
+  name: Add(KeyValuePair<TKey, TValue>)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Add_KeyValuePair__0__1__
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Add(KeyValuePair{`0,`1})
+  name.vb: Add(KeyValuePair(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Add(KeyValuePair<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Add(KeyValuePair(Of TKey, TValue))
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Add(KeyValuePair<TKey, TValue>)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Add(KeyValuePair(Of TKey, TValue))
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Add*
+  name: Add
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Add_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Add
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Add
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Add
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Add
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Clear
+  name: Clear()
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Clear
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Clear
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Clear()
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Clear()
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Clear()
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Clear()
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Clear*
+  name: Clear
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Clear_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Clear
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Clear
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Clear
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Clear
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Clear
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Contains(KeyValuePair{`0,`1})
+  name: Contains(KeyValuePair<TKey, TValue>)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Contains_KeyValuePair__0__1__
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Contains(KeyValuePair{`0,`1})
+  name.vb: Contains(KeyValuePair(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Contains(KeyValuePair<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Contains(KeyValuePair(Of TKey, TValue))
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Contains(KeyValuePair<TKey, TValue>)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Contains(KeyValuePair(Of TKey, TValue))
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Contains*
+  name: Contains
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Contains_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Contains
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Contains
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Contains
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Contains
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Contains
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ContainsKey(`0)
+  name: ContainsKey(TKey)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ContainsKey__0_
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.ContainsKey(`0)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ContainsKey(TKey)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ContainsKey(TKey)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ContainsKey*
+  name: ContainsKey
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ContainsKey_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.ContainsKey
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ContainsKey
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ContainsKey
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ContainsKey
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ContainsKey
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.CopyTo(KeyValuePair{`0,`1}[],System.Int32)
+  name: CopyTo(KeyValuePair<TKey, TValue>[], Int32)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_CopyTo_KeyValuePair__0__1____System_Int32_
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.CopyTo(KeyValuePair{`0,`1}[],System.Int32)
+  name.vb: CopyTo(KeyValuePair(Of TKey, TValue)(), Int32)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.CopyTo(KeyValuePair<TKey, TValue>[], System.Int32)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).CopyTo(KeyValuePair(Of TKey, TValue)(), System.Int32)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.CopyTo(KeyValuePair<TKey, TValue>[], Int32)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).CopyTo(KeyValuePair(Of TKey, TValue)(), Int32)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.CopyTo*
+  name: CopyTo
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_CopyTo_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.CopyTo
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.CopyTo
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).CopyTo
+  nameWithType: BiDirectionDictionary<TKey, TValue>.CopyTo
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).CopyTo
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Count
+  name: Count
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Count
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.Count
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Count
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Count
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Count
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Count
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Count*
+  name: Count
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Count_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Count
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Count
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Count
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Count
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Count
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Equals_System_Object_
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Equals(System.Object)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Equals(System.Object)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Equals(System.Object)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Equals(Object)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Equals(Object)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Equals*
+  name: Equals
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Equals_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Equals
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Equals
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Equals
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Equals
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Equals
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_GetEnumerator
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.GetEnumerator
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.GetEnumerator()
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).GetEnumerator()
+  nameWithType: BiDirectionDictionary<TKey, TValue>.GetEnumerator()
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).GetEnumerator()
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_GetEnumerator_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.GetEnumerator
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.GetEnumerator
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).GetEnumerator
+  nameWithType: BiDirectionDictionary<TKey, TValue>.GetEnumerator
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).GetEnumerator
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.GetHashCode
+  name: GetHashCode()
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_GetHashCode
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.GetHashCode
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.GetHashCode()
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).GetHashCode()
+  nameWithType: BiDirectionDictionary<TKey, TValue>.GetHashCode()
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).GetHashCode()
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.GetHashCode*
+  name: GetHashCode
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_GetHashCode_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.GetHashCode
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.GetHashCode
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).GetHashCode
+  nameWithType: BiDirectionDictionary<TKey, TValue>.GetHashCode
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).GetHashCode
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.IsReadOnly
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_IsReadOnly
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.IsReadOnly
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).IsReadOnly
+  nameWithType: BiDirectionDictionary<TKey, TValue>.IsReadOnly
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).IsReadOnly
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.IsReadOnly*
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_IsReadOnly_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.IsReadOnly
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).IsReadOnly
+  nameWithType: BiDirectionDictionary<TKey, TValue>.IsReadOnly
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).IsReadOnly
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Item(`0)
+  name: Item[TKey]
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Item__0_
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.Item(`0)
+  name.vb: Item(TKey)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Item[TKey]
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Item(TKey)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Item[TKey]
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Item(TKey)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Item*
+  name: Item
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Item_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Item
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Item
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Item
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Item
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Item
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Keys
+  name: Keys
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Keys
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.Keys
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Keys
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Keys
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Keys
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Keys
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Keys*
+  name: Keys
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Keys_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Keys
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Keys
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Keys
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Keys
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Keys
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Remove(`0)
+  name: Remove(TKey)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Remove__0_
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Remove(`0)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Remove(TKey)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Remove(TKey)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Remove(TKey)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Remove(KeyValuePair{`0,`1})
+  name: Remove(KeyValuePair<TKey, TValue>)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Remove_KeyValuePair__0__1__
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.Remove(KeyValuePair{`0,`1})
+  name.vb: Remove(KeyValuePair(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Remove(KeyValuePair<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Remove(KeyValuePair(Of TKey, TValue))
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Remove(KeyValuePair<TKey, TValue>)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Remove(KeyValuePair(Of TKey, TValue))
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Remove*
+  name: Remove
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Remove_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Remove
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Remove
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Remove
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Remove
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Remove
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ReverseDirection
+  name: ReverseDirection
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ReverseDirection
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.ReverseDirection
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ReverseDirection
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ReverseDirection
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ReverseDirection
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ReverseDirection
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ReverseDirection*
+  name: ReverseDirection
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ReverseDirection_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.ReverseDirection
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ReverseDirection
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ReverseDirection
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ReverseDirection
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ReverseDirection
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ToString
+  name: ToString()
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ToString
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.ToString
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ToString()
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ToString()
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ToString()
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ToString()
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.ToString*
+  name: ToString
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_ToString_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.ToString
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.ToString
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).ToString
+  nameWithType: BiDirectionDictionary<TKey, TValue>.ToString
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).ToString
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.TryGetValue(`0,`1@)
+  name: TryGetValue(TKey, out TValue)
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_TryGetValue__0__1__
+  commentId: M:Nier.Commons.Collections.BiDirectionDictionary`2.TryGetValue(`0,`1@)
+  name.vb: TryGetValue(TKey, ByRef TValue)
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+  nameWithType: BiDirectionDictionary<TKey, TValue>.TryGetValue(TKey, out TValue)
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.TryGetValue*
+  name: TryGetValue
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_TryGetValue_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.TryGetValue
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.TryGetValue
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).TryGetValue
+  nameWithType: BiDirectionDictionary<TKey, TValue>.TryGetValue
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).TryGetValue
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Values
+  name: Values
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Values
+  commentId: P:Nier.Commons.Collections.BiDirectionDictionary`2.Values
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Values
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Values
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Values
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Values
+- uid: Nier.Commons.Collections.BiDirectionDictionary`2.Values*
+  name: Values
+  href: api/Nier.Commons.Collections.BiDirectionDictionary-2.html#Nier_Commons_Collections_BiDirectionDictionary_2_Values_
+  commentId: Overload:Nier.Commons.Collections.BiDirectionDictionary`2.Values
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.BiDirectionDictionary<TKey, TValue>.Values
+  fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Values
+  nameWithType: BiDirectionDictionary<TKey, TValue>.Values
+  nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Values
 - uid: Nier.Commons.Collections.Extensions
   name: Nier.Commons.Collections.Extensions
   href: api/Nier.Commons.Collections.Extensions.html
@@ -190,6 +536,32 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
   nameWithType: EnumerableExtensions.ToReadableString<T>(IEnumerable<T>)
   nameWithType.vb: EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
+- uid: Nier.Commons.Collections.IBiDirectionDictionary`2
+  name: IBiDirectionDictionary<TKey, TValue>
+  href: api/Nier.Commons.Collections.IBiDirectionDictionary-2.html
+  commentId: T:Nier.Commons.Collections.IBiDirectionDictionary`2
+  name.vb: IBiDirectionDictionary(Of TKey, TValue)
+  fullName: Nier.Commons.Collections.IBiDirectionDictionary<TKey, TValue>
+  fullName.vb: Nier.Commons.Collections.IBiDirectionDictionary(Of TKey, TValue)
+  nameWithType: IBiDirectionDictionary<TKey, TValue>
+  nameWithType.vb: IBiDirectionDictionary(Of TKey, TValue)
+- uid: Nier.Commons.Collections.IBiDirectionDictionary`2.ReverseDirection
+  name: ReverseDirection
+  href: api/Nier.Commons.Collections.IBiDirectionDictionary-2.html#Nier_Commons_Collections_IBiDirectionDictionary_2_ReverseDirection
+  commentId: P:Nier.Commons.Collections.IBiDirectionDictionary`2.ReverseDirection
+  fullName: Nier.Commons.Collections.IBiDirectionDictionary<TKey, TValue>.ReverseDirection
+  fullName.vb: Nier.Commons.Collections.IBiDirectionDictionary(Of TKey, TValue).ReverseDirection
+  nameWithType: IBiDirectionDictionary<TKey, TValue>.ReverseDirection
+  nameWithType.vb: IBiDirectionDictionary(Of TKey, TValue).ReverseDirection
+- uid: Nier.Commons.Collections.IBiDirectionDictionary`2.ReverseDirection*
+  name: ReverseDirection
+  href: api/Nier.Commons.Collections.IBiDirectionDictionary-2.html#Nier_Commons_Collections_IBiDirectionDictionary_2_ReverseDirection_
+  commentId: Overload:Nier.Commons.Collections.IBiDirectionDictionary`2.ReverseDirection
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IBiDirectionDictionary<TKey, TValue>.ReverseDirection
+  fullName.vb: Nier.Commons.Collections.IBiDirectionDictionary(Of TKey, TValue).ReverseDirection
+  nameWithType: IBiDirectionDictionary<TKey, TValue>.ReverseDirection
+  nameWithType.vb: IBiDirectionDictionary(Of TKey, TValue).ReverseDirection
 - uid: Nier.Commons.Collections.IDictionaryDifference`2
   name: IDictionaryDifference<TKey, TVal>
   href: api/Nier.Commons.Collections.IDictionaryDifference-2.html
@@ -411,6 +783,45 @@ references:
   isSpec: "True"
   fullName: Nier.Commons.Extensions.StringExtensions.Center
   nameWithType: StringExtensions.Center
+- uid: Nier.Commons.Extensions.StringExtensions.CommonPrefix(System.String,System.String)
+  name: CommonPrefix(String, String)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_CommonPrefix_System_String_System_String_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.CommonPrefix(System.String,System.String)
+  fullName: Nier.Commons.Extensions.StringExtensions.CommonPrefix(System.String, System.String)
+  nameWithType: StringExtensions.CommonPrefix(String, String)
+- uid: Nier.Commons.Extensions.StringExtensions.CommonPrefix*
+  name: CommonPrefix
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_CommonPrefix_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.CommonPrefix
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.CommonPrefix
+  nameWithType: StringExtensions.CommonPrefix
+- uid: Nier.Commons.Extensions.StringExtensions.CommonSuffix(System.String,System.String)
+  name: CommonSuffix(String, String)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_CommonSuffix_System_String_System_String_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.CommonSuffix(System.String,System.String)
+  fullName: Nier.Commons.Extensions.StringExtensions.CommonSuffix(System.String, System.String)
+  nameWithType: StringExtensions.CommonSuffix(String, String)
+- uid: Nier.Commons.Extensions.StringExtensions.CommonSuffix*
+  name: CommonSuffix
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_CommonSuffix_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.CommonSuffix
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.CommonSuffix
+  nameWithType: StringExtensions.CommonSuffix
+- uid: Nier.Commons.Extensions.StringExtensions.ConcatSelf(System.String,System.Int32)
+  name: ConcatSelf(String, Int32)
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_ConcatSelf_System_String_System_Int32_
+  commentId: M:Nier.Commons.Extensions.StringExtensions.ConcatSelf(System.String,System.Int32)
+  fullName: Nier.Commons.Extensions.StringExtensions.ConcatSelf(System.String, System.Int32)
+  nameWithType: StringExtensions.ConcatSelf(String, Int32)
+- uid: Nier.Commons.Extensions.StringExtensions.ConcatSelf*
+  name: ConcatSelf
+  href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_ConcatSelf_
+  commentId: Overload:Nier.Commons.Extensions.StringExtensions.ConcatSelf
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.StringExtensions.ConcatSelf
+  nameWithType: StringExtensions.ConcatSelf
 - uid: Nier.Commons.Extensions.StringExtensions.PadEnd(System.String,System.Int32,System.Char)
   name: PadEnd(String, Int32, Char)
   href: api/Nier.Commons.Extensions.StringExtensions.html#Nier_Commons_Extensions_StringExtensions_PadEnd_System_String_System_Int32_System_Char_
@@ -498,6 +909,25 @@ references:
   isSpec: "True"
   fullName: Nier.Commons.Extensions.ToStringBuilder.ToString
   nameWithType: ToStringBuilder.ToString
+- uid: Nier.Commons.Extensions.TypeExtensions
+  name: TypeExtensions
+  href: api/Nier.Commons.Extensions.TypeExtensions.html
+  commentId: T:Nier.Commons.Extensions.TypeExtensions
+  fullName: Nier.Commons.Extensions.TypeExtensions
+  nameWithType: TypeExtensions
+- uid: Nier.Commons.Extensions.TypeExtensions.ToReadableString(System.Type)
+  name: ToReadableString(Type)
+  href: api/Nier.Commons.Extensions.TypeExtensions.html#Nier_Commons_Extensions_TypeExtensions_ToReadableString_System_Type_
+  commentId: M:Nier.Commons.Extensions.TypeExtensions.ToReadableString(System.Type)
+  fullName: Nier.Commons.Extensions.TypeExtensions.ToReadableString(System.Type)
+  nameWithType: TypeExtensions.ToReadableString(Type)
+- uid: Nier.Commons.Extensions.TypeExtensions.ToReadableString*
+  name: ToReadableString
+  href: api/Nier.Commons.Extensions.TypeExtensions.html#Nier_Commons_Extensions_TypeExtensions_ToReadableString_
+  commentId: Overload:Nier.Commons.Extensions.TypeExtensions.ToReadableString
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.TypeExtensions.ToReadableString
+  nameWithType: TypeExtensions.ToReadableString
 - uid: Nier.Commons.ISystemClock
   name: ISystemClock
   href: api/Nier.Commons.ISystemClock.html

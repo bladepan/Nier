@@ -488,9 +488,177 @@ already end with the suffix.</p>
   </table>
   
   
+  <a id="Nier_Commons_Extensions_StringExtensions_CommonPrefix_" data-uid="Nier.Commons.Extensions.StringExtensions.CommonPrefix*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_CommonPrefix_System_String_System_String_" data-uid="Nier.Commons.Extensions.StringExtensions.CommonPrefix(System.String,System.String)">CommonPrefix(String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns longest common prefix of str and another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CommonPrefix(this string str, string another)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>source string. can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">another</span></td>
+        <td><p>another string. can be null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>empty string is there is no common prefix. Otherwise longest common prefix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_CommonSuffix_" data-uid="Nier.Commons.Extensions.StringExtensions.CommonSuffix*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_CommonSuffix_System_String_System_String_" data-uid="Nier.Commons.Extensions.StringExtensions.CommonSuffix(System.String,System.String)">CommonSuffix(String, String)</h4>
+  <div class="markdown level1 summary"><p>Return the longest common suffix of str and another.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string CommonSuffix(this string str, string another)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>source string. can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">another</span></td>
+        <td><p>another string. can be null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>empty string is there is no common suffix. Otherwise longest common suffix</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Extensions_StringExtensions_ConcatSelf_" data-uid="Nier.Commons.Extensions.StringExtensions.ConcatSelf*"></a>
+  <h4 id="Nier_Commons_Extensions_StringExtensions_ConcatSelf_System_String_System_Int32_" data-uid="Nier.Commons.Extensions.StringExtensions.ConcatSelf(System.String,System.Int32)">ConcatSelf(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Concat the str with itself count times. Returns empty string when string is null or empty or count is 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConcatSelf(this string str, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">str</span></td>
+        <td><p>source string.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p>count is less than 0</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Nier_Commons_Extensions_StringExtensions_PadEnd_" data-uid="Nier.Commons.Extensions.StringExtensions.PadEnd*"></a>
   <h4 id="Nier_Commons_Extensions_StringExtensions_PadEnd_System_String_System_Int32_System_Char_" data-uid="Nier.Commons.Extensions.StringExtensions.PadEnd(System.String,System.Int32,System.Char)">PadEnd(String, Int32, Char)</h4>
-  <div class="markdown level1 summary"><p>Right pad a string with a specified character.
+  <div class="markdown level1 summary"><p>Null safe version of String.PadRight method.
+Right pad a string with a specified character.
 The string is padded to the size of size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -511,7 +679,8 @@ The string is padded to the size of size.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">str</span></td>
-        <td></td>
+        <td><p>source string. can be null.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
@@ -544,7 +713,8 @@ The string is padded to the size of size.</p>
   
   <a id="Nier_Commons_Extensions_StringExtensions_PadStart_" data-uid="Nier.Commons.Extensions.StringExtensions.PadStart*"></a>
   <h4 id="Nier_Commons_Extensions_StringExtensions_PadStart_System_String_System_Int32_System_Char_" data-uid="Nier.Commons.Extensions.StringExtensions.PadStart(System.String,System.Int32,System.Char)">PadStart(String, Int32, Char)</h4>
-  <div class="markdown level1 summary"><p>Left pad a string with a specified character.
+  <div class="markdown level1 summary"><p>Null safe version of String.PadLeft method.
+Left pad a string with a specified character.
 The string is padded to the size of size.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -565,7 +735,8 @@ The string is padded to the size of size.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">str</span></td>
-        <td></td>
+        <td><p>source string. can be null.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
