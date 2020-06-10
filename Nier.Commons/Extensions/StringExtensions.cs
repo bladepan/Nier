@@ -298,33 +298,33 @@ namespace Nier.Commons.Extensions
         }
 
         /// <summary>
+        /// Null safe version of String.PadLeft method.
         /// Left pad a string with a specified character.
         /// The string is padded to the size of size.
         /// </summary>
-        /// <param name="str"></param>
+        /// <param name="str">source string. can be null.</param>
         /// <param name="size"></param>
         /// <param name="padChar"></param>
         /// <returns></returns>
         public static string PadStart(this string str, int size, char padChar = ' ')
         {
-            int strLen = str?.Length ?? 0;
-            int padSize = size - strLen;
-            return padSize <= 0 ? str : Pad(str, padSize, 0, padChar);
+            string sourceStr = str ?? string.Empty;
+            return sourceStr.PadLeft(size, padChar);
         }
 
         /// <summary>
+        /// Null safe version of String.PadRight method.
         /// Right pad a string with a specified character.
         /// The string is padded to the size of size.
         /// </summary>
-        /// <param name="str"></param>
+        /// <param name="str">source string. can be null.</param>
         /// <param name="size"></param>
         /// <param name="padChar"></param>
         /// <returns></returns>
         public static string PadEnd(this string str, int size, char padChar = ' ')
         {
-            int strLen = str?.Length ?? 0;
-            int padSize = size - strLen;
-            return padSize <= 0 ? str : Pad(str, 0, padSize, padChar);
+            string sourceStr = str ?? string.Empty;
+            return sourceStr.PadRight(size, padChar);
         }
 
         /// <summary>
