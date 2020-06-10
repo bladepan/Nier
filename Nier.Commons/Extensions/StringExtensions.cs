@@ -259,6 +259,45 @@ namespace Nier.Commons.Extensions
         }
 
         /// <summary>
+        /// Concat the str with itself count times. Returns empty string when string is null or empty or count is 0.
+        /// </summary>
+        /// <param name="str">source string.</param>
+        /// <param name="count"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException">count is less than 0</exception>
+        public static string ConcatSelf(this string str, int count)
+        {
+            if (count < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(count));
+            }
+
+            if (count == 0)
+            {
+                return string.Empty;
+            }
+
+            int strLen = str?.Length ?? 0;
+            if (strLen == 0)
+            {
+                return string.Empty;
+            }
+
+            if (count == 1)
+            {
+                return str;
+            }
+
+            StringBuilder stringBuilder = new StringBuilder(strLen * count);
+            for (int i = 0; i < count; i++)
+            {
+                stringBuilder.Append(str);
+            }
+
+            return stringBuilder.ToString();
+        }
+
+        /// <summary>
         /// Left pad a string with a specified character.
         /// The string is padded to the size of size.
         /// </summary>

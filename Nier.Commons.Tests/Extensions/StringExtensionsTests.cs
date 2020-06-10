@@ -160,6 +160,18 @@ namespace Nier.Commons.Tests.Extensions
         }
 
         [TestMethod]
+        [DataRow(null, 5, "")]
+        [DataRow("", 5, "")]
+        [DataRow("abc", 2, "abcabc")]
+        [DataRow("abc", 0, "")]
+        [DataRow("abc", 1, "abc")]
+        public void ConcatSelf(string str, int count, string expectedResult)
+        {
+            string result = str.ConcatSelf(count);
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestMethod]
         [DataRow("abc", 2, "abc")]
         [DataRow("abc", 3, "abc")]
         [DataRow("abc", 5, "..abc")]
