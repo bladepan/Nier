@@ -100,16 +100,38 @@ namespace Nier.Commons.Collections.Extensions
         /// <returns>readable string representation of the dictionary</returns>
         public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict)
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            string typeName;
             if (dict == null)
             {
-                stringBuilder.Append("IDictionary<").Append(typeof(TKey).ToReadableString()).Append(",")
-                    .Append(typeof(TValue).ToReadableString())
-                    .Append("> null");
+                typeName = "IDictionary<" + typeof(TKey).ToReadableString() + "," + typeof(TValue).ToReadableString() +
+                           ">";
             }
             else
             {
-                stringBuilder.Append(dict.GetType().ToReadableString()).Append("{");
+                typeName = dict.GetType().ToReadableString();
+            }
+            return ToReadableString(dict, typeName);
+        }
+
+        /// <summary>
+        /// Readable string representation contains key values of a dictionary.
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="name">name of the dictionary</param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
+        public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict, string name)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append(name);
+            if (dict == null)
+            {
+                stringBuilder.Append(" null");
+            }
+            else
+            {
+                stringBuilder.Append("{");
                 bool firstValue = true;
                 foreach (KeyValuePair<TKey, TValue> keyValuePair in dict)
                 {

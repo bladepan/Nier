@@ -21,7 +21,7 @@ namespace Nier.Commons.Extensions
             {
                 throw new ArgumentNullException(nameof(obj));
             }
-            return new ToStringBuilder(obj.GetType().Name);
+            return new ToStringBuilder(obj.GetType().ToReadableString());
         }
 
         /// <summary>
