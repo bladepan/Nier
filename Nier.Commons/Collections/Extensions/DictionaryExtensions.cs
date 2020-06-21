@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Nier.Commons.Extensions;
@@ -25,7 +26,24 @@ namespace Nier.Commons.Collections.Extensions
             IDictionary<TKey, TValue> dict2)
         {
             return IsEquivalentTo(new DictionaryAccessor<TKey, TValue>(dict1),
-                new DictionaryAccessor<TKey, TValue>(dict2));
+                new DictionaryAccessor<TKey, TValue>(dict2), (val1, val2) => Equals(val1, val2));
+        }
+
+        /// <summary>
+        /// <see cref="dict1"/> has the same key value pairs as <see cref="dict2"/>, or they
+        /// are both null/empty.
+        /// </summary>
+        /// <param name="dict1"></param>
+        /// <param name="dict2"></param>
+        /// <param name="valueEqualityComparer"></param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <returns></returns>
+        public static bool IsEquivalentTo<TKey, TValue>(this IDictionary<TKey, TValue> dict1,
+            IDictionary<TKey, TValue> dict2, Func<TValue, TValue, bool> valueEqualityComparer)
+        {
+            return IsEquivalentTo(new DictionaryAccessor<TKey, TValue>(dict1),
+                new DictionaryAccessor<TKey, TValue>(dict2), valueEqualityComparer);
         }
 
         /// <summary>
@@ -40,7 +58,7 @@ namespace Nier.Commons.Collections.Extensions
             IReadOnlyDictionary<TKey, TValue> dict2)
         {
             return IsEquivalentTo(new ReadOnlyDictionaryAccessor<TKey, TValue>(dict1),
-                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2));
+                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2), (val1, val2) => Equals(val1, val2));
         }
 
         /// <summary>
@@ -55,11 +73,11 @@ namespace Nier.Commons.Collections.Extensions
             IReadOnlyDictionary<TKey, TValue> dict2)
         {
             return IsEquivalentTo(new DictionaryAccessor<TKey, TValue>(dict1),
-                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2));
+                new ReadOnlyDictionaryAccessor<TKey, TValue>(dict2), (val1, val2) => Equals(val1, val2));
         }
 
         private static bool IsEquivalentTo<TKey, TValue>(IDictionaryAccessor<TKey, TValue> dict1,
-            IDictionaryAccessor<TKey, TValue> dict2)
+            IDictionaryAccessor<TKey, TValue> dict2, Func<TValue, TValue, bool> valueEqualityComparer)
         {
             int len1 = dict1.Count;
             int len2 = dict2.Count;
@@ -75,7 +93,7 @@ namespace Nier.Commons.Collections.Extensions
                 {
                     if (dict2.TryGetValue(kv.Key, out TValue val2))
                     {
-                        if (!Equals(kv.Value, val2))
+                        if (!valueEqualityComparer(kv.Value, val2))
                         {
                             return false;
                         }
@@ -103,13 +121,13 @@ namespace Nier.Commons.Collections.Extensions
             string typeName;
             if (dict == null)
             {
-                typeName = "IDictionary<" + typeof(TKey).ToReadableString() + "," + typeof(TValue).ToReadableString() +
-                           ">";
+                typeName = $"IDictionary<{typeof(TKey).ToReadableString()},{typeof(TValue).ToReadableString()}>";
             }
             else
             {
                 typeName = dict.GetType().ToReadableString();
             }
+
             return ToReadableString(dict, typeName);
         }
 
@@ -117,14 +135,46 @@ namespace Nier.Commons.Collections.Extensions
         /// Readable string representation contains key values of a dictionary.
         /// </summary>
         /// <param name="dict"></param>
-        /// <param name="name">name of the dictionary</param>
+        /// <param name="dictionaryName">name of the dictionary</param>
         /// <typeparam name="TKey"></typeparam>
         /// <typeparam name="TValue"></typeparam>
         /// <returns></returns>
-        public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict, string name)
+        public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict, string dictionaryName)
         {
+            return ToReadableString(dict, dictionaryName, key => key.ToString(), value => value.SafeToString());
+        }
+
+        /// <summary>
+        /// Readable string representation contains key values of a dictionary.
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <param name="dictionaryName">name of the dictionary</param>
+        /// <typeparam name="TKey"></typeparam>
+        /// <typeparam name="TValue"></typeparam>
+        /// <param name="keyFormatter"></param>
+        /// <param name="valueFormatter"></param>
+        /// <returns></returns>
+        public static string ToReadableString<TKey, TValue>(this IDictionary<TKey, TValue> dict, string dictionaryName,
+            Func<TKey, string> keyFormatter,
+            Func<TValue, string> valueFormatter)
+        {
+            if (dictionaryName == null)
+            {
+                throw new ArgumentNullException(nameof(dictionaryName));
+            }
+
+            if (keyFormatter == null)
+            {
+                throw new ArgumentNullException(nameof(keyFormatter));
+            }
+
+            if (valueFormatter == null)
+            {
+                throw new ArgumentNullException(nameof(valueFormatter));
+            }
+
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(name);
+            stringBuilder.Append(dictionaryName);
             if (dict == null)
             {
                 stringBuilder.Append(" null");
@@ -144,9 +194,9 @@ namespace Nier.Commons.Collections.Extensions
                         stringBuilder.Append(", ");
                     }
 
-                    stringBuilder.Append(keyValuePair.Key?.ToString() ?? "null");
+                    stringBuilder.Append(keyFormatter(keyValuePair.Key));
                     stringBuilder.Append('=');
-                    stringBuilder.Append(keyValuePair.Value?.ToString() ?? "null");
+                    stringBuilder.Append(valueFormatter(keyValuePair.Value));
                 }
 
                 stringBuilder.Append('}');

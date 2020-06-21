@@ -10,6 +10,21 @@ namespace Nier.Commons.Extensions
     public static class ObjectExtensions
     {
         /// <summary>
+        /// Null safe ToString.
+        /// </summary>
+        /// <param name="obj">may be null</param>
+        /// <returns></returns>
+        public static string SafeToString(this object obj)
+        {
+            if (obj == null)
+            {
+                return "null";
+            }
+
+            return obj.ToString();
+        }
+
+        /// <summary>
         /// Create a ToStringBuilder instance.
         /// </summary>
         /// <param name="obj"></param>

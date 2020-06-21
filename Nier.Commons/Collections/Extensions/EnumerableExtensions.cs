@@ -20,14 +20,43 @@ namespace Nier.Commons.Collections.Extensions
         /// <returns>Readable string</returns>
         public static string ToReadableString<T>(this IEnumerable<T> enumerable)
         {
-            StringBuilder stringBuilder = new StringBuilder();
+            string enumerableName;
             if (enumerable == null)
             {
-                stringBuilder.Append("IEnumerable<").Append(typeof(T).ToReadableString()).Append("> null");
+                enumerableName ="IEnumerable<" + typeof(T).ToReadableString()+">";
             }
             else
             {
-                stringBuilder.Append(enumerable.GetType().ToReadableString()).Append('[');
+                enumerableName = enumerable.GetType().ToReadableString();
+            }
+
+            return ToReadableString(enumerable, enumerableName);
+        }
+
+        /// <summary>
+        /// <see cref="ToReadableString{T}(System.Collections.Generic.IEnumerable{T})"/>
+        /// </summary>
+        /// <param name="enumerable"></param>
+        /// <param name="enumerableName"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
+        /// <exception cref="ArgumentNullException"></exception>
+        public static string ToReadableString<T>(this IEnumerable<T> enumerable, string enumerableName)
+        {
+            if (enumerableName == null)
+            {
+                throw new ArgumentNullException(nameof(enumerableName));
+            }
+
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append(enumerableName);
+            if (enumerable == null)
+            {
+                stringBuilder.Append(" null");
+            }
+            else
+            {
+                stringBuilder.Append('[');
                 bool firstValue = true;
                 foreach (T value in enumerable)
                 {

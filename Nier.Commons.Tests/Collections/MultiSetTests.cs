@@ -161,7 +161,7 @@ namespace Nier.Commons.Tests.Collections
         }
 
         [TestMethod]
-        public void ToString()
+        public void ToString_ReturnsReadableString()
         {
             IMultiSet<string> multiSet = new MultiSet<string>();
             multiSet.Add("item1", 3);
