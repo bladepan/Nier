@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IMultiSet&lt;TValue&gt;
+   | Nier.Commons </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IMultiSet&lt;TValue&gt;
+   | Nier.Commons ">
+    <meta name="generator" content="docfx 2.45.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Nier.Commons.Collections.IMultiSet`1">
+  
+  
+  <h1 id="Nier_Commons_Collections_IMultiSet_1" data-uid="Nier.Commons.Collections.IMultiSet`1" class="text-break">Interface IMultiSet&lt;TValue&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A collection that supports order-independent equality, constant time look up.
+It is like <see cref="!:ISet&lt;T>"></see>, but may have duplicate elements.
+Similar to MultiSet in Guava or Bag in Apache Commons.</p>
+<p>It is useful to keep occurrences of items, i.e. counters. It provides constant time
+of increase, decrease, lookup and update counts of items.</p>
+<p>It uses object.Equals(obj1, obj2) to determine if two objects are the same, unless specified
+otherwise by implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Nier.Commons.Collections.html">Nier.Commons.Collections</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Nier_Commons_Collections_IMultiSet_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMultiSet&lt;TValue&gt; : ICollection&lt;TValue&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_EntrySet_" data-uid="Nier.Commons.Collections.IMultiSet`1.EntrySet*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_EntrySet" data-uid="Nier.Commons.Collections.IMultiSet`1.EntrySet">EntrySet</h4>
+  <div class="markdown level1 summary"><p>returns the key value pair of item and item count, each unique item appear only once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;KeyValuePair&lt;TValue, int&gt;&gt; EntrySet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;TValue, <span class="xref">System.Int32</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_ItemSet_" data-uid="Nier.Commons.Collections.IMultiSet`1.ItemSet*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_ItemSet" data-uid="Nier.Commons.Collections.IMultiSet`1.ItemSet">ItemSet</h4>
+  <div class="markdown level1 summary"><p>returns the unique items from the set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TValue&gt; ItemSet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_Add_" data-uid="Nier.Commons.Collections.IMultiSet`1.Add*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_Add__0_System_Int32_" data-uid="Nier.Commons.Collections.IMultiSet`1.Add(`0,System.Int32)">Add(TValue, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add count number of item to the set. Return the previous count of item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Add(TValue item, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>item to be added. can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>previous count if item is already in the set, 0 otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_GetItemCount_" data-uid="Nier.Commons.Collections.IMultiSet`1.GetItemCount*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_GetItemCount__0_" data-uid="Nier.Commons.Collections.IMultiSet`1.GetItemCount(`0)">GetItemCount(TValue)</h4>
+  <div class="markdown level1 summary"><p>Get number of item in the set, 0 if the item is not in the set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetItemCount(TValue item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>item to be counted. can be null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_Remove_" data-uid="Nier.Commons.Collections.IMultiSet`1.Remove*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_Remove__0_System_Int32_" data-uid="Nier.Commons.Collections.IMultiSet`1.Remove(`0,System.Int32)">Remove(TValue, Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove count number of items from set. If count is greater than number of item in the set, all occurrences of item are removed.
+Return the previous count of item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Remove(TValue item, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_SetItemCount_" data-uid="Nier.Commons.Collections.IMultiSet`1.SetItemCount*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_SetItemCount__0_System_Int32_" data-uid="Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32)">SetItemCount(TValue, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set count of item in set to count. Throws exception if the count is negative.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SetItemCount(TValue item, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>item that the count to be updated. can be null</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>the new count</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>the previous count</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">count</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiSet_1_SetItemCount_" data-uid="Nier.Commons.Collections.IMultiSet`1.SetItemCount*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiSet_1_SetItemCount__0_System_Int32_System_Int32_" data-uid="Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32,System.Int32)">SetItemCount(TValue, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set count of item to newCount if the count of item is expectedCount. Returns true
+if set is modified, otherwise false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SetItemCount(TValue item, int expectedCount, int newCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">expectedCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">expectedCount</code> is less than 0.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentOutOfRangeException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">newCount</code> is less than 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

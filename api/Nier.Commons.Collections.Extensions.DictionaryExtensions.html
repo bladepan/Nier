@@ -269,6 +269,79 @@ are both null/empty.</p>
   </table>
   
   
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__System_Func___1___1_System_Boolean__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo``2(IDictionary{``0,``1},IDictionary{``0,``1},System.Func{``1,``1,System.Boolean})">IsEquivalentTo&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;, Func&lt;TValue, TValue, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p><see cref="!:dict1"></see> has the same key value pairs as <see cref="!:dict2"></see>, or they
+are both null/empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEquivalentTo&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dict1, IDictionary&lt;TKey, TValue&gt; dict2, Func&lt;TValue, TValue, bool&gt; valueEqualityComparer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TValue, TValue, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="parametername">valueEqualityComparer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly*"></a>
   <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly__2_IDictionary___0___1__IReadOnlyDictionary___0___1__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly``2(IDictionary{``0,``1},IReadOnlyDictionary{``0,``1})">IsEquivalentToReadonly&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IReadOnlyDictionary&lt;TKey, TValue&gt;)</h4>
   <div class="markdown level1 summary"><p>Same as <a class="xref" href="Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__">IsEquivalentTo&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, IDictionary&lt;TKey, TValue&gt;)</a>, but compares IDictionary with IReadOnlyDictionary.</p>
@@ -491,6 +564,152 @@ are both null/empty.</p>
       <tr>
         <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dict</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__System_String_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String)">ToReadableString&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Readable string representation contains key values of a dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToReadableString&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dict, string dictionaryName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dictionaryName</span></td>
+        <td><p>name of the dictionary</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString_" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString*"></a>
+  <h4 id="Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__System_String_System_Func___0_System_String__System_Func___1_System_String__" data-uid="Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String,System.Func{``0,System.String},System.Func{``1,System.String})">ToReadableString&lt;TKey, TValue&gt;(IDictionary&lt;TKey, TValue&gt;, String, Func&lt;TKey, String&gt;, Func&lt;TValue, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Readable string representation contains key values of a dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToReadableString&lt;TKey, TValue&gt;(this IDictionary&lt;TKey, TValue&gt; dict, string dictionaryName, Func&lt;TKey, string&gt; keyFormatter, Func&lt;TValue, string&gt; valueFormatter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IDictionary</span>&lt;TKey, TValue&gt;</td>
+        <td><span class="parametername">dict</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">dictionaryName</span></td>
+        <td><p>name of the dictionary</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TKey, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">keyFormatter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TValue, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">valueFormatter</span></td>
         <td></td>
       </tr>
     </tbody>

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ObjectExtensions
+    <title>Interface IMultiDictionary&lt;TKey, TValue&gt;
    | Nier.Commons </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ObjectExtensions
+    <meta name="title" content="Interface IMultiDictionary&lt;TKey, TValue&gt;
    | Nier.Commons ">
     <meta name="generator" content="docfx 2.45.1.0">
     
@@ -78,61 +78,51 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Nier.Commons.Extensions.ObjectExtensions">
+            <article class="content wrap" id="_content" data-uid="Nier.Commons.Collections.IMultiDictionary`2">
   
   
-  <h1 id="Nier_Commons_Extensions_ObjectExtensions" data-uid="Nier.Commons.Extensions.ObjectExtensions" class="text-break">Class ObjectExtensions
+  <h1 id="Nier_Commons_Collections_IMultiDictionary_2" data-uid="Nier.Commons.Collections.IMultiDictionary`2" class="text-break">Interface IMultiDictionary&lt;TKey, TValue&gt;
   </h1>
-  <div class="markdown level0 summary"><p>Utility methods for <span class="xref">System.Object</span> type.</p>
+  <div class="markdown level0 summary"><p>Similar to <seealso cref="!:IDictionary&lt;TKey,TValue>"></seealso> but each key can be associated with multiple values.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">ObjectExtensions</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Nier.Commons.Extensions.html">Nier.Commons.Extensions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Nier.Commons.Collections.html">Nier.Commons.Collections</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Nier_Commons_Extensions_ObjectExtensions_syntax">Syntax</h5>
+  <h5 id="Nier_Commons_Collections_IMultiDictionary_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ObjectExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IMultiDictionary&lt;TKey, TValue&gt; : IDictionary&lt;TKey, IReadOnlyCollection&lt;TValue&gt;&gt;</code></pre>
   </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="Nier_Commons_Extensions_ObjectExtensions_SafeToString_" data-uid="Nier.Commons.Extensions.ObjectExtensions.SafeToString*"></a>
-  <h4 id="Nier_Commons_Extensions_ObjectExtensions_SafeToString_System_Object_" data-uid="Nier.Commons.Extensions.ObjectExtensions.SafeToString(System.Object)">SafeToString(Object)</h4>
-  <div class="markdown level1 summary"><p>Null safe ToString.</p>
+  <a id="Nier_Commons_Collections_IMultiDictionary_2_Add_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.Add*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiDictionary_2_Add__0__1_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.Add(`0,`1)">Add(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Add a single value to Key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string SafeToString(this object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">bool Add(TKey key, TValue value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -145,38 +135,165 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
-        <td><p>may be null</p>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiDictionary_2_AddAll_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.AddAll*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiDictionary_2_AddAll__0_IEnumerable__1__" data-uid="Nier.Commons.Collections.IMultiDictionary`2.AddAll(`0,IEnumerable{`1})">AddAll(TKey, IEnumerable&lt;TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Add multiple values to key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AddAll(TKey key, IEnumerable&lt;TValue&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TValue&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiDictionary_2_GetKeyValueEnumerator_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiDictionary_2_GetKeyValueEnumerator" data-uid="Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator">GetKeyValueEnumerator()</h4>
+  <div class="markdown level1 summary"><p>A enumerator with key value pairs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt; GetKeyValueEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_Commons_Collections_IMultiDictionary_2_Remove_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.Remove*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiDictionary_2_Remove__0__1_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.Remove(`0,`1)">Remove(TKey, TValue)</h4>
+  <div class="markdown level1 summary"><p>Remove value from Key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Remove(TKey key, TValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if the value is removed.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   
   
-  <a id="Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_" data-uid="Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder*"></a>
-  <h4 id="Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_System_Object_" data-uid="Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.Object)">ToStringBuilder(Object)</h4>
-  <div class="markdown level1 summary"><p>Create a ToStringBuilder instance.</p>
+  <a id="Nier_Commons_Collections_IMultiDictionary_2_RemoveAll_" data-uid="Nier.Commons.Collections.IMultiDictionary`2.RemoveAll*"></a>
+  <h4 id="Nier_Commons_Collections_IMultiDictionary_2_RemoveAll__0_IEnumerable__1__" data-uid="Nier.Commons.Collections.IMultiDictionary`2.RemoveAll(`0,IEnumerable{`1})">RemoveAll(TKey, IEnumerable&lt;TValue&gt;)</h4>
+  <div class="markdown level1 summary"><p>Remove all elements in values associated to key.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ToStringBuilder ToStringBuilder(this object obj)</code></pre>
+    <pre><code class="lang-csharp hljs">int RemoveAll(TKey key, IEnumerable&lt;TValue&gt; values)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -189,8 +306,13 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">obj</span></td>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">key</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;TValue&gt;</td>
+        <td><span class="parametername">values</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -205,82 +327,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Nier.Commons.Extensions.ToStringBuilder.html">ToStringBuilder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td><p>obj is null</p>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of values removed.</p>
 </td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_" data-uid="Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder*"></a>
-  <h4 id="Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_System_String_" data-uid="Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.String)">ToStringBuilder(String)</h4>
-  <div class="markdown level1 summary"><p>Create a ToStringBuilder instance.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ToStringBuilder ToStringBuilder(string className)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">className</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Nier.Commons.Extensions.ToStringBuilder.html">ToStringBuilder</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.ArgumentNullException</span></td>
-        <td></td>
       </tr>
     </tbody>
   </table>

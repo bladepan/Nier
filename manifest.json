@@ -50,6 +50,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.Enumerables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.Enumerables.html",
+          "hash": "ghUyxm+61E9Ad+L+zKiTsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Collections.Extensions.DictionaryDifferenceExtensions.yml",
       "output": {
         ".html": {
@@ -66,7 +78,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html",
-          "hash": "kT+Rwf7EbxU7BdYqa+bjHQ=="
+          "hash": "ORxLNEDNGF4RcO96DUd7Bw=="
         }
       },
       "is_incremental": false,
@@ -78,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html",
-          "hash": "N045U95GqkLIgQEbCOnYsg=="
+          "hash": "i/7ReVJXhkdZ354lwjWU4g=="
         }
       },
       "is_incremental": false,
@@ -134,11 +146,59 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.IMultiDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.IMultiDictionary-2.html",
+          "hash": "WgzBr6JMCfafDolibGRoZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.IMultiSet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.IMultiSet-1.html",
+          "hash": "Q1BVkV9efiNZgENH0FE6ZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.ListMultiDictionary-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.ListMultiDictionary-2.html",
+          "hash": "eU0JioHL55vIfIW72hdM5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Collections.MultiSet-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Collections.MultiSet-1.html",
+          "hash": "0OHIQENxGiw0soQY8IHiMQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Collections.yml",
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Collections.html",
-          "hash": "mlISMHgxvxR1ZA7VTSIEiA=="
+          "hash": "5uxaYhe0UtZ9w2WXJWh9Iw=="
         }
       },
       "is_incremental": false,
@@ -150,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.ObjectExtensions.html",
-          "hash": "InohY4GZFCI+uIfnE2a5Qg=="
+          "hash": "zF/tVzfBMQOjGybhrhRTfQ=="
         }
       },
       "is_incremental": false,
@@ -246,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "uxxL2gJePazpCNgTqSNZ3g=="
+          "hash": "sFQkXi6Z+Lccpj2Lmg70aw=="
         }
       },
       "is_incremental": false,
@@ -279,7 +339,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 17,
+          "total_file_count": 22,
           "skipped_file_count": 0
         },
         "ConceptualDocumentProcessor": {

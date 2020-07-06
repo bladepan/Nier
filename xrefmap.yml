@@ -359,6 +359,28 @@ references:
   fullName.vb: Nier.Commons.Collections.BiDirectionDictionary(Of TKey, TValue).Values
   nameWithType: BiDirectionDictionary<TKey, TValue>.Values
   nameWithType.vb: BiDirectionDictionary(Of TKey, TValue).Values
+- uid: Nier.Commons.Collections.Enumerables
+  name: Enumerables
+  href: api/Nier.Commons.Collections.Enumerables.html
+  commentId: T:Nier.Commons.Collections.Enumerables
+  fullName: Nier.Commons.Collections.Enumerables
+  nameWithType: Enumerables
+- uid: Nier.Commons.Collections.Enumerables.SequenceEqualityComparer*
+  name: SequenceEqualityComparer
+  href: api/Nier.Commons.Collections.Enumerables.html#Nier_Commons_Collections_Enumerables_SequenceEqualityComparer_
+  commentId: Overload:Nier.Commons.Collections.Enumerables.SequenceEqualityComparer
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.Enumerables.SequenceEqualityComparer
+  nameWithType: Enumerables.SequenceEqualityComparer
+- uid: Nier.Commons.Collections.Enumerables.SequenceEqualityComparer``1
+  name: SequenceEqualityComparer<T>()
+  href: api/Nier.Commons.Collections.Enumerables.html#Nier_Commons_Collections_Enumerables_SequenceEqualityComparer__1
+  commentId: M:Nier.Commons.Collections.Enumerables.SequenceEqualityComparer``1
+  name.vb: SequenceEqualityComparer(Of T)()
+  fullName: Nier.Commons.Collections.Enumerables.SequenceEqualityComparer<T>()
+  fullName.vb: Nier.Commons.Collections.Enumerables.SequenceEqualityComparer(Of T)()
+  nameWithType: Enumerables.SequenceEqualityComparer<T>()
+  nameWithType.vb: Enumerables.SequenceEqualityComparer(Of T)()
 - uid: Nier.Commons.Collections.Extensions
   name: Nier.Commons.Collections.Extensions
   href: api/Nier.Commons.Collections.Extensions.html
@@ -425,6 +447,15 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
   nameWithType: DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>)
   nameWithType.vb: DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo``2(IDictionary{``0,``1},IDictionary{``0,``1},System.Func{``1,``1,System.Boolean})
+  name: IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>, Func<TValue, TValue, Boolean>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentTo__2_IDictionary___0___1__IDictionary___0___1__System_Func___1___1_System_Boolean__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo``2(IDictionary{``0,``1},IDictionary{``0,``1},System.Func{``1,``1,System.Boolean})
+  name.vb: IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue), Func(Of TValue, TValue, Boolean))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>, System.Func<TValue, TValue, System.Boolean>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue), System.Func(Of TValue, TValue, System.Boolean))
+  nameWithType: DictionaryExtensions.IsEquivalentTo<TKey, TValue>(IDictionary<TKey, TValue>, IDictionary<TKey, TValue>, Func<TValue, TValue, Boolean>)
+  nameWithType.vb: DictionaryExtensions.IsEquivalentTo(Of TKey, TValue)(IDictionary(Of TKey, TValue), IDictionary(Of TKey, TValue), Func(Of TValue, TValue, Boolean))
 - uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.IsEquivalentToReadonly*
   name: IsEquivalentToReadonly
   href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_IsEquivalentToReadonly_
@@ -489,6 +520,24 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue))
   nameWithType: DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>)
   nameWithType.vb: DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String)
+  name: ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, String)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__System_String_
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String)
+  name.vb: ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), String)
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, System.String)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), System.String)
+  nameWithType: DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, String)
+  nameWithType.vb: DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), String)
+- uid: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String,System.Func{``0,System.String},System.Func{``1,System.String})
+  name: ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, String, Func<TKey, String>, Func<TValue, String>)
+  href: api/Nier.Commons.Collections.Extensions.DictionaryExtensions.html#Nier_Commons_Collections_Extensions_DictionaryExtensions_ToReadableString__2_IDictionary___0___1__System_String_System_Func___0_System_String__System_Func___1_System_String__
+  commentId: M:Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString``2(IDictionary{``0,``1},System.String,System.Func{``0,System.String},System.Func{``1,System.String})
+  name.vb: ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), String, Func(Of TKey, String), Func(Of TValue, String))
+  fullName: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, System.String, System.Func<TKey, System.String>, System.Func<TValue, System.String>)
+  fullName.vb: Nier.Commons.Collections.Extensions.DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), System.String, System.Func(Of TKey, System.String), System.Func(Of TValue, System.String))
+  nameWithType: DictionaryExtensions.ToReadableString<TKey, TValue>(IDictionary<TKey, TValue>, String, Func<TKey, String>, Func<TValue, String>)
+  nameWithType.vb: DictionaryExtensions.ToReadableString(Of TKey, TValue)(IDictionary(Of TKey, TValue), String, Func(Of TKey, String), Func(Of TValue, String))
 - uid: Nier.Commons.Collections.Extensions.EnumerableExtensions
   name: EnumerableExtensions
   href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html
@@ -536,6 +585,15 @@ references:
   fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
   nameWithType: EnumerableExtensions.ToReadableString<T>(IEnumerable<T>)
   nameWithType.vb: EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T))
+- uid: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString``1(IEnumerable{``0},System.String)
+  name: ToReadableString<T>(IEnumerable<T>, String)
+  href: api/Nier.Commons.Collections.Extensions.EnumerableExtensions.html#Nier_Commons_Collections_Extensions_EnumerableExtensions_ToReadableString__1_IEnumerable___0__System_String_
+  commentId: M:Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString``1(IEnumerable{``0},System.String)
+  name.vb: ToReadableString(Of T)(IEnumerable(Of T), String)
+  fullName: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString<T>(IEnumerable<T>, System.String)
+  fullName.vb: Nier.Commons.Collections.Extensions.EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T), System.String)
+  nameWithType: EnumerableExtensions.ToReadableString<T>(IEnumerable<T>, String)
+  nameWithType.vb: EnumerableExtensions.ToReadableString(Of T)(IEnumerable(Of T), String)
 - uid: Nier.Commons.Collections.IBiDirectionDictionary`2
   name: IBiDirectionDictionary<TKey, TValue>
   href: api/Nier.Commons.Collections.IBiDirectionDictionary-2.html
@@ -682,6 +740,909 @@ references:
   fullName.vb: Nier.Commons.Collections.IDictionaryValueDifference(Of TVal).RightValue
   nameWithType: IDictionaryValueDifference<TVal>.RightValue
   nameWithType.vb: IDictionaryValueDifference(Of TVal).RightValue
+- uid: Nier.Commons.Collections.IMultiDictionary`2
+  name: IMultiDictionary<TKey, TValue>
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html
+  commentId: T:Nier.Commons.Collections.IMultiDictionary`2
+  name.vb: IMultiDictionary(Of TKey, TValue)
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue)
+  nameWithType: IMultiDictionary<TKey, TValue>
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue)
+- uid: Nier.Commons.Collections.IMultiDictionary`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_Add__0__1_
+  commentId: M:Nier.Commons.Collections.IMultiDictionary`2.Add(`0,`1)
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).Add(TKey, TValue)
+  nameWithType: IMultiDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).Add(TKey, TValue)
+- uid: Nier.Commons.Collections.IMultiDictionary`2.Add*
+  name: Add
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_Add_
+  commentId: Overload:Nier.Commons.Collections.IMultiDictionary`2.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.Add
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).Add
+  nameWithType: IMultiDictionary<TKey, TValue>.Add
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).Add
+- uid: Nier.Commons.Collections.IMultiDictionary`2.AddAll(`0,IEnumerable{`1})
+  name: AddAll(TKey, IEnumerable<TValue>)
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_AddAll__0_IEnumerable__1__
+  commentId: M:Nier.Commons.Collections.IMultiDictionary`2.AddAll(`0,IEnumerable{`1})
+  name.vb: AddAll(TKey, IEnumerable(Of TValue))
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.AddAll(TKey, IEnumerable<TValue>)
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).AddAll(TKey, IEnumerable(Of TValue))
+  nameWithType: IMultiDictionary<TKey, TValue>.AddAll(TKey, IEnumerable<TValue>)
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).AddAll(TKey, IEnumerable(Of TValue))
+- uid: Nier.Commons.Collections.IMultiDictionary`2.AddAll*
+  name: AddAll
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_AddAll_
+  commentId: Overload:Nier.Commons.Collections.IMultiDictionary`2.AddAll
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.AddAll
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).AddAll
+  nameWithType: IMultiDictionary<TKey, TValue>.AddAll
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).AddAll
+- uid: Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator
+  name: GetKeyValueEnumerator()
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_GetKeyValueEnumerator
+  commentId: M:Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.GetKeyValueEnumerator()
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator()
+  nameWithType: IMultiDictionary<TKey, TValue>.GetKeyValueEnumerator()
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator()
+- uid: Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator*
+  name: GetKeyValueEnumerator
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_GetKeyValueEnumerator_
+  commentId: Overload:Nier.Commons.Collections.IMultiDictionary`2.GetKeyValueEnumerator
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.GetKeyValueEnumerator
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator
+  nameWithType: IMultiDictionary<TKey, TValue>.GetKeyValueEnumerator
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator
+- uid: Nier.Commons.Collections.IMultiDictionary`2.Remove(`0,`1)
+  name: Remove(TKey, TValue)
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_Remove__0__1_
+  commentId: M:Nier.Commons.Collections.IMultiDictionary`2.Remove(`0,`1)
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.Remove(TKey, TValue)
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).Remove(TKey, TValue)
+  nameWithType: IMultiDictionary<TKey, TValue>.Remove(TKey, TValue)
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).Remove(TKey, TValue)
+- uid: Nier.Commons.Collections.IMultiDictionary`2.Remove*
+  name: Remove
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_Remove_
+  commentId: Overload:Nier.Commons.Collections.IMultiDictionary`2.Remove
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.Remove
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).Remove
+  nameWithType: IMultiDictionary<TKey, TValue>.Remove
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).Remove
+- uid: Nier.Commons.Collections.IMultiDictionary`2.RemoveAll(`0,IEnumerable{`1})
+  name: RemoveAll(TKey, IEnumerable<TValue>)
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_RemoveAll__0_IEnumerable__1__
+  commentId: M:Nier.Commons.Collections.IMultiDictionary`2.RemoveAll(`0,IEnumerable{`1})
+  name.vb: RemoveAll(TKey, IEnumerable(Of TValue))
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.RemoveAll(TKey, IEnumerable<TValue>)
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).RemoveAll(TKey, IEnumerable(Of TValue))
+  nameWithType: IMultiDictionary<TKey, TValue>.RemoveAll(TKey, IEnumerable<TValue>)
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).RemoveAll(TKey, IEnumerable(Of TValue))
+- uid: Nier.Commons.Collections.IMultiDictionary`2.RemoveAll*
+  name: RemoveAll
+  href: api/Nier.Commons.Collections.IMultiDictionary-2.html#Nier_Commons_Collections_IMultiDictionary_2_RemoveAll_
+  commentId: Overload:Nier.Commons.Collections.IMultiDictionary`2.RemoveAll
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiDictionary<TKey, TValue>.RemoveAll
+  fullName.vb: Nier.Commons.Collections.IMultiDictionary(Of TKey, TValue).RemoveAll
+  nameWithType: IMultiDictionary<TKey, TValue>.RemoveAll
+  nameWithType.vb: IMultiDictionary(Of TKey, TValue).RemoveAll
+- uid: Nier.Commons.Collections.IMultiSet`1
+  name: IMultiSet<TValue>
+  href: api/Nier.Commons.Collections.IMultiSet-1.html
+  commentId: T:Nier.Commons.Collections.IMultiSet`1
+  name.vb: IMultiSet(Of TValue)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue)
+  nameWithType: IMultiSet<TValue>
+  nameWithType.vb: IMultiSet(Of TValue)
+- uid: Nier.Commons.Collections.IMultiSet`1.Add(`0,System.Int32)
+  name: Add(TValue, Int32)
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_Add__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.IMultiSet`1.Add(`0,System.Int32)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.Add(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).Add(TValue, System.Int32)
+  nameWithType: IMultiSet<TValue>.Add(TValue, Int32)
+  nameWithType.vb: IMultiSet(Of TValue).Add(TValue, Int32)
+- uid: Nier.Commons.Collections.IMultiSet`1.Add*
+  name: Add
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_Add_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.Add
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).Add
+  nameWithType: IMultiSet<TValue>.Add
+  nameWithType.vb: IMultiSet(Of TValue).Add
+- uid: Nier.Commons.Collections.IMultiSet`1.EntrySet
+  name: EntrySet
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_EntrySet
+  commentId: P:Nier.Commons.Collections.IMultiSet`1.EntrySet
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.EntrySet
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).EntrySet
+  nameWithType: IMultiSet<TValue>.EntrySet
+  nameWithType.vb: IMultiSet(Of TValue).EntrySet
+- uid: Nier.Commons.Collections.IMultiSet`1.EntrySet*
+  name: EntrySet
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_EntrySet_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.EntrySet
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.EntrySet
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).EntrySet
+  nameWithType: IMultiSet<TValue>.EntrySet
+  nameWithType.vb: IMultiSet(Of TValue).EntrySet
+- uid: Nier.Commons.Collections.IMultiSet`1.GetItemCount(`0)
+  name: GetItemCount(TValue)
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_GetItemCount__0_
+  commentId: M:Nier.Commons.Collections.IMultiSet`1.GetItemCount(`0)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.GetItemCount(TValue)
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).GetItemCount(TValue)
+  nameWithType: IMultiSet<TValue>.GetItemCount(TValue)
+  nameWithType.vb: IMultiSet(Of TValue).GetItemCount(TValue)
+- uid: Nier.Commons.Collections.IMultiSet`1.GetItemCount*
+  name: GetItemCount
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_GetItemCount_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.GetItemCount
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.GetItemCount
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).GetItemCount
+  nameWithType: IMultiSet<TValue>.GetItemCount
+  nameWithType.vb: IMultiSet(Of TValue).GetItemCount
+- uid: Nier.Commons.Collections.IMultiSet`1.ItemSet
+  name: ItemSet
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_ItemSet
+  commentId: P:Nier.Commons.Collections.IMultiSet`1.ItemSet
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.ItemSet
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).ItemSet
+  nameWithType: IMultiSet<TValue>.ItemSet
+  nameWithType.vb: IMultiSet(Of TValue).ItemSet
+- uid: Nier.Commons.Collections.IMultiSet`1.ItemSet*
+  name: ItemSet
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_ItemSet_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.ItemSet
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.ItemSet
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).ItemSet
+  nameWithType: IMultiSet<TValue>.ItemSet
+  nameWithType.vb: IMultiSet(Of TValue).ItemSet
+- uid: Nier.Commons.Collections.IMultiSet`1.Remove(`0,System.Int32)
+  name: Remove(TValue, Int32)
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_Remove__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.IMultiSet`1.Remove(`0,System.Int32)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.Remove(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).Remove(TValue, System.Int32)
+  nameWithType: IMultiSet<TValue>.Remove(TValue, Int32)
+  nameWithType.vb: IMultiSet(Of TValue).Remove(TValue, Int32)
+- uid: Nier.Commons.Collections.IMultiSet`1.Remove*
+  name: Remove
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_Remove_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.Remove
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.Remove
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).Remove
+  nameWithType: IMultiSet<TValue>.Remove
+  nameWithType.vb: IMultiSet(Of TValue).Remove
+- uid: Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32)
+  name: SetItemCount(TValue, Int32)
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_SetItemCount__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.SetItemCount(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).SetItemCount(TValue, System.Int32)
+  nameWithType: IMultiSet<TValue>.SetItemCount(TValue, Int32)
+  nameWithType.vb: IMultiSet(Of TValue).SetItemCount(TValue, Int32)
+- uid: Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32,System.Int32)
+  name: SetItemCount(TValue, Int32, Int32)
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_SetItemCount__0_System_Int32_System_Int32_
+  commentId: M:Nier.Commons.Collections.IMultiSet`1.SetItemCount(`0,System.Int32,System.Int32)
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.SetItemCount(TValue, System.Int32, System.Int32)
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).SetItemCount(TValue, System.Int32, System.Int32)
+  nameWithType: IMultiSet<TValue>.SetItemCount(TValue, Int32, Int32)
+  nameWithType.vb: IMultiSet(Of TValue).SetItemCount(TValue, Int32, Int32)
+- uid: Nier.Commons.Collections.IMultiSet`1.SetItemCount*
+  name: SetItemCount
+  href: api/Nier.Commons.Collections.IMultiSet-1.html#Nier_Commons_Collections_IMultiSet_1_SetItemCount_
+  commentId: Overload:Nier.Commons.Collections.IMultiSet`1.SetItemCount
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.IMultiSet<TValue>.SetItemCount
+  fullName.vb: Nier.Commons.Collections.IMultiSet(Of TValue).SetItemCount
+  nameWithType: IMultiSet<TValue>.SetItemCount
+  nameWithType.vb: IMultiSet(Of TValue).SetItemCount
+- uid: Nier.Commons.Collections.ListMultiDictionary`2
+  name: ListMultiDictionary<TKey, TValue>
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html
+  commentId: T:Nier.Commons.Collections.ListMultiDictionary`2
+  name.vb: ListMultiDictionary(Of TKey, TValue)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue)
+  nameWithType: ListMultiDictionary<TKey, TValue>
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Add(`0,`1)
+  name: Add(TKey, TValue)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Add__0__1_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Add(`0,`1)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Add(TKey, TValue)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Add(TKey, TValue)
+  nameWithType: ListMultiDictionary<TKey, TValue>.Add(TKey, TValue)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Add(TKey, TValue)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Add(`0,IReadOnlyCollection{`1})
+  name: Add(TKey, IReadOnlyCollection<TValue>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Add__0_IReadOnlyCollection__1__
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Add(`0,IReadOnlyCollection{`1})
+  name.vb: Add(TKey, IReadOnlyCollection(Of TValue))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Add(TKey, IReadOnlyCollection<TValue>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Add(TKey, IReadOnlyCollection(Of TValue))
+  nameWithType: ListMultiDictionary<TKey, TValue>.Add(TKey, IReadOnlyCollection<TValue>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Add(TKey, IReadOnlyCollection(Of TValue))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Add(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name: Add(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Add_KeyValuePair__0_IReadOnlyCollection__1___
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Add(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name.vb: Add(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Add(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Add(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  nameWithType: ListMultiDictionary<TKey, TValue>.Add(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Add(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Add*
+  name: Add
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Add_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Add
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Add
+  nameWithType: ListMultiDictionary<TKey, TValue>.Add
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Add
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.AddAll(`0,IEnumerable{`1})
+  name: AddAll(TKey, IEnumerable<TValue>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_AddAll__0_IEnumerable__1__
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.AddAll(`0,IEnumerable{`1})
+  name.vb: AddAll(TKey, IEnumerable(Of TValue))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.AddAll(TKey, IEnumerable<TValue>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).AddAll(TKey, IEnumerable(Of TValue))
+  nameWithType: ListMultiDictionary<TKey, TValue>.AddAll(TKey, IEnumerable<TValue>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).AddAll(TKey, IEnumerable(Of TValue))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.AddAll*
+  name: AddAll
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_AddAll_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.AddAll
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.AddAll
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).AddAll
+  nameWithType: ListMultiDictionary<TKey, TValue>.AddAll
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).AddAll
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Clear
+  name: Clear()
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Clear
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Clear
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Clear()
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Clear()
+  nameWithType: ListMultiDictionary<TKey, TValue>.Clear()
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Clear()
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Clear*
+  name: Clear
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Clear_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Clear
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Clear
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Clear
+  nameWithType: ListMultiDictionary<TKey, TValue>.Clear
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Clear
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Contains(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name: Contains(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Contains_KeyValuePair__0_IReadOnlyCollection__1___
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Contains(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name.vb: Contains(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Contains(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Contains(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  nameWithType: ListMultiDictionary<TKey, TValue>.Contains(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Contains(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Contains*
+  name: Contains
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Contains_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Contains
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Contains
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Contains
+  nameWithType: ListMultiDictionary<TKey, TValue>.Contains
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Contains
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.ContainsKey(`0)
+  name: ContainsKey(TKey)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_ContainsKey__0_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.ContainsKey(`0)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.ContainsKey(TKey)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).ContainsKey(TKey)
+  nameWithType: ListMultiDictionary<TKey, TValue>.ContainsKey(TKey)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).ContainsKey(TKey)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.ContainsKey*
+  name: ContainsKey
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_ContainsKey_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.ContainsKey
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.ContainsKey
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).ContainsKey
+  nameWithType: ListMultiDictionary<TKey, TValue>.ContainsKey
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).ContainsKey
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.CopyTo(KeyValuePair{`0,IReadOnlyCollection{`1}}[],System.Int32)
+  name: CopyTo(KeyValuePair<TKey, IReadOnlyCollection<TValue>>[], Int32)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_CopyTo_KeyValuePair__0_IReadOnlyCollection__1_____System_Int32_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.CopyTo(KeyValuePair{`0,IReadOnlyCollection{`1}}[],System.Int32)
+  name.vb: CopyTo(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue))(), Int32)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.CopyTo(KeyValuePair<TKey, IReadOnlyCollection<TValue>>[], System.Int32)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).CopyTo(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue))(), System.Int32)
+  nameWithType: ListMultiDictionary<TKey, TValue>.CopyTo(KeyValuePair<TKey, IReadOnlyCollection<TValue>>[], Int32)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).CopyTo(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue))(), Int32)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.CopyTo*
+  name: CopyTo
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_CopyTo_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.CopyTo
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.CopyTo
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).CopyTo
+  nameWithType: ListMultiDictionary<TKey, TValue>.CopyTo
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).CopyTo
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Count
+  name: Count
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Count
+  commentId: P:Nier.Commons.Collections.ListMultiDictionary`2.Count
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Count
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Count
+  nameWithType: ListMultiDictionary<TKey, TValue>.Count
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Count
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Count*
+  name: Count
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Count_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Count
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Count
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Count
+  nameWithType: ListMultiDictionary<TKey, TValue>.Count
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Count
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Equals(Nier.Commons.Collections.ListMultiDictionary{`0,`1})
+  name: Equals(ListMultiDictionary<TKey, TValue>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Equals_Nier_Commons_Collections_ListMultiDictionary__0__1__
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Equals(Nier.Commons.Collections.ListMultiDictionary{`0,`1})
+  name.vb: Equals(ListMultiDictionary(Of TKey, TValue))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Equals(Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Equals(Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue))
+  nameWithType: ListMultiDictionary<TKey, TValue>.Equals(ListMultiDictionary<TKey, TValue>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Equals(ListMultiDictionary(Of TKey, TValue))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Equals_System_Object_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Equals(System.Object)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Equals(System.Object)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Equals(System.Object)
+  nameWithType: ListMultiDictionary<TKey, TValue>.Equals(Object)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Equals(Object)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Equals*
+  name: Equals
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Equals_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Equals
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Equals
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Equals
+  nameWithType: ListMultiDictionary<TKey, TValue>.Equals
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Equals
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetEnumerator
+  name: GetEnumerator()
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetEnumerator
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.GetEnumerator
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetEnumerator()
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetEnumerator()
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetEnumerator()
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetEnumerator()
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetEnumerator*
+  name: GetEnumerator
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetEnumerator_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.GetEnumerator
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetEnumerator
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetEnumerator
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetEnumerator
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetEnumerator
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetHashCode
+  name: GetHashCode()
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetHashCode
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.GetHashCode
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetHashCode()
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetHashCode()
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetHashCode()
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetHashCode()
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetHashCode*
+  name: GetHashCode
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetHashCode_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.GetHashCode
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetHashCode
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetHashCode
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetHashCode
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetHashCode
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetKeyValueEnumerator
+  name: GetKeyValueEnumerator()
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetKeyValueEnumerator
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.GetKeyValueEnumerator
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetKeyValueEnumerator()
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator()
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetKeyValueEnumerator()
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator()
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.GetKeyValueEnumerator*
+  name: GetKeyValueEnumerator
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_GetKeyValueEnumerator_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.GetKeyValueEnumerator
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.GetKeyValueEnumerator
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator
+  nameWithType: ListMultiDictionary<TKey, TValue>.GetKeyValueEnumerator
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).GetKeyValueEnumerator
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.IsReadOnly
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_IsReadOnly
+  commentId: P:Nier.Commons.Collections.ListMultiDictionary`2.IsReadOnly
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).IsReadOnly
+  nameWithType: ListMultiDictionary<TKey, TValue>.IsReadOnly
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).IsReadOnly
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.IsReadOnly*
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_IsReadOnly_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.IsReadOnly
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).IsReadOnly
+  nameWithType: ListMultiDictionary<TKey, TValue>.IsReadOnly
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).IsReadOnly
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Item(`0)
+  name: Item[TKey]
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Item__0_
+  commentId: P:Nier.Commons.Collections.ListMultiDictionary`2.Item(`0)
+  name.vb: Item(TKey)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Item[TKey]
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Item(TKey)
+  nameWithType: ListMultiDictionary<TKey, TValue>.Item[TKey]
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Item(TKey)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Item*
+  name: Item
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Item_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Item
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Item
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Item
+  nameWithType: ListMultiDictionary<TKey, TValue>.Item
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Item
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Keys
+  name: Keys
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Keys
+  commentId: P:Nier.Commons.Collections.ListMultiDictionary`2.Keys
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Keys
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Keys
+  nameWithType: ListMultiDictionary<TKey, TValue>.Keys
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Keys
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Keys*
+  name: Keys
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Keys_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Keys
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Keys
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Keys
+  nameWithType: ListMultiDictionary<TKey, TValue>.Keys
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Keys
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Remove(`0)
+  name: Remove(TKey)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Remove__0_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Remove(`0)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Remove(TKey)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Remove(TKey)
+  nameWithType: ListMultiDictionary<TKey, TValue>.Remove(TKey)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Remove(TKey)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Remove(`0,`1)
+  name: Remove(TKey, TValue)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Remove__0__1_
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Remove(`0,`1)
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Remove(TKey, TValue)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Remove(TKey, TValue)
+  nameWithType: ListMultiDictionary<TKey, TValue>.Remove(TKey, TValue)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Remove(TKey, TValue)
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Remove(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name: Remove(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Remove_KeyValuePair__0_IReadOnlyCollection__1___
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.Remove(KeyValuePair{`0,IReadOnlyCollection{`1}})
+  name.vb: Remove(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Remove(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Remove(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+  nameWithType: ListMultiDictionary<TKey, TValue>.Remove(KeyValuePair<TKey, IReadOnlyCollection<TValue>>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Remove(KeyValuePair(Of TKey, IReadOnlyCollection(Of TValue)))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Remove*
+  name: Remove
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Remove_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Remove
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Remove
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Remove
+  nameWithType: ListMultiDictionary<TKey, TValue>.Remove
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Remove
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.RemoveAll(`0,IEnumerable{`1})
+  name: RemoveAll(TKey, IEnumerable<TValue>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_RemoveAll__0_IEnumerable__1__
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.RemoveAll(`0,IEnumerable{`1})
+  name.vb: RemoveAll(TKey, IEnumerable(Of TValue))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.RemoveAll(TKey, IEnumerable<TValue>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).RemoveAll(TKey, IEnumerable(Of TValue))
+  nameWithType: ListMultiDictionary<TKey, TValue>.RemoveAll(TKey, IEnumerable<TValue>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).RemoveAll(TKey, IEnumerable(Of TValue))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.RemoveAll*
+  name: RemoveAll
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_RemoveAll_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.RemoveAll
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.RemoveAll
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).RemoveAll
+  nameWithType: ListMultiDictionary<TKey, TValue>.RemoveAll
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).RemoveAll
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.ToString
+  name: ToString()
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_ToString
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.ToString
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.ToString()
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).ToString()
+  nameWithType: ListMultiDictionary<TKey, TValue>.ToString()
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).ToString()
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.ToString*
+  name: ToString
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_ToString_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.ToString
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.ToString
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).ToString
+  nameWithType: ListMultiDictionary<TKey, TValue>.ToString
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).ToString
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.TryGetValue(`0,IReadOnlyCollection{`1}@)
+  name: TryGetValue(TKey, out IReadOnlyCollection<TValue>)
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_TryGetValue__0_IReadOnlyCollection__1___
+  commentId: M:Nier.Commons.Collections.ListMultiDictionary`2.TryGetValue(`0,IReadOnlyCollection{`1}@)
+  name.vb: TryGetValue(TKey, ByRef IReadOnlyCollection(Of TValue))
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.TryGetValue(TKey, out IReadOnlyCollection<TValue>)
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef IReadOnlyCollection(Of TValue))
+  nameWithType: ListMultiDictionary<TKey, TValue>.TryGetValue(TKey, out IReadOnlyCollection<TValue>)
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).TryGetValue(TKey, ByRef IReadOnlyCollection(Of TValue))
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.TryGetValue*
+  name: TryGetValue
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_TryGetValue_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.TryGetValue
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.TryGetValue
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).TryGetValue
+  nameWithType: ListMultiDictionary<TKey, TValue>.TryGetValue
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).TryGetValue
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Values
+  name: Values
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Values
+  commentId: P:Nier.Commons.Collections.ListMultiDictionary`2.Values
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Values
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Values
+  nameWithType: ListMultiDictionary<TKey, TValue>.Values
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Values
+- uid: Nier.Commons.Collections.ListMultiDictionary`2.Values*
+  name: Values
+  href: api/Nier.Commons.Collections.ListMultiDictionary-2.html#Nier_Commons_Collections_ListMultiDictionary_2_Values_
+  commentId: Overload:Nier.Commons.Collections.ListMultiDictionary`2.Values
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.ListMultiDictionary<TKey, TValue>.Values
+  fullName.vb: Nier.Commons.Collections.ListMultiDictionary(Of TKey, TValue).Values
+  nameWithType: ListMultiDictionary<TKey, TValue>.Values
+  nameWithType.vb: ListMultiDictionary(Of TKey, TValue).Values
+- uid: Nier.Commons.Collections.MultiSet`1
+  name: MultiSet<TValue>
+  href: api/Nier.Commons.Collections.MultiSet-1.html
+  commentId: T:Nier.Commons.Collections.MultiSet`1
+  name.vb: MultiSet(Of TValue)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue)
+  nameWithType: MultiSet<TValue>
+  nameWithType.vb: MultiSet(Of TValue)
+- uid: Nier.Commons.Collections.MultiSet`1.#ctor
+  name: MultiSet()
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1__ctor
+  commentId: M:Nier.Commons.Collections.MultiSet`1.#ctor
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.MultiSet()
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).MultiSet()
+  nameWithType: MultiSet<TValue>.MultiSet()
+  nameWithType.vb: MultiSet(Of TValue).MultiSet()
+- uid: Nier.Commons.Collections.MultiSet`1.#ctor*
+  name: MultiSet
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1__ctor_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.#ctor
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.MultiSet
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).MultiSet
+  nameWithType: MultiSet<TValue>.MultiSet
+  nameWithType.vb: MultiSet(Of TValue).MultiSet
+- uid: Nier.Commons.Collections.MultiSet`1.Add(`0)
+  name: Add(TValue)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Add__0_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Add(`0)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Add(TValue)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Add(TValue)
+  nameWithType: MultiSet<TValue>.Add(TValue)
+  nameWithType.vb: MultiSet(Of TValue).Add(TValue)
+- uid: Nier.Commons.Collections.MultiSet`1.Add(`0,System.Int32)
+  name: Add(TValue, Int32)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Add__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Add(`0,System.Int32)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Add(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Add(TValue, System.Int32)
+  nameWithType: MultiSet<TValue>.Add(TValue, Int32)
+  nameWithType.vb: MultiSet(Of TValue).Add(TValue, Int32)
+- uid: Nier.Commons.Collections.MultiSet`1.Add*
+  name: Add
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Add_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Add
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Add
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Add
+  nameWithType: MultiSet<TValue>.Add
+  nameWithType.vb: MultiSet(Of TValue).Add
+- uid: Nier.Commons.Collections.MultiSet`1.Clear
+  name: Clear()
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Clear
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Clear
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Clear()
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Clear()
+  nameWithType: MultiSet<TValue>.Clear()
+  nameWithType.vb: MultiSet(Of TValue).Clear()
+- uid: Nier.Commons.Collections.MultiSet`1.Clear*
+  name: Clear
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Clear_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Clear
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Clear
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Clear
+  nameWithType: MultiSet<TValue>.Clear
+  nameWithType.vb: MultiSet(Of TValue).Clear
+- uid: Nier.Commons.Collections.MultiSet`1.Contains(`0)
+  name: Contains(TValue)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Contains__0_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Contains(`0)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Contains(TValue)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Contains(TValue)
+  nameWithType: MultiSet<TValue>.Contains(TValue)
+  nameWithType.vb: MultiSet(Of TValue).Contains(TValue)
+- uid: Nier.Commons.Collections.MultiSet`1.Contains*
+  name: Contains
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Contains_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Contains
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Contains
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Contains
+  nameWithType: MultiSet<TValue>.Contains
+  nameWithType.vb: MultiSet(Of TValue).Contains
+- uid: Nier.Commons.Collections.MultiSet`1.CopyTo(`0[],System.Int32)
+  name: CopyTo(TValue[], Int32)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_CopyTo__0___System_Int32_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.CopyTo(`0[],System.Int32)
+  name.vb: CopyTo(TValue(), Int32)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.CopyTo(TValue[], System.Int32)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).CopyTo(TValue(), System.Int32)
+  nameWithType: MultiSet<TValue>.CopyTo(TValue[], Int32)
+  nameWithType.vb: MultiSet(Of TValue).CopyTo(TValue(), Int32)
+- uid: Nier.Commons.Collections.MultiSet`1.CopyTo*
+  name: CopyTo
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_CopyTo_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.CopyTo
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.CopyTo
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).CopyTo
+  nameWithType: MultiSet<TValue>.CopyTo
+  nameWithType.vb: MultiSet(Of TValue).CopyTo
+- uid: Nier.Commons.Collections.MultiSet`1.Count
+  name: Count
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Count
+  commentId: P:Nier.Commons.Collections.MultiSet`1.Count
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Count
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Count
+  nameWithType: MultiSet<TValue>.Count
+  nameWithType.vb: MultiSet(Of TValue).Count
+- uid: Nier.Commons.Collections.MultiSet`1.Count*
+  name: Count
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Count_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Count
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Count
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Count
+  nameWithType: MultiSet<TValue>.Count
+  nameWithType.vb: MultiSet(Of TValue).Count
+- uid: Nier.Commons.Collections.MultiSet`1.EntrySet
+  name: EntrySet
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_EntrySet
+  commentId: P:Nier.Commons.Collections.MultiSet`1.EntrySet
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.EntrySet
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).EntrySet
+  nameWithType: MultiSet<TValue>.EntrySet
+  nameWithType.vb: MultiSet(Of TValue).EntrySet
+- uid: Nier.Commons.Collections.MultiSet`1.EntrySet*
+  name: EntrySet
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_EntrySet_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.EntrySet
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.EntrySet
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).EntrySet
+  nameWithType: MultiSet<TValue>.EntrySet
+  nameWithType.vb: MultiSet(Of TValue).EntrySet
+- uid: Nier.Commons.Collections.MultiSet`1.Equals(System.Object)
+  name: Equals(Object)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Equals_System_Object_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Equals(System.Object)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Equals(System.Object)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Equals(System.Object)
+  nameWithType: MultiSet<TValue>.Equals(Object)
+  nameWithType.vb: MultiSet(Of TValue).Equals(Object)
+- uid: Nier.Commons.Collections.MultiSet`1.Equals*
+  name: Equals
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Equals_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Equals
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Equals
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Equals
+  nameWithType: MultiSet<TValue>.Equals
+  nameWithType.vb: MultiSet(Of TValue).Equals
+- uid: Nier.Commons.Collections.MultiSet`1.GetEnumerator
+  name: GetEnumerator()
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetEnumerator
+  commentId: M:Nier.Commons.Collections.MultiSet`1.GetEnumerator
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetEnumerator()
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetEnumerator()
+  nameWithType: MultiSet<TValue>.GetEnumerator()
+  nameWithType.vb: MultiSet(Of TValue).GetEnumerator()
+- uid: Nier.Commons.Collections.MultiSet`1.GetEnumerator*
+  name: GetEnumerator
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetEnumerator_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.GetEnumerator
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetEnumerator
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetEnumerator
+  nameWithType: MultiSet<TValue>.GetEnumerator
+  nameWithType.vb: MultiSet(Of TValue).GetEnumerator
+- uid: Nier.Commons.Collections.MultiSet`1.GetHashCode
+  name: GetHashCode()
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetHashCode
+  commentId: M:Nier.Commons.Collections.MultiSet`1.GetHashCode
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetHashCode()
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetHashCode()
+  nameWithType: MultiSet<TValue>.GetHashCode()
+  nameWithType.vb: MultiSet(Of TValue).GetHashCode()
+- uid: Nier.Commons.Collections.MultiSet`1.GetHashCode*
+  name: GetHashCode
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetHashCode_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.GetHashCode
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetHashCode
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetHashCode
+  nameWithType: MultiSet<TValue>.GetHashCode
+  nameWithType.vb: MultiSet(Of TValue).GetHashCode
+- uid: Nier.Commons.Collections.MultiSet`1.GetItemCount(`0)
+  name: GetItemCount(TValue)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetItemCount__0_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.GetItemCount(`0)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetItemCount(TValue)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetItemCount(TValue)
+  nameWithType: MultiSet<TValue>.GetItemCount(TValue)
+  nameWithType.vb: MultiSet(Of TValue).GetItemCount(TValue)
+- uid: Nier.Commons.Collections.MultiSet`1.GetItemCount*
+  name: GetItemCount
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_GetItemCount_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.GetItemCount
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.GetItemCount
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).GetItemCount
+  nameWithType: MultiSet<TValue>.GetItemCount
+  nameWithType.vb: MultiSet(Of TValue).GetItemCount
+- uid: Nier.Commons.Collections.MultiSet`1.IsReadOnly
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_IsReadOnly
+  commentId: P:Nier.Commons.Collections.MultiSet`1.IsReadOnly
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).IsReadOnly
+  nameWithType: MultiSet<TValue>.IsReadOnly
+  nameWithType.vb: MultiSet(Of TValue).IsReadOnly
+- uid: Nier.Commons.Collections.MultiSet`1.IsReadOnly*
+  name: IsReadOnly
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_IsReadOnly_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.IsReadOnly
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.IsReadOnly
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).IsReadOnly
+  nameWithType: MultiSet<TValue>.IsReadOnly
+  nameWithType.vb: MultiSet(Of TValue).IsReadOnly
+- uid: Nier.Commons.Collections.MultiSet`1.ItemSet
+  name: ItemSet
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_ItemSet
+  commentId: P:Nier.Commons.Collections.MultiSet`1.ItemSet
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.ItemSet
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).ItemSet
+  nameWithType: MultiSet<TValue>.ItemSet
+  nameWithType.vb: MultiSet(Of TValue).ItemSet
+- uid: Nier.Commons.Collections.MultiSet`1.ItemSet*
+  name: ItemSet
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_ItemSet_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.ItemSet
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.ItemSet
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).ItemSet
+  nameWithType: MultiSet<TValue>.ItemSet
+  nameWithType.vb: MultiSet(Of TValue).ItemSet
+- uid: Nier.Commons.Collections.MultiSet`1.Remove(`0)
+  name: Remove(TValue)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Remove__0_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Remove(`0)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Remove(TValue)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Remove(TValue)
+  nameWithType: MultiSet<TValue>.Remove(TValue)
+  nameWithType.vb: MultiSet(Of TValue).Remove(TValue)
+- uid: Nier.Commons.Collections.MultiSet`1.Remove(`0,System.Int32)
+  name: Remove(TValue, Int32)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Remove__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.Remove(`0,System.Int32)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Remove(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Remove(TValue, System.Int32)
+  nameWithType: MultiSet<TValue>.Remove(TValue, Int32)
+  nameWithType.vb: MultiSet(Of TValue).Remove(TValue, Int32)
+- uid: Nier.Commons.Collections.MultiSet`1.Remove*
+  name: Remove
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_Remove_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.Remove
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.Remove
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).Remove
+  nameWithType: MultiSet<TValue>.Remove
+  nameWithType.vb: MultiSet(Of TValue).Remove
+- uid: Nier.Commons.Collections.MultiSet`1.SetItemCount(`0,System.Int32)
+  name: SetItemCount(TValue, Int32)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_SetItemCount__0_System_Int32_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.SetItemCount(`0,System.Int32)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.SetItemCount(TValue, System.Int32)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).SetItemCount(TValue, System.Int32)
+  nameWithType: MultiSet<TValue>.SetItemCount(TValue, Int32)
+  nameWithType.vb: MultiSet(Of TValue).SetItemCount(TValue, Int32)
+- uid: Nier.Commons.Collections.MultiSet`1.SetItemCount(`0,System.Int32,System.Int32)
+  name: SetItemCount(TValue, Int32, Int32)
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_SetItemCount__0_System_Int32_System_Int32_
+  commentId: M:Nier.Commons.Collections.MultiSet`1.SetItemCount(`0,System.Int32,System.Int32)
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.SetItemCount(TValue, System.Int32, System.Int32)
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).SetItemCount(TValue, System.Int32, System.Int32)
+  nameWithType: MultiSet<TValue>.SetItemCount(TValue, Int32, Int32)
+  nameWithType.vb: MultiSet(Of TValue).SetItemCount(TValue, Int32, Int32)
+- uid: Nier.Commons.Collections.MultiSet`1.SetItemCount*
+  name: SetItemCount
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_SetItemCount_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.SetItemCount
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.SetItemCount
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).SetItemCount
+  nameWithType: MultiSet<TValue>.SetItemCount
+  nameWithType.vb: MultiSet(Of TValue).SetItemCount
+- uid: Nier.Commons.Collections.MultiSet`1.ToString
+  name: ToString()
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_ToString
+  commentId: M:Nier.Commons.Collections.MultiSet`1.ToString
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.ToString()
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).ToString()
+  nameWithType: MultiSet<TValue>.ToString()
+  nameWithType.vb: MultiSet(Of TValue).ToString()
+- uid: Nier.Commons.Collections.MultiSet`1.ToString*
+  name: ToString
+  href: api/Nier.Commons.Collections.MultiSet-1.html#Nier_Commons_Collections_MultiSet_1_ToString_
+  commentId: Overload:Nier.Commons.Collections.MultiSet`1.ToString
+  isSpec: "True"
+  fullName: Nier.Commons.Collections.MultiSet<TValue>.ToString
+  fullName.vb: Nier.Commons.Collections.MultiSet(Of TValue).ToString
+  nameWithType: MultiSet<TValue>.ToString
+  nameWithType.vb: MultiSet(Of TValue).ToString
 - uid: Nier.Commons.Extensions
   name: Nier.Commons.Extensions
   href: api/Nier.Commons.Extensions.html
@@ -694,6 +1655,19 @@ references:
   commentId: T:Nier.Commons.Extensions.ObjectExtensions
   fullName: Nier.Commons.Extensions.ObjectExtensions
   nameWithType: ObjectExtensions
+- uid: Nier.Commons.Extensions.ObjectExtensions.SafeToString(System.Object)
+  name: SafeToString(Object)
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_SafeToString_System_Object_
+  commentId: M:Nier.Commons.Extensions.ObjectExtensions.SafeToString(System.Object)
+  fullName: Nier.Commons.Extensions.ObjectExtensions.SafeToString(System.Object)
+  nameWithType: ObjectExtensions.SafeToString(Object)
+- uid: Nier.Commons.Extensions.ObjectExtensions.SafeToString*
+  name: SafeToString
+  href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_SafeToString_
+  commentId: Overload:Nier.Commons.Extensions.ObjectExtensions.SafeToString
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.ObjectExtensions.SafeToString
+  nameWithType: ObjectExtensions.SafeToString
 - uid: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder(System.Object)
   name: ToStringBuilder(Object)
   href: api/Nier.Commons.Extensions.ObjectExtensions.html#Nier_Commons_Extensions_ObjectExtensions_ToStringBuilder_System_Object_
