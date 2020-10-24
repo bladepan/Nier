@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.TwoB", "Nier.TwoB\Nier
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.TwoB.Tests", "Nier.TwoB.Tests\Nier.TwoB.Tests.csproj", "{3DBAC4F1-4DE0-45CA-BCA1-891C7EDC4C39}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nier.TwoB.Benchmarks", "Nier.TwoB.Benchmarks\Nier.TwoB.Benchmarks.csproj", "{99B3080D-F6BA-4A8C-B3DD-813F2BA40A2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{3DBAC4F1-4DE0-45CA-BCA1-891C7EDC4C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DBAC4F1-4DE0-45CA-BCA1-891C7EDC4C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DBAC4F1-4DE0-45CA-BCA1-891C7EDC4C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B3080D-F6BA-4A8C-B3DD-813F2BA40A2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B3080D-F6BA-4A8C-B3DD-813F2BA40A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B3080D-F6BA-4A8C-B3DD-813F2BA40A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B3080D-F6BA-4A8C-B3DD-813F2BA40A2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
