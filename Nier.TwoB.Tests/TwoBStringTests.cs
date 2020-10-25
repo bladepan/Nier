@@ -15,15 +15,11 @@ namespace Nier.TwoB.Tests
             Assert.AreSame(TwoBString.Empty, TwoBString.FromValue(null));
             Assert.AreSame(TwoBString.Empty, TwoBString.FromValue(string.Empty));
 
-            string notCachedvalue = "abc";
-            Assert.AreNotSame(TwoBString.FromValue(notCachedvalue), TwoBString.FromValue(notCachedvalue));
-            Assert.AreEqual(notCachedvalue, TwoBString.FromValue(notCachedvalue).ToString());
+            string value = GenerateString(1024);
+            Assert.AreSame(TwoBString.FromValue(value), TwoBString.FromValue(value));
+            Assert.AreEqual(value, TwoBString.FromValue(value).ToString());
 
-            string cachedValue = GenerateString(1024);
-            Assert.AreSame(TwoBString.FromValue(cachedValue), TwoBString.FromValue(cachedValue));
-            Assert.AreEqual(cachedValue, TwoBString.FromValue(cachedValue).ToString());
-
-            Assert.AreNotSame(TwoBString.FromValue(cachedValue), TwoBString.FromValue(cachedValue, true));
+            Assert.AreNotSame(TwoBString.FromValue(value), TwoBString.FromValue(value, true));
         }
 
         [TestMethod]
@@ -36,14 +32,9 @@ namespace Nier.TwoB.Tests
         [TestMethod]
         public void FromValue_Int()
         {
-            for (int i = 0; i < CachedNumberCount; i++)
+            for (int i = 0; i < CachedNumberCount + 5; i++)
             {
                 Assert.AreSame(TwoBString.FromValue(i), TwoBString.FromValue(i));
-            }
-
-            for (int i = CachedNumberCount; i < CachedNumberCount + 100; i++)
-            {
-                Assert.AreNotSame(TwoBString.FromValue(i), TwoBString.FromValue(i));
             }
         }
 

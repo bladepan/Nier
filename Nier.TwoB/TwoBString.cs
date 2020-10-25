@@ -5,6 +5,10 @@ using Microsoft.Extensions.Caching.Memory;
 
 namespace Nier.TwoB
 {
+    /// <summary>
+    /// A <seealso cref="string"/> wrapper with a pool that caches previous allocated instances so strings with the same
+    /// content can share the same instance. It also caches hashcode to improve hashcode and equals perf.
+    /// </summary>
     public class TwoBString
     {
         public static readonly TwoBString Empty = new TwoBString(string.Empty);
@@ -13,22 +17,20 @@ namespace Nier.TwoB
 
         private static IMemoryCache s_cache = new MemoryCache(new MemoryCacheOptions {SizeLimit = 64 * 1024 * 1024});
 
-        private const int MinimumCacheSize = 16;
-
         private static readonly TwoBString[] Numbers =
             Enumerable.Range(0, 128).Select(i => new TwoBString(i.ToString("D", CultureInfo.InvariantCulture)))
                 .ToArray();
 
-        private readonly string _val;
+        public string Value { get; }
         private readonly int _hashCode;
 
-        private TwoBString(string val)
+        private TwoBString(string value)
         {
-            _val = val;
+            Value = value;
 #if NETSTANDARD2_1
-            _hashCode = val.GetHashCode(StringComparison.Ordinal);
+            _hashCode = value.GetHashCode(StringComparison.Ordinal);
 #else
-            _hashCode = val.GetHashCode();
+            _hashCode = value.GetHashCode();
 #endif
         }
 
@@ -48,13 +50,13 @@ namespace Nier.TwoB
                     return false;
                 }
 
-                return _val == another._val;
+                return Value == another.Value;
             }
 
             return false;
         }
 
-        public override string ToString() => _val;
+        public override string ToString() => Value;
 
         public static TwoBString FromValue(byte val)
         {
@@ -91,6 +93,14 @@ namespace Nier.TwoB
             return val ? True : False;
         }
 
+        /// <summary>
+        /// Get a instance of TwoBString with the specified value. It will try to return a cached instance first if
+        /// caching is enabled.
+        /// </summary>
+        /// <param name="val">string value</param>
+        /// <param name="disableCaching">if set true, it will always allocate a new instance instead of first trying to
+        /// find a cached instance.</param>
+        /// <returns></returns>
         public static TwoBString FromValue(string val, bool disableCaching = false)
         {
             if (string.IsNullOrEmpty(val))
@@ -102,21 +112,21 @@ namespace Nier.TwoB
             var cache = s_cache;
             if (!disableCaching && cache != null)
             {
-                int strLen = val.Length;
-                if (strLen > MinimumCacheSize)
+                var cachedInstance = cache.GetOrCreate(instance, entry =>
                 {
-                    var cachedInstance = cache.GetOrCreate(instance, entry =>
-                    {
-                        entry.Size = strLen;
-                        return instance;
-                    });
-                    return cachedInstance;
-                }
+                    entry.Size = val.Length;
+                    return instance;
+                });
+                return cachedInstance;
             }
 
             return instance;
         }
 
+        /// <summary>
+        /// set the cache that used to store TwoBString instances.
+        /// </summary>
+        /// <param name="cache"></param>
         public static void SetCache(IMemoryCache cache)
         {
             s_cache = cache;
