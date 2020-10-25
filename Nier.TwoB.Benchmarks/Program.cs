@@ -1,5 +1,4 @@
-﻿using System;
-using BenchmarkDotNet.Running;
+﻿using BenchmarkDotNet.Running;
 
 namespace Nier.TwoB.Benchmarks
 {
@@ -7,7 +6,8 @@ namespace Nier.TwoB.Benchmarks
     {
         public static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run(typeof(Program).Assembly);
+            // _ = BenchmarkRunner.Run(typeof(TwoBStringHashCodeBenchmarks));
+            _ = BenchmarkRunner.Run(typeof(TwoBStringEqualsBenchmarks));
         }
     }
 }

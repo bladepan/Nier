@@ -47,6 +47,14 @@ namespace Nier.TwoB.Tests
             }
         }
 
+        [TestMethod]
+        public void Equals_DifferentStringValue_ReturnsFalse()
+        {
+            string val1 = GenerateString(1020) + "abcd";
+            string val2 = GenerateString(1020) + "1234";
+            Assert.AreNotEqual(TwoBString.FromValue(val1), TwoBString.FromValue(val2));
+        }
+
         private string GenerateString(int length)
         {
             byte[] bytes = new byte[length];

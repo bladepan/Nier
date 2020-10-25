@@ -4,17 +4,16 @@ using BenchmarkDotNet.Attributes;
 
 namespace Nier.TwoB.Benchmarks
 {
-    public class TwoBStringBenchmarks
+    public class TwoBStringHashCodeBenchmarks
     {
         private const int StrCount = 1024;
         private const int StrLength = 1024;
-        private readonly Random _random = new Random(42);
         private readonly string[] _strings;
         private readonly TwoBString[] _2bStrings;
 
-        public TwoBStringBenchmarks()
+        public TwoBStringHashCodeBenchmarks()
         {
-            _strings = Enumerable.Range(0, StrCount).Select(i => GenString(StrLength)).ToArray();
+            _strings = Enumerable.Range(0, StrCount).Select(i => StringGenerator.GenString(StrLength)).ToArray();
             _2bStrings = _strings.Select(s => TwoBString.FromValue(s)).ToArray();
         }
 
@@ -40,14 +39,6 @@ namespace Nier.TwoB.Benchmarks
             }
 
             return result;
-        }
-
-        private string GenString(int length)
-        {
-            byte[] bytes = new byte[length];
-            _random.NextBytes(bytes);
-            string str = Convert.ToBase64String(bytes);
-            return str.Substring(0, length);
         }
     }
 }
