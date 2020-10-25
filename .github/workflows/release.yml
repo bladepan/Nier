@@ -26,9 +26,15 @@ jobs:
       run: dotnet pack --configuration Release
     - name: Publish Nier.Commons
       run: dotnet nuget push Nier.Commons/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
+    - name: Publish Nier.TwoB
+      run: dotnet nuget push Nier.TwoB/bin/Release/*.nupkg -k ${{secrets.NUGET_KEY}} -s https://api.nuget.org/v3/index.json --skip-duplicate
     - name: Publish nuget
       run: |
             for f in ./Nier.Commons/bin/Release/*.nupkg
+            do
+              curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
+            done
+            for f in ./Nier.TwoB/bin/Release/*.nupkg
             do
               curl -vX PUT -u "bladepan:${{ secrets.GITHUB_TOKEN }}" -F package=@$f https://nuget.pkg.github.com/bladepan/
             done

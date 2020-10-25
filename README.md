@@ -10,6 +10,11 @@ Dotnet utility classes usually end up in folders named like "Utilities", "Utils"
 # API Doc
 - [API doc](https://bladepan.github.io/Nier/api/Nier.Commons.html)
 
-# Notable features 
+# Notable features
 - Null safe methods. Most of the extension methods are null safe.
 - Readable ToString for Collections. `ToString` methods in Collection types in dotnet does not have collection values. `ToReadableString` methods in extension classes creates string with collection values.
+
+# Nier.TwoB
+Advanced types.
+
+- TwoBString. String with cached constant pool (like java) and cached hashcode.
