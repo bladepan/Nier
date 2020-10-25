@@ -1,5 +1,7 @@
 # Benchmark results
-hashcode for 1024 strings each with 1024 characters.
+the longer the string, the slower string Equals and HashCode. 
+
+env:
 
 ```
 BenchmarkDotNet=v0.12.1, OS=macOS Catalina 10.15.7 (19H2) [Darwin 19.6.0]
@@ -9,11 +11,15 @@ Intel Core i7-4850HQ CPU 2.30GHz (Haswell), 1 CPU, 8 logical and 4 physical core
   DefaultJob : .NET Core 3.1.9 (CoreCLR 4.700.20.47201, CoreFX 4.700.20.47203), X64 RyuJIT
 ```
 
+## hashcode benchmark
+hashcode for 1024 strings each with 1024 characters.
+
 |             Method |       Mean |     Error |    StdDev |
 |------------------- |-----------:|----------:|----------:|
 |     StringHashCode | 847.979 us | 2.2238 us | 1.9713 us |
 | TwoBStringHashCode |   1.957 us | 0.0343 us | 0.0367 us |
 
+## equals benchmark
 equals for 1024 strings each with 1024 characters.
 
 |                      Method |      Mean |     Error |    StdDev |
@@ -25,3 +31,9 @@ equals for 1024 strings each with 1024 characters.
 |            StringEqualsTrue | 93.237 us | 1.0773 us | 0.9550 us |
 |        TwoBStringEqualsTrue |  4.258 us | 0.0197 us | 0.0175 us |
 
+## dictionary benchmark
+
+|      Method |      Mean |    Error |   StdDev |
+|------------ |----------:|---------:|---------:|
+|     DictGet | 380.41 us | 1.963 us | 1.836 us |
+| TwoBDictGet |  27.39 us | 0.118 us | 0.111 us |

@@ -7,7 +7,8 @@ namespace Nier.TwoB.Benchmarks
         public static void Main(string[] args)
         {
             // _ = BenchmarkRunner.Run(typeof(TwoBStringHashCodeBenchmarks));
-            _ = BenchmarkRunner.Run(typeof(TwoBStringEqualsBenchmarks));
+            // _ = BenchmarkRunner.Run(typeof(TwoBStringEqualsBenchmarks));
+            _ = BenchmarkRunner.Run(typeof(TwoBStringDictionaryBenchmarks));
         }
     }
 }
