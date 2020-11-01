@@ -4,17 +4,17 @@ using BenchmarkDotNet.Attributes;
 
 namespace Nier.TwoB.Benchmarks
 {
-    public class TwoBStringHashCodeBenchmarks
+    public class CharSequenceHashCodeBenchmarks
     {
         private const int StrCount = 1024;
         private const int StrLength = 1024;
         private readonly string[] _strings;
-        private readonly TwoBString[] _2bStrings;
+        private readonly CharSequence[] _2bStrings;
 
-        public TwoBStringHashCodeBenchmarks()
+        public CharSequenceHashCodeBenchmarks()
         {
             _strings = Enumerable.Range(0, StrCount).Select(i => StringGenerator.GenString(StrLength)).ToArray();
-            _2bStrings = _strings.Select(s => TwoBString.FromValue(s)).ToArray();
+            _2bStrings = _strings.Select(s => CharSequence.FromValue(s)).ToArray();
         }
 
         [Benchmark]
@@ -33,7 +33,7 @@ namespace Nier.TwoB.Benchmarks
         public int TwoBStringHashCode()
         {
             int result = 0;
-            foreach (TwoBString s in _2bStrings)
+            foreach (CharSequence s in _2bStrings)
             {
                 result += s.GetHashCode();
             }

@@ -3,7 +3,7 @@ using BenchmarkDotNet.Attributes;
 
 namespace Nier.TwoB.Benchmarks
 {
-    public class TwoBStringEqualsBenchmarks
+    public class CharSequenceEqualsBenchmarks
     {
         private const int StrCount = 1024;
         private const int StrLength = 1024;
@@ -13,19 +13,19 @@ namespace Nier.TwoB.Benchmarks
         // same prefix different content
         private readonly string[] _strings3;
 
-        private readonly TwoBString[] _2bStrings;
-        private readonly TwoBString[] _2bStrings2;
-        private readonly TwoBString[] _2bStrings3;
+        private readonly CharSequence[] _2bStrings;
+        private readonly CharSequence[] _2bStrings2;
+        private readonly CharSequence[] _2bStrings3;
 
-        public TwoBStringEqualsBenchmarks()
+        public CharSequenceEqualsBenchmarks()
         {
             _strings = Enumerable.Range(0, StrCount).Select(i => StringGenerator.GenString(StrLength - 4) + "abcd").ToArray();
-            _2bStrings = _strings.Select(s => TwoBString.FromValue(s)).ToArray();
+            _2bStrings = _strings.Select(s => CharSequence.FromValue(s)).ToArray();
             _strings3 = _strings.Select(s => s.Substring(0, StrLength - 4) + "1234").ToArray();
 
             _strings2 = _strings.Select(s => new string(s)).ToArray();
-            _2bStrings2 = _strings2.Select(s => TwoBString.FromValue(s)).ToArray();
-            _2bStrings3 = _strings3.Select(s => TwoBString.FromValue(s)).ToArray();
+            _2bStrings2 = _strings2.Select(s => CharSequence.FromValue(s)).ToArray();
+            _2bStrings3 = _strings3.Select(s => CharSequence.FromValue(s)).ToArray();
         }
 
         [Benchmark]

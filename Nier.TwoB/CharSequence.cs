@@ -9,22 +9,22 @@ namespace Nier.TwoB
     /// A <seealso cref="string"/> wrapper with a pool that caches previous allocated instances so strings with the same
     /// content can share the same instance. It also caches hashcode to improve hashcode and equals perf.
     /// </summary>
-    public class TwoBString
+    public class CharSequence
     {
-        public static readonly TwoBString Empty = new TwoBString(string.Empty);
-        public static readonly TwoBString True = new TwoBString(bool.TrueString);
-        public static readonly TwoBString False = new TwoBString(bool.FalseString);
+        public static readonly CharSequence Empty = new CharSequence(string.Empty);
+        public static readonly CharSequence True = new CharSequence(bool.TrueString);
+        public static readonly CharSequence False = new CharSequence(bool.FalseString);
 
         private static IMemoryCache s_cache = new MemoryCache(new MemoryCacheOptions {SizeLimit = 64 * 1024 * 1024});
 
-        private static readonly TwoBString[] Numbers =
-            Enumerable.Range(0, 128).Select(i => new TwoBString(i.ToString("D", CultureInfo.InvariantCulture)))
+        private static readonly CharSequence[] Numbers =
+            Enumerable.Range(0, 128).Select(i => new CharSequence(i.ToString("D", CultureInfo.InvariantCulture)))
                 .ToArray();
 
         public string Value { get; }
         private readonly int _hashCode;
 
-        private TwoBString(string value)
+        private CharSequence(string value)
         {
             Value = value;
 #if NETSTANDARD2_1
@@ -38,7 +38,7 @@ namespace Nier.TwoB
 
         public override bool Equals(object obj)
         {
-            if (obj is TwoBString another)
+            if (obj is CharSequence another)
             {
                 if (obj == this)
                 {
@@ -58,7 +58,7 @@ namespace Nier.TwoB
 
         public override string ToString() => Value;
 
-        public static TwoBString FromValue(byte val)
+        public static CharSequence FromValue(byte val)
         {
             if (val < Numbers.Length)
             {
@@ -68,7 +68,7 @@ namespace Nier.TwoB
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
         }
 
-        public static TwoBString FromValue(long val)
+        public static CharSequence FromValue(long val)
         {
             if (val >= 0 && val < Numbers.Length)
             {
@@ -78,7 +78,7 @@ namespace Nier.TwoB
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
         }
 
-        public static TwoBString FromValue(int val)
+        public static CharSequence FromValue(int val)
         {
             if (val >= 0 && val < Numbers.Length)
             {
@@ -88,27 +88,27 @@ namespace Nier.TwoB
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
         }
 
-        public static TwoBString FromValue(bool val)
+        public static CharSequence FromValue(bool val)
         {
             return val ? True : False;
         }
 
         /// <summary>
-        /// Get a instance of TwoBString with the specified value. It will try to return a cached instance first if
+        /// Get a instance of CharSequence with the specified value. It will try to return a cached instance first if
         /// caching is enabled.
         /// </summary>
         /// <param name="val">string value</param>
         /// <param name="disableCaching">if set true, it will always allocate a new instance instead of first trying to
         /// find a cached instance.</param>
         /// <returns></returns>
-        public static TwoBString FromValue(string val, bool disableCaching = false)
+        public static CharSequence FromValue(string val, bool disableCaching = false)
         {
             if (string.IsNullOrEmpty(val))
             {
                 return Empty;
             }
 
-            var instance = new TwoBString(val);
+            var instance = new CharSequence(val);
             var cache = s_cache;
             if (!disableCaching && cache != null)
             {
@@ -124,7 +124,7 @@ namespace Nier.TwoB
         }
 
         /// <summary>
-        /// set the cache that used to store TwoBString instances.
+        /// set the cache that used to store CharSequence instances.
         /// </summary>
         /// <param name="cache"></param>
         public static void SetCache(IMemoryCache cache)

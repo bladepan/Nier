@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Nier.TwoB.Tests
 {
     [TestClass]
-    public class TwoBStringTests
+    public class CharSequenceTests
     {
         private const int CachedNumberCount = 128;
         private readonly Random _random = new Random();
@@ -12,21 +12,21 @@ namespace Nier.TwoB.Tests
         [TestMethod]
         public void FromValue()
         {
-            Assert.AreSame(TwoBString.Empty, TwoBString.FromValue(null));
-            Assert.AreSame(TwoBString.Empty, TwoBString.FromValue(string.Empty));
+            Assert.AreSame(CharSequence.Empty, CharSequence.FromValue(null));
+            Assert.AreSame(CharSequence.Empty, CharSequence.FromValue(string.Empty));
 
             string value = GenerateString(1024);
-            Assert.AreSame(TwoBString.FromValue(value), TwoBString.FromValue(value));
-            Assert.AreEqual(value, TwoBString.FromValue(value).ToString());
+            Assert.AreSame(CharSequence.FromValue(value), CharSequence.FromValue(value));
+            Assert.AreEqual(value, CharSequence.FromValue(value).ToString());
 
-            Assert.AreNotSame(TwoBString.FromValue(value), TwoBString.FromValue(value, true));
+            Assert.AreNotSame(CharSequence.FromValue(value), CharSequence.FromValue(value, true));
         }
 
         [TestMethod]
         public void FromValue_Bool()
         {
-            Assert.AreSame(TwoBString.True, TwoBString.FromValue(true));
-            Assert.AreSame(TwoBString.False, TwoBString.FromValue(false));
+            Assert.AreSame(CharSequence.True, CharSequence.FromValue(true));
+            Assert.AreSame(CharSequence.False, CharSequence.FromValue(false));
         }
 
         [TestMethod]
@@ -34,7 +34,7 @@ namespace Nier.TwoB.Tests
         {
             for (int i = 0; i < CachedNumberCount + 5; i++)
             {
-                Assert.AreSame(TwoBString.FromValue(i), TwoBString.FromValue(i));
+                Assert.AreSame(CharSequence.FromValue(i), CharSequence.FromValue(i));
             }
         }
 
@@ -43,7 +43,7 @@ namespace Nier.TwoB.Tests
         {
             string val1 = GenerateString(1020) + "abcd";
             string val2 = GenerateString(1020) + "1234";
-            Assert.AreNotEqual(TwoBString.FromValue(val1), TwoBString.FromValue(val2));
+            Assert.AreNotEqual(CharSequence.FromValue(val1), CharSequence.FromValue(val2));
         }
 
         private string GenerateString(int length)

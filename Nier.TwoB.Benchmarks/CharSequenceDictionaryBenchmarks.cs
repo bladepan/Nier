@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes;
 
 namespace Nier.TwoB.Benchmarks
 {
-    public class TwoBStringDictionaryBenchmarks
+    public class CharSequenceDictionaryBenchmarks
     {
         private const int StrCount = 1024;
         private const int StrLength = 1024;
@@ -15,26 +15,26 @@ namespace Nier.TwoB.Benchmarks
         private readonly string[] _strings2;
         private readonly Dictionary<string, int> _strDict = new Dictionary<string, int>();
 
-        private readonly TwoBString[] _2bStrings;
-        private readonly TwoBString[] _2bStrings2;
-        private readonly Dictionary<TwoBString, int> _2bDict = new Dictionary<TwoBString, int>();
+        private readonly CharSequence[] _2bStrings;
+        private readonly CharSequence[] _2bStrings2;
+        private readonly Dictionary<CharSequence, int> _2bDict = new Dictionary<CharSequence, int>();
 
-        public TwoBStringDictionaryBenchmarks()
+        public CharSequenceDictionaryBenchmarks()
         {
             _strings = Enumerable.Range(0, StrCount).Select(i => StringGenerator.GenString(StrLength)).ToArray();
-            _2bStrings = _strings.Select(s => TwoBString.FromValue(s)).ToArray();
+            _2bStrings = _strings.Select(s => CharSequence.FromValue(s)).ToArray();
             foreach (string s in _strings)
             {
                 _strDict[s] = 1;
             }
 
-            foreach (TwoBString s in _2bStrings)
+            foreach (CharSequence s in _2bStrings)
             {
                 _2bDict[s] = 1;
             }
 
             _strings2 = _strings.Select(s => new string(s)).ToArray();
-            _2bStrings2 = _strings2.Select(s => TwoBString.FromValue(s)).ToArray();
+            _2bStrings2 = _strings2.Select(s => CharSequence.FromValue(s)).ToArray();
         }
 
         [Benchmark]
@@ -53,7 +53,7 @@ namespace Nier.TwoB.Benchmarks
         public int TwoBDictGet()
         {
             int result = 0;
-            foreach (TwoBString s in _2bStrings2)
+            foreach (CharSequence s in _2bStrings2)
             {
                 result += _2bDict[s];
             }
