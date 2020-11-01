@@ -13,8 +13,9 @@ Dotnet utility classes usually end up in folders named like "Utilities", "Utils"
 # Notable features
 - Null safe methods. Most of the extension methods are null safe.
 - Readable ToString for Collections. `ToString` methods in Collection types in dotnet does not have collection values. `ToReadableString` methods in extension classes creates string with collection values.
-- Advanced collecton types: MultiSet, MultiDictionary, BiDictionary, etc.
+- Advanced collection types: MultiSet, MultiDictionary, BiDictionary, etc.
 - Utility methods for strings, objects, collections, etc.
+- Thread safe random.
 
 # Nier.TwoB
 Advanced types.
