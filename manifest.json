@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "/GEAenJylOhN/l+JmAJPcw=="
+          "hash": "95PxxSzUzytO/Qf8kikOEA=="
         }
       },
       "is_incremental": false,
@@ -266,6 +266,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.IRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.IRandom.html",
+          "hash": "Y2Qntdmjgmohxmirv7jJIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.ISystemClock.yml",
       "output": {
         ".html": {
@@ -282,7 +294,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.SystemClock.html",
-          "hash": "sJ+mfIR4ACOUAOCAJpHRlA=="
+          "hash": "XLFgKT8VyO3xtbVrc6YqPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.ThreadLocalRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.ThreadLocalRandom.html",
+          "hash": "aenSi+uAL4gdBfdf4eb5hQ=="
         }
       },
       "is_incremental": false,
@@ -294,7 +318,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.html",
-          "hash": "OrcVRTdRuEwR22B8CzH44A=="
+          "hash": "gfwwLPR9nSTiVg68Zktikw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.TwoB.CharSequence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.TwoB.CharSequence.html",
+          "hash": "+WRx7kenpmaYQ4AUENSG+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.TwoB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.TwoB.html",
+          "hash": "3BT8UO021QLMWkVDre/qlQ=="
         }
       },
       "is_incremental": false,
@@ -306,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "sFQkXi6Z+Lccpj2Lmg70aw=="
+          "hash": "9braTxG+8V6X1HaqjdqPkw=="
         }
       },
       "is_incremental": false,
@@ -352,7 +400,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 22,
+          "total_file_count": 26,
           "skipped_file_count": 0
         }
       }
