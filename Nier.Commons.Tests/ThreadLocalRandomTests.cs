@@ -29,7 +29,7 @@ namespace Nier.Commons.Tests
         }
 
         [TestMethod]
-        public void Nex()
+        public void Next_Double()
         {
             double result = _random.NextDouble();
             Assert.IsTrue(result >= 0.0);
