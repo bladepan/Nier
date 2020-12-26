@@ -1687,6 +1687,28 @@ references:
   isSpec: "True"
   fullName: Nier.Commons.Extensions.ObjectExtensions.ToStringBuilder
   nameWithType: ObjectExtensions.ToStringBuilder
+- uid: Nier.Commons.Extensions.RandomExtensions
+  name: RandomExtensions
+  href: api/Nier.Commons.Extensions.RandomExtensions.html
+  commentId: T:Nier.Commons.Extensions.RandomExtensions
+  fullName: Nier.Commons.Extensions.RandomExtensions
+  nameWithType: RandomExtensions
+- uid: Nier.Commons.Extensions.RandomExtensions.RandomString(Nier.Commons.IRandom,System.Char[],System.Int32)
+  name: RandomString(IRandom, Char[], Int32)
+  href: api/Nier.Commons.Extensions.RandomExtensions.html#Nier_Commons_Extensions_RandomExtensions_RandomString_Nier_Commons_IRandom_System_Char___System_Int32_
+  commentId: M:Nier.Commons.Extensions.RandomExtensions.RandomString(Nier.Commons.IRandom,System.Char[],System.Int32)
+  name.vb: RandomString(IRandom, Char(), Int32)
+  fullName: Nier.Commons.Extensions.RandomExtensions.RandomString(Nier.Commons.IRandom, System.Char[], System.Int32)
+  fullName.vb: Nier.Commons.Extensions.RandomExtensions.RandomString(Nier.Commons.IRandom, System.Char(), System.Int32)
+  nameWithType: RandomExtensions.RandomString(IRandom, Char[], Int32)
+  nameWithType.vb: RandomExtensions.RandomString(IRandom, Char(), Int32)
+- uid: Nier.Commons.Extensions.RandomExtensions.RandomString*
+  name: RandomString
+  href: api/Nier.Commons.Extensions.RandomExtensions.html#Nier_Commons_Extensions_RandomExtensions_RandomString_
+  commentId: Overload:Nier.Commons.Extensions.RandomExtensions.RandomString
+  isSpec: "True"
+  fullName: Nier.Commons.Extensions.RandomExtensions.RandomString
+  nameWithType: RandomExtensions.RandomString
 - uid: Nier.Commons.Extensions.StringExtensions
   name: StringExtensions
   href: api/Nier.Commons.Extensions.StringExtensions.html
@@ -1981,6 +2003,72 @@ references:
   isSpec: "True"
   fullName: Nier.Commons.ISystemClock.UtcNow
   nameWithType: ISystemClock.UtcNow
+- uid: Nier.Commons.RNGCryptoRandom
+  name: RNGCryptoRandom
+  href: api/Nier.Commons.RNGCryptoRandom.html
+  commentId: T:Nier.Commons.RNGCryptoRandom
+  fullName: Nier.Commons.RNGCryptoRandom
+  nameWithType: RNGCryptoRandom
+- uid: Nier.Commons.RNGCryptoRandom.Instance
+  name: Instance
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_Instance
+  commentId: F:Nier.Commons.RNGCryptoRandom.Instance
+  fullName: Nier.Commons.RNGCryptoRandom.Instance
+  nameWithType: RNGCryptoRandom.Instance
+- uid: Nier.Commons.RNGCryptoRandom.Next
+  name: Next()
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_Next
+  commentId: M:Nier.Commons.RNGCryptoRandom.Next
+  fullName: Nier.Commons.RNGCryptoRandom.Next()
+  nameWithType: RNGCryptoRandom.Next()
+- uid: Nier.Commons.RNGCryptoRandom.Next(System.Int32)
+  name: Next(Int32)
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_Next_System_Int32_
+  commentId: M:Nier.Commons.RNGCryptoRandom.Next(System.Int32)
+  fullName: Nier.Commons.RNGCryptoRandom.Next(System.Int32)
+  nameWithType: RNGCryptoRandom.Next(Int32)
+- uid: Nier.Commons.RNGCryptoRandom.Next(System.Int32,System.Int32)
+  name: Next(Int32, Int32)
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_Next_System_Int32_System_Int32_
+  commentId: M:Nier.Commons.RNGCryptoRandom.Next(System.Int32,System.Int32)
+  fullName: Nier.Commons.RNGCryptoRandom.Next(System.Int32, System.Int32)
+  nameWithType: RNGCryptoRandom.Next(Int32, Int32)
+- uid: Nier.Commons.RNGCryptoRandom.Next*
+  name: Next
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_Next_
+  commentId: Overload:Nier.Commons.RNGCryptoRandom.Next
+  isSpec: "True"
+  fullName: Nier.Commons.RNGCryptoRandom.Next
+  nameWithType: RNGCryptoRandom.Next
+- uid: Nier.Commons.RNGCryptoRandom.NextBytes(System.Byte[])
+  name: NextBytes(Byte[])
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_NextBytes_System_Byte___
+  commentId: M:Nier.Commons.RNGCryptoRandom.NextBytes(System.Byte[])
+  name.vb: NextBytes(Byte())
+  fullName: Nier.Commons.RNGCryptoRandom.NextBytes(System.Byte[])
+  fullName.vb: Nier.Commons.RNGCryptoRandom.NextBytes(System.Byte())
+  nameWithType: RNGCryptoRandom.NextBytes(Byte[])
+  nameWithType.vb: RNGCryptoRandom.NextBytes(Byte())
+- uid: Nier.Commons.RNGCryptoRandom.NextBytes*
+  name: NextBytes
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_NextBytes_
+  commentId: Overload:Nier.Commons.RNGCryptoRandom.NextBytes
+  isSpec: "True"
+  fullName: Nier.Commons.RNGCryptoRandom.NextBytes
+  nameWithType: RNGCryptoRandom.NextBytes
+- uid: Nier.Commons.RNGCryptoRandom.NextDouble
+  name: NextDouble()
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_NextDouble
+  commentId: M:Nier.Commons.RNGCryptoRandom.NextDouble
+  fullName: Nier.Commons.RNGCryptoRandom.NextDouble()
+  nameWithType: RNGCryptoRandom.NextDouble()
+- uid: Nier.Commons.RNGCryptoRandom.NextDouble*
+  name: NextDouble
+  href: api/Nier.Commons.RNGCryptoRandom.html#Nier_Commons_RNGCryptoRandom_NextDouble_
+  commentId: Overload:Nier.Commons.RNGCryptoRandom.NextDouble
+  isSpec: "True"
+  fullName: Nier.Commons.RNGCryptoRandom.NextDouble
+  nameWithType: RNGCryptoRandom.NextDouble
 - uid: Nier.Commons.SystemClock
   name: SystemClock
   href: api/Nier.Commons.SystemClock.html

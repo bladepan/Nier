@@ -218,6 +218,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.Extensions.RandomExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.Extensions.RandomExtensions.html",
+          "hash": "GYGRG8mQYMRAFJv7uAgk8A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/Nier.Commons.Extensions.StringExtensions.yml",
       "output": {
         ".html": {
@@ -258,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.Extensions.html",
-          "hash": "OmXcgu853qeVaPtYH/Qy8A=="
+          "hash": "ttmyTf8pPI4yHg0AQ1K1rw=="
         }
       },
       "is_incremental": false,
@@ -283,6 +295,18 @@
         ".html": {
           "relative_path": "api/Nier.Commons.ISystemClock.html",
           "hash": "/9kWxZFPoRohqipoeZE8SQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/Nier.Commons.RNGCryptoRandom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Nier.Commons.RNGCryptoRandom.html",
+          "hash": "rMhS1bS7tyL9sBDaEoMWHQ=="
         }
       },
       "is_incremental": false,
@@ -318,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Nier.Commons.html",
-          "hash": "gfwwLPR9nSTiVg68Zktikw=="
+          "hash": "IvbUJq4tWLBDgZpOc4A5zw=="
         }
       },
       "is_incremental": false,
@@ -354,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "9braTxG+8V6X1HaqjdqPkw=="
+          "hash": "+SmXhzA12F/f+B3Zx6xAfA=="
         }
       },
       "is_incremental": false,
@@ -400,7 +424,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 26,
+          "total_file_count": 28,
           "skipped_file_count": 0
         }
       }
