@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-        <PackageVersion>0.0.8</PackageVersion>
+        <PackageVersion>0.0.9</PackageVersion>
         <Authors>Pan</Authors>
         <Description>Extra methods for dotnet standard library. Similar to Apache Commons or Guava for java.</Description>
         <Copyright>MIT</Copyright>
@@ -10,7 +10,7 @@
         <PackageProjectUrl>https://github.com/bladepan/Nier</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bladepan/Nier</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
-        <PackageTags>commons,utilities,utils,guava,collections,extensions,multiset,mutlimap,bidirectionalmap,dictionaries</PackageTags>
+        <PackageTags>commons,utilities,utils,guava,collections,extensions,multiset,mutlimap,bidirectionalmap,dictionaries,random</PackageTags>
     </PropertyGroup>
     
     <ItemGroup>

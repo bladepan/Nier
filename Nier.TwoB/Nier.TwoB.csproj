@@ -2,9 +2,9 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;netstandard2.1</TargetFrameworks>
-        <PackageVersion>0.0.8</PackageVersion>
+        <PackageVersion>0.0.9</PackageVersion>
         <Title>Nier.TwoB</Title>
-        <Description>Advanced types.</Description>
+        <Description>Advanced types. Pooled instance string, hashcode cached string</Description>
         <Copyright>MIT</Copyright>
         <PackageProjectUrl>https://github.com/bladepan/Nier</PackageProjectUrl>
         <RepositoryUrl>https://github.com/bladepan/Nier</RepositoryUrl>
