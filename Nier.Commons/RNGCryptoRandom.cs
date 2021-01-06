@@ -9,7 +9,7 @@ namespace Nier.Commons
     public class RNGCryptoRandom : IRandom
     {
         private static readonly RNGCryptoServiceProvider s_globalRandomProvider = new RNGCryptoServiceProvider();
-        public static RNGCryptoRandom Instance = new RNGCryptoRandom();
+        public static readonly RNGCryptoRandom Instance = new RNGCryptoRandom();
 
         private RNGCryptoRandom()
         {
