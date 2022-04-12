@@ -7,7 +7,10 @@ namespace Nier.Commons
     /// </summary>
     public class SystemClock : ISystemClock
     {
-        public static readonly SystemClock Instance = new SystemClock();
+        /// <summary>
+        /// Singleton instance
+        /// </summary>
+        public static readonly SystemClock Instance = new ();
 
         private SystemClock()
         {

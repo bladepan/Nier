@@ -7,7 +7,7 @@ namespace Nier.TwoB.Tests
     public class CharSequenceTests
     {
         private const int CachedNumberCount = 128;
-        private readonly Random _random = new Random();
+        private readonly Random _random = new ();
 
         [TestMethod]
         public void FromValue()
@@ -44,6 +44,15 @@ namespace Nier.TwoB.Tests
             string val1 = GenerateString(1020) + "abcd";
             string val2 = GenerateString(1020) + "1234";
             Assert.AreNotEqual(CharSequence.FromValue(val1), CharSequence.FromValue(val2));
+        }
+
+        [TestMethod]
+        public void CastOperations()
+        {
+            CharSequence val = "someVal";
+            Assert.AreSame(CharSequence.FromValue("someVal"), val);
+            string sVal = val;
+            Assert.AreEqual("someVal", sVal);
         }
 
         private string GenerateString(int length)

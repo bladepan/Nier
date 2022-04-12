@@ -4,12 +4,16 @@ using System.Security.Cryptography;
 namespace Nier.Commons
 {
     /// <summary>
-    /// Random implementation based on <see cref="RNGCryptoServiceProvider"/>.
+    /// a cryptographic random number generator
     /// </summary>
     public class RNGCryptoRandom : IRandom
     {
-        private static readonly RNGCryptoServiceProvider s_globalRandomProvider = new RNGCryptoServiceProvider();
-        public static readonly RNGCryptoRandom Instance = new RNGCryptoRandom();
+        private static readonly RandomNumberGenerator s_globalRandomProvider = RandomNumberGenerator.Create();
+
+        /// <summary>
+        /// Singleton instance
+        /// </summary>
+        public static readonly RNGCryptoRandom Instance = new ();
 
         private RNGCryptoRandom()
         {

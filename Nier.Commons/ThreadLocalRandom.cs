@@ -9,8 +9,12 @@ namespace Nier.Commons
     /// </summary>
     public class ThreadLocalRandom: IRandom
     {
-        private static readonly RNGCryptoServiceProvider s_globalRandomProvider = new RNGCryptoServiceProvider();
-        public static readonly ThreadLocalRandom Instance = new ThreadLocalRandom();
+        private static readonly RandomNumberGenerator s_globalRandomProvider = RandomNumberGenerator.Create();
+
+        /// <summary>
+        /// Singleton instance.
+        /// </summary>
+        public static readonly ThreadLocalRandom Instance = new ();
 
         [ThreadStatic] private static Random _local;
 

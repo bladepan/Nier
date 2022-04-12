@@ -1,14 +1,14 @@
 # Benchmark results
-the longer the string, the slower string Equals and HashCode. 
+the longer the string, the slower string Equals and HashCode.
 
 env:
 
 ```
-BenchmarkDotNet=v0.12.1, OS=macOS Catalina 10.15.7 (19H2) [Darwin 19.6.0]
-Intel Core i7-4850HQ CPU 2.30GHz (Haswell), 1 CPU, 8 logical and 4 physical cores
-.NET Core SDK=3.1.403
-  [Host]     : .NET Core 3.1.9 (CoreCLR 4.700.20.47201, CoreFX 4.700.20.47203), X64 RyuJIT
-  DefaultJob : .NET Core 3.1.9 (CoreCLR 4.700.20.47201, CoreFX 4.700.20.47203), X64 RyuJIT
+BenchmarkDotNet=v0.13.1, OS=ubuntu 21.10
+Intel Core i7-9750H CPU 2.60GHz, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.201
+  [Host]     : .NET 6.0.3 (6.0.322.12309), X64 RyuJIT
+  DefaultJob : .NET 6.0.3 (6.0.322.12309), X64 RyuJIT
 ```
 
 ## hashcode benchmark
@@ -16,24 +16,24 @@ hashcode for 1024 strings each with 1024 characters.
 
 |             Method |       Mean |     Error |    StdDev |
 |------------------- |-----------:|----------:|----------:|
-|     StringHashCode | 847.979 us | 2.2238 us | 1.9713 us |
-| TwoBStringHashCode |   1.957 us | 0.0343 us | 0.0367 us |
+|     StringHashCode | 685.931 μs | 7.2269 μs | 6.7600 μs |
+| TwoBStringHashCode |   1.993 μs | 0.0109 μs | 0.0085 μs |
 
 ## equals benchmark
 equals for 1024 strings each with 1024 characters.
 
 |                      Method |      Mean |     Error |    StdDev |
 |---------------------------- |----------:|----------:|----------:|
-|           StringEqualsFalse |  7.018 us | 0.0354 us | 0.0331 us |
-|       TwoBStringEqualsFalse |  4.845 us | 0.0104 us | 0.0081 us |
-|     StringEqualsSharePrefix | 97.121 us | 0.6174 us | 0.5775 us |
-| TwoBStringEqualsSharePrefix |  7.151 us | 0.0651 us | 0.0609 us |
-|            StringEqualsTrue | 93.237 us | 1.0773 us | 0.9550 us |
-|        TwoBStringEqualsTrue |  4.258 us | 0.0197 us | 0.0175 us |
+|           StringEqualsFalse |  4.852 μs | 0.0075 μs | 0.0070 μs |
+|       TwoBStringEqualsFalse |  4.522 μs | 0.0167 μs | 0.0130 μs |
+|     StringEqualsSharePrefix | 80.203 μs | 1.5661 μs | 1.5382 μs |
+| TwoBStringEqualsSharePrefix |  5.596 μs | 0.0599 μs | 0.0501 μs |
+|            StringEqualsTrue | 79.794 μs | 1.1011 μs | 0.8597 μs |
+|        TwoBStringEqualsTrue |  4.138 μs | 0.0726 μs | 0.0777 μs |
 
 ## dictionary benchmark
 
 |      Method |      Mean |    Error |   StdDev |
 |------------ |----------:|---------:|---------:|
-|     DictGet | 380.41 us | 1.963 us | 1.836 us |
-| TwoBDictGet |  27.39 us | 0.118 us | 0.111 us |
+|     DictGet | 332.30 μs | 4.755 μs | 3.971 μs |
+| TwoBDictGet |  19.82 μs | 0.084 μs | 0.066 μs |
