@@ -1,5 +1,4 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 using System.Linq;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -11,13 +10,13 @@ namespace Nier.TwoB
     /// </summary>
     public class CharSequence
     {
-        public static readonly CharSequence Empty = new CharSequence(string.Empty);
-        public static readonly CharSequence True = new CharSequence(bool.TrueString);
-        public static readonly CharSequence False = new CharSequence(bool.FalseString);
+        public static readonly CharSequence Empty = new (string.Empty);
+        public static readonly CharSequence True = new (bool.TrueString);
+        public static readonly CharSequence False = new (bool.FalseString);
 
         private static IMemoryCache s_cache = new MemoryCache(new MemoryCacheOptions {SizeLimit = 64 * 1024 * 1024});
 
-        private static readonly CharSequence[] Numbers =
+        private static readonly CharSequence[] s_numbers =
             Enumerable.Range(0, 128).Select(i => new CharSequence(i.ToString("D", CultureInfo.InvariantCulture)))
                 .ToArray();
 
@@ -27,11 +26,7 @@ namespace Nier.TwoB
         private CharSequence(string value)
         {
             Value = value;
-#if NETSTANDARD2_1
-            _hashCode = value.GetHashCode(StringComparison.Ordinal);
-#else
             _hashCode = value.GetHashCode();
-#endif
         }
 
         public override int GetHashCode() => _hashCode;
@@ -60,9 +55,9 @@ namespace Nier.TwoB
 
         public static CharSequence FromValue(byte val)
         {
-            if (val < Numbers.Length)
+            if (val < s_numbers.Length)
             {
-                return Numbers[val];
+                return s_numbers[val];
             }
 
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
@@ -70,9 +65,9 @@ namespace Nier.TwoB
 
         public static CharSequence FromValue(long val)
         {
-            if (val >= 0 && val < Numbers.Length)
+            if (val >= 0 && val < s_numbers.Length)
             {
-                return Numbers[val];
+                return s_numbers[val];
             }
 
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
@@ -80,9 +75,9 @@ namespace Nier.TwoB
 
         public static CharSequence FromValue(int val)
         {
-            if (val >= 0 && val < Numbers.Length)
+            if (val >= 0 && val < s_numbers.Length)
             {
-                return Numbers[val];
+                return s_numbers[val];
             }
 
             return FromValue(val.ToString("D", CultureInfo.InvariantCulture));
@@ -96,6 +91,9 @@ namespace Nier.TwoB
         /// <summary>
         /// Get a instance of CharSequence with the specified value. It will try to return a cached instance first if
         /// caching is enabled.
+        ///
+        /// You can also assign a string to a CharSequence variable directly,
+        /// <code> CharSequence str = "some string";</code>
         /// </summary>
         /// <param name="val">string value</param>
         /// <param name="disableCaching">if set true, it will always allocate a new instance instead of first trying to
@@ -131,5 +129,8 @@ namespace Nier.TwoB
         {
             s_cache = cache;
         }
+
+        public static implicit operator string(CharSequence c) => c.Value;
+        public static implicit operator CharSequence(string s) => FromValue(s);
     }
 }

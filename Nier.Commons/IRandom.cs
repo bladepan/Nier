@@ -1,5 +1,8 @@
 namespace Nier.Commons
 {
+    /// <summary>
+    /// Abstract random generator operations.
+    /// </summary>
     public interface IRandom
     {
         /// <summary>Returns a non-negative random integer.</summary>
