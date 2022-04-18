@@ -434,6 +434,8 @@ content can share the same instance. It also caches hashcode to improve hashcode
   <h4 id="Nier_TwoB_CharSequence_FromValue_System_String_System_Boolean_" data-uid="Nier.TwoB.CharSequence.FromValue(System.String,System.Boolean)">FromValue(String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get a instance of CharSequence with the specified value. It will try to return a cached instance first if
 caching is enabled.</p>
+<p>You can also assign a string to a CharSequence variable directly,</p>
+<pre><code> CharSequence str = &quot;some string&quot;;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -562,6 +564,92 @@ find a cached instance.</p>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Nier_TwoB_CharSequence_op_Implicit_" data-uid="Nier.TwoB.CharSequence.op_Implicit*"></a>
+  <h4 id="Nier_TwoB_CharSequence_op_Implicit_Nier_TwoB_CharSequence__System_String" data-uid="Nier.TwoB.CharSequence.op_Implicit(Nier.TwoB.CharSequence)~System.String">Implicit(CharSequence to String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator string (CharSequence c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nier.TwoB.CharSequence.html">CharSequence</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Nier_TwoB_CharSequence_op_Implicit_" data-uid="Nier.TwoB.CharSequence.op_Implicit*"></a>
+  <h4 id="Nier_TwoB_CharSequence_op_Implicit_System_String__Nier_TwoB_CharSequence" data-uid="Nier.TwoB.CharSequence.op_Implicit(System.String)~Nier.TwoB.CharSequence">Implicit(String to CharSequence)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator CharSequence(string s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Nier.TwoB.CharSequence.html">CharSequence</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           

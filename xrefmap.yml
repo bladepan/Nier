@@ -2247,6 +2247,34 @@ references:
   isSpec: "True"
   fullName: Nier.TwoB.CharSequence.GetHashCode
   nameWithType: CharSequence.GetHashCode
+- uid: Nier.TwoB.CharSequence.op_Implicit(Nier.TwoB.CharSequence)~System.String
+  name: Implicit(CharSequence to String)
+  href: api/Nier.TwoB.CharSequence.html#Nier_TwoB_CharSequence_op_Implicit_Nier_TwoB_CharSequence__System_String
+  commentId: M:Nier.TwoB.CharSequence.op_Implicit(Nier.TwoB.CharSequence)~System.String
+  name.vb: Widening(CharSequence to String)
+  fullName: Nier.TwoB.CharSequence.Implicit(Nier.TwoB.CharSequence to System.String)
+  fullName.vb: Nier.TwoB.CharSequence.Widening(Nier.TwoB.CharSequence to System.String)
+  nameWithType: CharSequence.Implicit(CharSequence to String)
+  nameWithType.vb: CharSequence.Widening(CharSequence to String)
+- uid: Nier.TwoB.CharSequence.op_Implicit(System.String)~Nier.TwoB.CharSequence
+  name: Implicit(String to CharSequence)
+  href: api/Nier.TwoB.CharSequence.html#Nier_TwoB_CharSequence_op_Implicit_System_String__Nier_TwoB_CharSequence
+  commentId: M:Nier.TwoB.CharSequence.op_Implicit(System.String)~Nier.TwoB.CharSequence
+  name.vb: Widening(String to CharSequence)
+  fullName: Nier.TwoB.CharSequence.Implicit(System.String to Nier.TwoB.CharSequence)
+  fullName.vb: Nier.TwoB.CharSequence.Widening(System.String to Nier.TwoB.CharSequence)
+  nameWithType: CharSequence.Implicit(String to CharSequence)
+  nameWithType.vb: CharSequence.Widening(String to CharSequence)
+- uid: Nier.TwoB.CharSequence.op_Implicit*
+  name: Implicit
+  href: api/Nier.TwoB.CharSequence.html#Nier_TwoB_CharSequence_op_Implicit_
+  commentId: Overload:Nier.TwoB.CharSequence.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Nier.TwoB.CharSequence.Implicit
+  fullName.vb: Nier.TwoB.CharSequence.Widening
+  nameWithType: CharSequence.Implicit
+  nameWithType.vb: CharSequence.Widening
 - uid: Nier.TwoB.CharSequence.SetCache(IMemoryCache)
   name: SetCache(IMemoryCache)
   href: api/Nier.TwoB.CharSequence.html#Nier_TwoB_CharSequence_SetCache_IMemoryCache_
